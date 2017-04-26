@@ -21,6 +21,7 @@
   text-align: center;
   font-family:'Arial';
   padding:0;
+  position:relative;
   cursor:pointer;
   vertical-align:middle
 }
@@ -63,9 +64,15 @@
   top:5px !important;
   position:relative;
 }
-#calendar-table td.current_day{
+#calendar-table td.current_day:after{
   border:2px solid #00a6e8 !important;
   color:#00a6e8;
+  position:absolute;
+  left:0;
+  content:'';
+  top:0;
+  height:100%;
+  width:100%;
 }
 #calendar-table td.next-mon-day{
   color:#e5e5e5;

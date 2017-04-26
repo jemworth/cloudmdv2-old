@@ -88,13 +88,20 @@
 
 // For Admission & Reminder
 
+	$(".page_header .title-right .select-normal .btn-search").hide();
+	$(".page_header .title-right .select-normal .btn-search").click(function(){
+		$('#admissions_form_container').hide();
+	});
 	$(".title-right .dropdown-trigger-div").click(function(){
-		$(".page_header .title-right .select-normal .eq-ui-select-wrapper").slideToggle("fast");	
+		$(".page_header .title-right .select-normal .eq-ui-select-wrapper,.eq-ui-dropdown-search").hide();
+		$(".page_header .title-right .select-normal .btn-search").show();
 	});
 
 	$(".eq-ui-dropdown-div #submit,.eq-ui-dropdown-div #cancel").click(function(){
-		$(".eq-ui-dropdown-div").slideToggle("slow");
-		$(".dropdown-trigger-div").removeClass("active");				
+		$(".eq-ui-dropdown-div").slideUp();
+		$(".page_header .title-right .select-normal .eq-ui-select-wrapper").show();
+		$(".page_header .title-right .select-normal .btn-search").hide();
+		$(".dropdown-trigger-div").removeClass("active");		
 	});
 
 // For All
@@ -699,8 +706,8 @@
 
 // FOLLOWUP / DISCHARGE 
 
-	 $('#followup_discharge_starttime, #followup_discharge_starttime_ampm, #followup_discharge_clinic, #discharge_textarea_2 ').attr('disabled',true);
-	 $('#fup_visit_discharge_date_daily,#fup_visit_discharge_date_alarm , #fup_visit_discharge_startdate, #fup_visit_discharge_enddate, #fup_discharge_visit_starttime, #fup_discharge_visit_starttime_ampm, #fup_discharge_visit_endtime, #fup_discharge_visit_endtime_ampm, #fup_discharge_visit_alarmtrigger ').attr('disabled',true);
+	$('#followup_discharge_starttime, #followup_discharge_starttime_ampm, #followup_discharge_clinic, #discharge_textarea_2 ').attr('disabled',true);
+	$('#fup_visit_discharge_date_daily,#fup_visit_discharge_date_alarm , #fup_visit_discharge_startdate, #fup_visit_discharge_enddate, #fup_discharge_visit_starttime, #fup_discharge_visit_starttime_ampm, #fup_discharge_visit_endtime, #fup_discharge_visit_endtime_ampm, #fup_discharge_visit_alarmtrigger ').attr('disabled',true);
 	 
 	 
 

@@ -1900,8 +1900,7 @@ table.eq-ui-data-table td.eq-ui-list-right .eq-ui-dropdown {
     font-size: 13px;
     line-height: 15px;
     color: #228dc7;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    white-space: normal;
 }
 .side_bar_container .eq-ui-list-info ul {
     font-size: 11px;

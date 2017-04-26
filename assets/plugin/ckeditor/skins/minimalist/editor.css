@@ -416,6 +416,7 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
     width: 16px;
     height: 16px;
     float: left;
+    background-position: center;
     display: inline-block;
 }
 .cke_rtl .cke_button_icon {

@@ -9,7 +9,6 @@ CKEDITOR.editorConfig = function( config ) {
 	// The configuration options below are needed when running CKEditor from source files.
 	config.plugins = 'basicstyles,dialogui,dialog,clipboard,button,toolbar,enterkey,entities,floatingspace,wysiwygarea,indent,indentlist,list,undo,save,panel,floatpanel,listblock,richcombo,font,inlinecancel,justify,menu,contextmenu,liststyle,fakeobjects,pagebreak,print,preview,popup,lineutils,widgetselection,widget,filetools,notification,notificationaggregator,uploadwidget,horizontalrule,format_buttons,sharedspace';
 	config.skin = 'minimalist';
-	config.extraPlugins= 'menubutton,htmlbuttons';
 
 	// %REMOVE_END%
 
@@ -25,8 +24,7 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'insert', items: [ 'HorizontalRule', 'PageBreak' ] },
 		{ name: 'basicstyles', items: ['h1', 'h2', 'h3', 'h4', 'h5' ] },
 		{ name: 'clipboard', items: [ 'Undo', 'Redo' ] },
-		{ name: 'document', items: [ 'Preview', 'Print' ] },
-		{ name: 'htmlbuttons', items: [ 'header', 'rx' ] } // /plugin/htmlbuttons
+		{ name: 'document', items: [ 'Preview', 'Print' ] }
 	];
 
 	config.toolbarGroups = [
@@ -35,7 +33,7 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'forms', groups: [ 'forms' ] },
 		{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] },
 		{ name: 'links', groups: [ 'links' ] },
-		{ name: 'insert', groups: [ 'insert', 'header', 'rx'] },
+		{ name: 'insert', groups: [ 'insert' ] },
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
 		{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
 		{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
@@ -53,3 +51,5 @@ CKEDITOR.editorConfig = function( config ) {
 	    top: 'cktoolbox'
 	}
 };
+
+

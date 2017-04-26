@@ -25,9 +25,8 @@ hr {
     margin: 16px 0;
     border-top: 1px solid #27baf1;
 }
-.skyblue{color:rgb(0, 174, 239);}
-
 /*** For All CSS Layout ***/
+
 body {
     font-size: 12px;
     color: #111111;
@@ -836,7 +835,7 @@ button.btn:visited {
     box-shadow: 0 0 0;
 }
 .form_text {
-    font-size: 12px;
+    font-size: 16px;
 }
 .eq-ui-input-field input.eq-ui-input,
 .eq-ui-input-field textarea.eq-ui-textarea,
@@ -895,61 +894,9 @@ button.btn:visited {
     float: left;
     color: #111111;
 }
-input.eq-ui-input[type=radio]:checked+label, input.eq-ui-input[type=radio]:not(:checked)+label{
-    height: 20px !important;
-    padding-top: 5px !important;
-    line-height:20px !important;
-    float:none !important;
-    padding-left: 25px;
-}
-input.eq-ui-input[type=radio]:not(:checked)+label:before{
-    border-color:#00aeef;
-    top: 2px;
-    margin:4px 0 !important;
-}
-input.eq-ui-input[type=radio]:checked+label:before{
-    top: 2px;
-    margin:4px 0 !important;
-}
-input.eq-ui-input[type=radio]:not(:checked)+label:after{
-    border-color:#00aeef;
-    top: 2px;
-    margin:4px 0 !important;
-}
-input.eq-ui-input[type=radio]:checked+label:after{
-    border-color:#00aeef;
-    background:#00aeef;
-    top: 2px;
-    margin:4px 0 !important;
-}
-input.eq-ui-input[type=checkbox]+label{
-    line-height:30px;
-    padding-top:0;
-    height:20px !important;
-    padding-left:25px;
-}
-input.eq-ui-input[type=checkbox].filled-in:checked+label:before{
-    top:7px;
-    width:7px;
-    height:10px;
-}
-input.eq-ui-input[type=checkbox].filled-in:not(:checked)+label:after{
-    border-color:#00aeef;
-    top: 7px;
-    height:16px;
-    width:16px;
-}
-input.eq-ui-input[type=checkbox].filled-in:checked+label:after{
-    top: 7px;
-    height:16px;
-    width:16px;
-    border-color:#00aeef;
-    background:#00aeef;
-}
 .eq-ui-input-full label{
-    padding-top: 0px !important;
-    display:block;
-    width:auto !important;
+    padding-top:0 !important;
+    width:100% !important;
     float:none !important;
     height: 20px !important;
 }
@@ -964,21 +911,6 @@ input.eq-ui-input[type=checkbox].filled-in:checked+label:after{
     width:100% !important;
     float:none !important;
     height:35px !important
-}
-.eq-ui-input-2 input{
-    width: 36% !important;
-}
-.eq-form .form_text input{
-    float:none !important;
-    display:inline-block;
-    margin:0 10px;
-    width:20% !important;
-}
-.eq-form .form_text .checkbox_text{
-    width:auto !important
-}
-.eq-form .form_text .checkbox_text label{
-    width:auto !important
 }
 .select-form-group .bootstrap-select> button,
 .select-form-group .bootstrap-select> button:focus {
@@ -1122,567 +1054,8 @@ input.eq-ui-input[type=checkbox].filled-in:checked+label:after{
 .eq-ui-input-full label.eq-ui-caret-text i:before{
     width:0;
 }
-form.eq-form table.table.eq-ui-data-table{
-    border:1px solid #d0d0d0 !important;
-    margin:15px 0;
-    white-space:normal;
-}
-form.eq-form table.table.eq-ui-data-table tbody td,
-form.eq-form table.table.eq-ui-data-table thead th
-{
-    border:1px solid #d0d0d0;
-    padding:10px;
-    color: #333;
-    text-align:center;
-}
-form.eq-form table.table.eq-ui-data-table tbody td.has-bg{
-    background:#f1f1f1;
-}
-table.table.eq-ui-data-table tbody .text-left,
-table.table.eq-ui-data-table thead .text-left
-{
-    text-align:left !important;
-}
-table.table.eq-ui-data-table tbody .text-right,
-table.table.eq-ui-data-table thead .text-right
-{
-    text-align:right !important;
-}
-table.table.eq-ui-data-table tbody .text-center,
-table.table.eq-ui-data-table thead .text-center
-{
-    text-align:center !important;
-}
-form.eq-form table thead th{
-    text-align:center;
-    background:#f1f1f1;
-    vertical-align:middle !important
-}
-form.eq-form table tbody th{
-    background:#f1f1f1;
-    font-weight:400;
-    vertical-align:middle
-}
-form.eq-form table.table.eq-ui-data-table td input,
-form.eq-form table.table.eq-ui-data-table td textarea{
-    border:0 !important;
-    width:100% !important;
-    float:none !important;
-    padding:0px !important;
-}
-form.eq-form table.table.eq-ui-data-table td input{
-    text-align:center;
-}
-form.eq-form table.table-md-4 tbody td,
-form.eq-form table.table-md-4 thead th
-{
-    border-color:#d0d0d0 !important;
-    padding:10px !important;
-    width:33.33%;
-}
-form.eq-form table.table-md-4 td:after,
-form.eq-form table.table-md-4 th:after{
-    display:none !important
-}
-form.eq-form table.eq-ui-data-table.table-md-4 thead th:first-child, form.eq-form table.eq-ui-data-table.table-md-4 tbody td:first-child{
-    padding-left:10px !important;
-}
-form.eq-form table.eq-ui-data-table.table-md-4 thead th:last-child, form.eq-form table.eq-ui-data-table.table-md-4 tbody td:last-child{
-    padding-right:10px !important;
-}
-.eq-form table tbody td .eq-ui-form-group{
-    margin:0;
-}
-form.eq-form table.table-md-2 tbody td,
-form.eq-form table.table-md-2 thead th
-{
-    width:16.6666666667%;
-    white-space:normal;
-}
-form.eq-form table.table-md-3 tbody td,
-form.eq-form table.table-md-3 thead th
-{
-    width:25%;
-    white-space:normal;
-}
-form.eq-form table.table-md-7 tbody td,
-form.eq-form table.table-md-7 thead th
-{
-    width:14.23%;
-    white-space:normal;
-}
-table.valign-mid tbody td,
-table.valign-mid thead th
-{
-    vertical-align:middle !important;
-}
-
-table.table-md-2.space-1-left tbody td:first-child,
-table.table-md-2.space-1-left thead th:first-child,
-table.table-md-2.space-1-right tbody td:last-child,
-table.table-md-2.space-1-right thead th:last-child{
-    width:30% !important;
-    text-align:left !important;
-}
-table.table-md-2.space-1-left tbody td,
-table.table-md-2.space-1-left thead th,
-table.table-md-2.space-1-right tbody td,
-table.table-md-2.space-1-right thead th{
-    width:14% !important;
-}
-table.table.eq-ui-data-table.empty-label tbody td .eq-ui-form-group label{
-    padding-left:15px;
-}
-table.table-md-4.space-1-left tbody td:first-child,
-table.table-md-4.space-1-left thead th:first-child,
-table.table-md-4.space-1-right tbody td:last-child,
-table.table-md-4.space-1-right thead th:last-child{
-    width:40% !important;
-}
-table.table-md-4.space-1-left tbody td,
-table.table-md-4.space-1-left thead th,
-table.table-md-4.space-1-right tbody td,
-table.table-md-4.space-1-right thead th{
-    width:30% !important;
-}
-table.table-md-4.space-2-left tbody td:first-child,
-table.table-md-4.space-2-left thead th:first-child,
-table.table-md-4.space-2-right tbody td:last-child,
-table.table-md-4.space-2-right thead th:last-child{
-    width:60% !important;
-    text-align:left !important;
-}
-table.table-md-4.space-2-left tbody td,
-table.table-md-4.space-2-left thead th,
-table.table-md-4.space-2-right tbody td,
-table.table-md-4.space-2-right thead th{
-    width:20% !important;
-}
-
-/* Range CSS */
-.eleven-columns li {
-    width:calc(100% / 10);
-}
-.six-columns li {
-    width:calc(100% / 5);
-}
-.no-ui-slider {
-    width: 100%;
-}
-.no-ui-slider .slider-labels {
-    list-style: none;
-    padding:0;
-    margin-top: 15px;
-    margin-left: -3px;
-    width: 100%;
-    text-align: left;
-    font-size: 13px;
-}
-.no-ui-slider .slider-labels li {
-    color: #111;
-    display: inline;
-    float:left;
-}
-.no-ui-slider .slider-labels li span{
-    cursor: pointer;
-}
-.no-ui-slider .slider-labels li span.active{
-    color:#27baf1
-}
-.no-ui-slider .slider-labels li:nth-last-child(1) {
-    position: absolute;
-    margin-left: -3px;
-    width:25px;
-}
-.no-ui-slider .slider-labels li:hover {
-   color: #333333;
-}
-.no-ui-slider .slider-labels li.active {
-   color: #333333;
-}
-.noUi-target,
-.noUi-target * {
--webkit-touch-callout: none;
--webkit-user-select: none;
--ms-touch-action: none;
--ms-user-select: none;
--moz-user-select: none;
--moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.noUi-base {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.noUi-origin {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-}
-.noUi-handle {
-    position: relative;
-    z-index: 1;
-  cursor: move;
-}
-.noUi-stacking .noUi-handle {
-/* This class is applied to the lower origin when
-   its values is > 50%. */
-    z-index: 10;
-}
-.noUi-stacking + .noUi-origin {
-/* Fix stacking order in IE7, which incorrectly
-   creates a new context for the origins. */
-    *z-index: -1;
-}
-.noUi-state-tap .noUi-origin {
--webkit-transition: left 0.3s, top 0.3s;
-    transition: left 0.3s, top 0.3s;
-}
-.noUi-state-drag * {
-    cursor: inherit !important;
-}
-
-.noUi-horizontal {
-    height: 12px;
-}
-.noUi-horizontal .noUi-handle {
-    width: 18px;
-    height: 18px;
-    left: -7px;
-    top: -4px;
-    border-radius: 100%;
-}
-.noUi-horizontal.noUi-extended {
-    padding: 0 15px;
-}
-.noUi-horizontal.noUi-extended .noUi-origin  {
-    right: -15px;
-}
-.noUi-vertical {
-    width: 18px;
-}
-.noUi-vertical .noUi-handle {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-    top: -6px;
-    border-radius: 100%;
-}
-.noUi-vertical.noUi-extended {
-    padding: 15px 0;
-}
-.noUi-vertical.noUi-extended .noUi-origin  {
-    bottom: -15px;
-}
-
-.noUi-background {
-    background: #228dc7;
-}
-.noUi-connect {
-    background: #228dc7;
--webkit-transition: background 450ms;
-    transition: background 450ms;
-}
-.noUi-origin {
-    border-radius:10px;
-    background: #fff;
-    -webkit-transition: background 450ms;
-    transition: background 450ms;
-}
-.noUi-target {
-    border-radius: 10px;
-    border: 1px solid #eee;
-}
-.noUi-target.noUi-connect {
-    box-shadow: inset 0 0 3px rgba(51,51,51,0.45), 0 3px 6px -5px #BBB;
-}
-/* Handles and cursors;
- */
-.noUi-dragable {
-    cursor: w-resize;
-}
-.noUi-vertical .noUi-dragable {
-    cursor: n-resize;
-}
-.noUi-handle {
-    border: 1px solid rgb(34, 141, 199);
-    border-radius: 100%;
-    background: rgb(255, 255, 255);
-    cursor:pointer;
-}
-.noUi-active {}
-
-.noUi-handle:before,
-.noUi-handle:after {
-    display: block;
-    position: absolute;
-    height: 14px;
-    width: 1px;
-    background: #E8E7E6;
-    left: 14px;
-    top: 6px;
-}
-.noUi-handle:after {
-    left: 17px;
-}
-.noUi-vertical .noUi-handle:before,
-.noUi-vertical .noUi-handle:after {
-    width: 14px;
-    height: 1px;
-    left: 6px;
-    top: 14px;
-}
-.noUi-vertical .noUi-handle:after {
-    top: 17px;
-}
-
-[disabled].noUi-connect,
-[disabled] .noUi-connect {
-    background: #B8B8B8;
-}
-[disabled] .noUi-handle {
-    cursor: not-allowed;
-}
-#verbal-scale .slider-labels li{
-    width: 17% !important;  
-}
-#verbal-scale .slider-labels li span{
-    width: 60px;
-    display:block;
-    margin:auto;
-    text-align:center;
-}
-#verbal-scale .slider-labels li:first-child span{
-    width: 40px;
-    margin-left:0
-}
-#verbal-scale .slider-labels li:nth-child(2) span{
-    width: 50px;
-    margin-left:0
-}
-#verbal-scale .slider-labels li:nth-child(3) span{
-    margin-left:15px
-}
-#verbal-scale .slider-labels li:nth-child(4) span{
-    margin-right:20px;
-}
-#verbal-scale .slider-labels li:nth-child(5) span{
-    margin-right:0;
-}
-#verbal-scale .slider-labels li:last-child span{
-    margin-right:0
-}
-.face-scale{
-    padding:0;
-}
-.face-scale li{
-    display:inline-block;
-    margin:0 10px;
-    width:8%;
-    vertical-align:top;
-}
-.face-scale li label{
-    padding:0!important;
-}
-.face-scale li input.eq-ui-input[type=radio]+label{
-    line-height:16px !important
-}
-.face-scale li label:after,
-.face-scale li label:before{
-    display:none;
-}
-.face-scale li label i{
-    width:58px;
-    margin:0 auto 10px auto;
-    height:58px;
-    display:block;
-    transition:all 0.3s ease;
-}
-.face-scale li label i.no-hurt{
-    background:url(../images/icons/no-hurt.png) top center no-repeat;
-}
-.face-scale li label:hover i.no-hurt,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.no-hurt{
-    background:url(../images/icons/no-hurt-hvr.png) top center no-repeat;
-}
-.face-scale li label i.hurt_bit{
-    background:url(../images/icons/hurts-bit.png) top center no-repeat;
-}
-.face-scale li label:hover i.hurt_bit,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.hurt_bit{
-    background:url(../images/icons/hurts-bit-hvr.png) top center no-repeat;
-}
-.face-scale li label i.hurt_more{
-    background:url(../images/icons/hurts-more.png) top center no-repeat;
-}
-.face-scale li label:hover i.hurt_more,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.hurt_more{
-    background:url(../images/icons/hurts-more-hvr.png) top center no-repeat;
-}
-.face-scale li label i.hurt_even{
-    background:url(../images/icons/hurts-even.png) top center no-repeat;
-}
-.face-scale li label:hover i.hurt_even,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.hurt_even{
-    background:url(../images/icons/hurts-even-hvr.png) top center no-repeat;
-}
-.face-scale li label i.hurt_whole{
-    background:url(../images/icons/hurt-whole.png) top center no-repeat;
-}
-.face-scale li label:hover i.hurt_whole,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.hurt_whole{
-    background:url(../images/icons/hurt-whole-hvr.png) top center no-repeat;
-}
-.face-scale li label i.hurt_worst{
-    background:url(../images/icons/hurt-worst.png) top center no-repeat;
-}
-.face-scale li label:hover i.hurt_worst,
-.face-scale li input.eq-ui-input[type=radio]:checked+label i.hurt_worst{
-    background:url(../images/icons/hurt-worst-hvr.png) top center no-repeat;
-}
-
-.label-img{}
-.eq-ui-input[type=radio]:checked+label.label-img {
-    border:2px solid #000;
-}
-.label-img img{
-    width:100%;
-    height:auto;
-}
-.label-img input.eq-ui-input[type=radio]:not(:checked)+label{
-    padding:15px;
-    border:2px solid #cbcbcb;
-    height:auto !important;
-}
-.label-img input.eq-ui-input[type=radio]:checked+label{
-    padding:15px;
-    border:2px solid #00aeef;
-    height:auto !important;
-}
-.label-img input.eq-ui-input[type=radio]+label:before,
-.label-img input.eq-ui-input[type=radio]+label:after{
-    display:none;
-}
-.label-img input.eq-ui-input[type=radio]:checked+label+label,.label-img input.eq-ui-input[type=radio]:not(:checked)+label+label{
-    height: 20px !important;
-    padding-top: 5px !important;
-    line-height:20px !important;
-    float:none !important;
-    padding-left: 25px;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    -webkit-transition: .28s ease;
-    transition: .28s ease;
-}
-.label-img input.eq-ui-input[type=radio]+label+label:after,.label-img input.eq-ui-input[type=radio]+label+label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 4px;
-    width: 16px;
-    height: 16px;
-    z-index: 0;
-    -webkit-transition: .28s ease;
-    transition: .28s ease;
-    border-radius: 50%;
-}
-.label-img input.eq-ui-input[type=radio]:not(:checked)+label+label:before{
-    top: 2px;
-    margin:4px 0 !important;
-    border-radius: 50%;
-    border: 2px solid #00aeef;
-}
-.label-img input.eq-ui-input[type=radio]:checked+label+label:before{
-    top: 2px;
-    margin:4px 0 !important;
-    border: 2px solid rgba(0, 0, 0, 0);
-}
-.label-img input.eq-ui-input[type=radio]:not(:checked)+label+label:after{
-    border: 2px solid #00aeef !important;
-    top: 2px;
-    margin:4px 0 !important;
-    z-index: -1;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-.label-img input.eq-ui-input[type=radio]:checked+label+label:after{
-    background:#00aeef;
-    top: 2px;
-    margin:4px 0 !important;
-    border-radius: 50%;
-    border: 2px solid #00aeef;
-    z-index: 0;
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-}
-
 /*** For All CSS ***/
-.no-bg{background: transparent !important;}
 #main-date_root .picker__date-display{display:none;}
-.margin-auto{margin:auto;float:none;}
-.width-30{
-    width:30% !important;
-}
-.width-50{
-    width:50% !important;
-}
-.float-div{
-    position:absolute;
-    top:0px;
-    line-height:3em;
-    padding:10px;
-    left:110%;
-}
-.table.eq-ui-data-table.valign-mid .float-div .eq-ui-form-group label{
-    float:none !important;
-    width: 100%;
-    display:inline-block;
-    text-align:left;
-}
-.table.eq-ui-data-table.valign-mid .float-div .eq-ui-form-group .eq-ui-select-wrapper input{
-    float:none !important;
-    width: 100% !important;
-    text-align:left;
-    padding:0 10px !important;
-    border-top: 1px solid rgb(226, 226, 226) !important;
-    border-right: 1px solid rgb(226, 226, 226) !important;
-    border-left: 1px solid rgb(226, 226, 226) !important;
-    border-bottom: 2px solid rgb(0, 174, 239) !important;
-    background: rgb(255, 255, 255) !important;
-}
-.table.eq-ui-data-table.valign-mid .float-div .eq-ui-form-group .eq-ui-select-wrapper{
-    float:none !important;
-    display:inline-block;
-    width:auto !important
-}
-.table.eq-ui-data-table.valign-mid .float-div .eq-ui-form-group > input{
-    display:inline-block;
-    float:none !important;
-    width:80% !important;
-    text-align:left;
-    padding:0 10px !important;
-    border-top: 1px solid rgb(226, 226, 226) !important;
-    border-right: 1px solid rgb(226, 226, 226) !important;
-    border-left: 1px solid rgb(226, 226, 226) !important;
-    border-bottom: 2px solid rgb(0, 174, 239) !important;
-    background: rgb(255, 255, 255) !important;
-}
-.float-right{
-    position:absolute;
-    right:0;
-    width:50%;
-    height:100%;
-}
-.float-right > div{
-    position:absolute !important;
-    width: 65%;
-    bottom:0;
-}
 .list_line {
     padding: 0;
 }
@@ -1693,24 +1066,6 @@ table.table-md-4.space-2-right thead th{
 }
 .list_line li a {
     text-decoration: underline !important;
-}
-.ul-solid-circ{
-    padding:0;
-}
-.ul-solid-circ li{
-    padding-left:20px;
-    position:relative;
-}
-.ul-solid-circ li:before{
-    content:'';
-    display:block;
-    width: 7px;
-    height: 7px;
-    background:#27baf1;
-    position:absolute;
-    left:0;
-    top: 5px;
-    border-radius:50%;
 }
 .btn-border-blue {
     border: 2px solid #228dc7 !important;
@@ -2454,24 +1809,6 @@ table.eq-ui-data-table td.eq-ui-list-right .eq-ui-dropdown {
     color: #fff !important;
     transition: all 0.3s;
 }
-/*** Popover CSS ***/
-.popover{
-    border-color: rgb(0, 174, 239);
-    font-size:12px;
-}
-.popover .arrow{
-    border-right-color: rgb(0, 174, 239) !important;
-}
-.popover.right{
-    margin-left:15px;
-}
-.btn-pop{
-    position:absolute;
-    margin-left:5px;
-    cursor:pointer;
-    display:inline;
-    font-size:12px;
-}
 /*** Side Section ***/
 
 .side_bar_container .title-right {
@@ -2907,19 +2244,22 @@ a:hover rect {
 }
 table.eq-ui-data-table.table-md-4{
     border-collapse:collapse !important;
-    white-space:normal;
+    white-space:pre-wrap
+}
+table.eq-ui-data-table.table-md-4 thead{
+    background: rgb(241, 241, 241);
 }
 table.eq-ui-data-table.table-md-4 thead tr:hover{
     background:transparent !important;
 }
 table.eq-ui-data-table.table-md-4 thead th{
     position:relative;
-    background: rgb(241, 241, 241);
     border-bottom:1px solid #00adee !important;
     width:25%;
     padding: 20px 20px !important;
+    font-size:14px !important;
     text-align:center !important;
-    color: #333;
+    color:#333 !important;
     vertical-align:middle !important;
 }
 table.eq-ui-data-table.table-md-4 td{
@@ -2988,6 +2328,7 @@ table.eq-ui-data-table.table-md-4 td > ul > li span.eq-ui-list-title{
 .gallery > figure:first-child{
     padding-left:0;
 }
+
 
 /* Search Case Modal UI */
 
@@ -3101,3 +2442,4 @@ div.scrate_col_2 sup {
     list-style: none;
     color: #09a6e7;
 }
+  

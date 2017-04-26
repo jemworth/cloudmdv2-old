@@ -1,6 +1,7 @@
 "use strict";
 
 // CLINIC SCHEDULER TOGGLE
+
 	$("#row-mid-scheduler-toggle").click(function(){
 		$(".row-mid-scheduler").slideToggle("slow");
 		$(".col-addsched-btn").toggleClass("col-addsched-btn-active");
@@ -86,20 +87,14 @@
 	});
 
 // For Admission & Reminder
-	$(".page_header .title-right .select-normal .btn-search").hide();
-	$(".page_header .title-right .select-normal .btn-search").click(function(){
-		$('#admissions_form_container').hide();
-	});
+
 	$(".title-right .dropdown-trigger-div").click(function(){
-		$(".page_header .title-right .select-normal .eq-ui-select-wrapper,.eq-ui-dropdown-search").hide();
-		$(".page_header .title-right .select-normal .btn-search").show();
+		$(".page_header .title-right .select-normal .eq-ui-select-wrapper").slideToggle("fast");	
 	});
 
 	$(".eq-ui-dropdown-div #submit,.eq-ui-dropdown-div #cancel").click(function(){
-		$(".eq-ui-dropdown-div").slideUp();
-		$(".page_header .title-right .select-normal .eq-ui-select-wrapper").show();
-		$(".page_header .title-right .select-normal .btn-search").hide();
-		$(".dropdown-trigger-div").removeClass("active");		
+		$(".eq-ui-dropdown-div").slideToggle("slow");
+		$(".dropdown-trigger-div").removeClass("active");				
 	});
 
 // For All
@@ -110,7 +105,7 @@
 
 	$(".dropdown-trigger-div").click(function(){
 		$(".dropdown-trigger-div").toggleClass("active");
-		$(".eq-ui-dropdown-div").slideDown("slow");
+		$(".eq-ui-dropdown-div").slideToggle("slow");
 	});
 
 	$('.validate-higlight').change(function() {
@@ -200,7 +195,7 @@
 		$('#surgeries_title,#sugeries-container').slideDown();
 		$('#add-surgery').removeClass('active');
 	});
-					
+				
 // Important Jquery
 
 	$('.default-trigger').leanModal({
@@ -310,11 +305,6 @@
 		showIcon: true,
 		liveSearchPlaceholder : 'Search Here'
 	});
-
-	$('.btn-pop').popover({
-        placement : 'right',
-        container : '#maincontainer'
-    });
 
 	// Images lightbox
 	var initPhotoSwipeFromDOM = function(gallerySelector) {
@@ -749,5 +739,107 @@
 
 	
 // /// END PATIENT PAGE FUNCTIONS
+
+
+// CLINICAL ENCOUNTER 
+
+	$("#cc-hpi .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#cc-hpi .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});		
+	
+	$("#history .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#history .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$("#currentmeds .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#currentmeds .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$("#ros .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#ros .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+		
+	$("#pe .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#pe .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	$("#progress-notes .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").click(function () {
+		$("#progress-notes .freetext-forms-tab ul.eq-ui-tabs li.eq-ui-tab").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	
+	$(".row.ui-history-row").click(function () {
+		$(".row.ui-history-row").removeClass("active");
+		$(this).addClass("active");
+	});	
+	
+	$("button.cchpi-btn-active").click(function () {
+		$("button.cchpi-btn-active").toggleClass("active");
+		$(".row.cchpi-attach-image-box").slideToggle("slow"); 
+	});	
+		
+	$("button.progressnotes-btn-active").click(function () {
+		$("button.progressnotes-btn-active").toggleClass("active");
+		$(".row.progressnotes-attach-image-box").slideToggle("slow"); 
+	});	
+	
+	$("button.history-btn-active").click(function () {
+		$("button.history-btn-active").toggleClass("active");
+		$(".row.history-attach-image-box").slideToggle("slow"); 
+	});	
+	
+	$("button.ros-btn-active").click(function () {
+		$("button.ros-btn-active").toggleClass("active");
+		$(".row.ros-attach-image-box").slideToggle("slow"); 
+	});	
+	
+	$("button.pe-btn-active").click(function () {
+		$("button.pe-btn-active").toggleClass("active");
+		$(".row.pe-attach-image-box").slideToggle("slow"); 
+	});	
+	
+	$("a.print-btn-hidefoot").click(function () {
+		$("#footer").hide('slow');
+		$(".col-assesandplan-third-tab").hide('slow');
+	});	
+	
+	$("a.encounter-tab-btn").click(function () {
+		$("#footer").show('slow');
+		$(".col-form-black-tab").hide('slow');
+		$("#col-form-maincontent-cchpi").removeClass("active");
+		$(".btn-add-forms-wrap").removeClass("active");
+		$(".col-assesandplan-third-tab").hide('slow');
+	});		
+	
+	$("a.assesandplan-nav-open").click(function () {
+		$(".col-assesandplan-third-tab").show('slow');
+	});	
+
+
+ // ASSESSMENT AND PLAN
+	
+	$("#xray-helpbox-open").click(function () {
+		$(".assesandplan-helpbox").slideToggle('slow');
+	});	
+	
+	$("button.procedure-btn-active").click(function () {
+		$("button.procedure-btn-active").toggleClass("active");
+		$(".row.procedure-attach-image-box").slideToggle("slow"); 
+	});	
+	
+  // CCHPI FORM
+  
+	$(".btn-add-forms-wrap button").click(function () {
+		$(".btn-add-forms-wrap").toggleClass("active");
+		$("#col-form-black-tab-cchpi").slideToggle('slow');
+		$("#col-form-maincontent-cchpi").toggleClass("active");
+	});	
+
 
 //  ---------------------------------- END JARELL JS

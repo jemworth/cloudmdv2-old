@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.55" height="26.53" viewBox="0 0 24.55 26.53">
+  <title>hospital</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <polyline points="9.3 26.02 6.78 26.02 6.78 0.5 17.77 0.5 17.77 26.02 15.28 26.02" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="17.77" y="6.39" width="6.28" height="19.64" transform="translate(41.83 32.41) rotate(180)" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="0.5" y="6.39" width="6.28" height="19.64" transform="translate(7.28 32.41) rotate(180)" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <polygon points="11.36 4.71 11.36 3.08 13.19 3.08 13.19 4.71 14.82 4.71 14.82 6.55 13.19 6.55 13.19 8.18 11.36 8.18 11.36 6.55 9.73 6.55 9.73 4.71 11.36 4.71" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline points="15.25 26.02 15.25 17.12 9.3 17.12 9.3 26.02" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <g>
+          <rect x="2.69" y="10.05" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="2.69" y="14.46" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="2.69" y="18.86" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g>
+          <rect x="19.96" y="10.05" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="19.96" y="14.46" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="19.96" y="18.86" width="1.91" height="2.63" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

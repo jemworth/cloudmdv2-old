@@ -1,0 +1,171 @@
+/* CLINIC INNER PAGES */
+
+.container .row {
+    background-color: #fff;
+}
+
+.row-mid-schedule {
+    border-top: 1px solid #248dc6;
+    border-bottom: 1px solid #248dc6;
+    background-color: #fff;
+    padding: 15px 0;
+    height: 78px;
+}
+
+.col-addsched-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+.col-addsched-btn .eq-ui-collapsible-header {
+    border: 1px solid #228DC7;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 200px;
+}
+.col-addsched-btn .eq-ui-collapsible-header span {
+    color: #228DC7;
+    position: absolute;
+    width: 125px;
+    left: 7px;
+    right: 0;
+    bottom: 0;
+    top: 12px;
+    margin: 0 auto;
+}
+.col-addsched-btn .eq-ui-collapsible-header i.mdi-plus {
+    font-size: 18px;
+    margin-top: 9px;
+    margin-right: 10px;
+    color: #e0a32c;
+}
+i.mdi-addsched-icon {
+    background-image: url(../images/icons/newschedule_icon_img_blue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 43px !important;
+    height: 43px;
+}
+.col-addsched-btn-active .eq-ui-collapsible-header {
+    background-color: #228DC7 !important;
+}
+.col-addsched-btn-active .eq-ui-collapsible-header span  {
+    color: #fff !important;
+}
+.col-addsched-btn-active .eq-ui-collapsible-header i.mdi-addsched-icon  {
+    background-image: url(../images/icons/newschedule_icon_img_white.png) !important;   
+}
+.row-mid-scheduler {
+    display: none;
+    padding-bottom: 25px;
+}
+.row-scheduler-dropdowns {
+    text-align: center;
+}
+.row-scheduler-dropdowns ul {
+   text-align: center;
+   padding-left: 0 !important;
+}
+.row-scheduler-dropdowns .row > ul > li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+/* ADD ENTRY BUTTON ICON */
+
+.eq-ui-collapsible-header-add-entry-active.eq-ui-collapsible-header i.sectab-addclinic-icon  {
+    background-image: url(../images/icons/add_clinic_icon_img_white.png) !important;   
+}
+
+/* Scheduler Forms */
+
+.eq-form .eq-ui-select-wrapper span.eq-ui-caret {
+    color: #228DC7 !important;
+}
+.row-scheduler-dropdowns .eq-form .eq-ui-input-field label {
+    width: auto !important;
+    padding:5px;
+    float:none !important;
+    display:inline-block;
+}
+.row-scheduler-dropdowns .eq-form .eq-ui-select-wrapper {
+    width: 150px !important;
+}
+.row-scheduler-dropdowns .eq-form .eq-ui-select-wrapper input {
+    width: 100% !important;
+    height: 30px !important;
+    float:none !important;
+    display:inline-block;
+}
+.row-scheduler-dropdowns .eq-ui-input-field input.eq-ui-input {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+.row-scheduler-dropdowns .row > ul > li {
+    min-width: 150px;
+}
+.row-scheduler-dropdowns .eq-ui-dropdown li>a {
+    font-size: 15px;
+}
+.row-scheduler-dropdowns .eq-ui-dropdown li, .eq-ui-dropdown li>a {
+    height: 40px;
+    line-height: 40px;
+}
+.row-scheduler-dropdowns .eq-form div.eq-ui-form-time .eq-ui-select-wrapper {
+    width: 80px !important;
+    float:none !important;
+    display:inline-block;
+}
+.row-scheduler-dropdowns .eq-form div.eq-ui-form-time .eq-ui-select-wrapper .eq-ui-dropdown {
+    min-width: 90px !important;
+}
+.row-scheduler-dropdowns .eq-form div.eq-ui-form-time .eq-ui-select-wrapper span.eq-ui-caret {
+    z-index: 10;
+}
+
+/* Table UI */
+
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered thead tr th {
+    color: #000;
+    background-color: #F1F1F1;
+    width: 50%;
+    padding: 20px 0;
+}
+.table-custom-ui table.eq-ui-data-table {
+    border: 1px solid #dedede;
+    border-right:0;
+    border-left:0;
+    box-shadow:0 0 0;
+}
+.table-custom-ui table.eq-ui-data-table {
+    color: #000;
+}
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr td {
+    padding: 20px 10px !important;
+}
+
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered thead tr th::after {
+    content: '';
+    width: 2px;
+    display: block;
+    background: #00adee;
+    position: absolute;
+    right: 0;
+    top: 25% !important;
+    bottom: 25% !important;
+}
+
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr td::after {
+    content: '';
+    width: 2px;
+    display: block;
+    background: #00adee;
+    position: absolute;
+    right: 0;
+    top: 25% !important;
+    bottom: 25% !important;
+}
+

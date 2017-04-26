@@ -1,0 +1,48 @@
+body.eq-ui-side-nav-hide .eq-ui-main-maincon-2 {
+    padding-left: 350px !Important;
+}
+body.eq-ui-side-nav-hide .col-md-2.col-secondary-tab {
+    left: 50px !important;
+}
+
+/** SECONDARY NAV TAB **/
+
+.col-sec-tab-head .eq-ui-collapsible-header a i.sectab-hmo-icon {
+    background-image: url(../images/icons/add_hmo_icon_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+	width: 30px !important;
+    height: 38px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.col-sec-tab-head .eq-ui-collapsible-header a.active i.sectab-hmo-icon, .eq-ui-collapsible-header a:hover i.sectab-hmo-icon {
+    background-image: url(../images/icons/add_hmo_icon_img.png);
+}
+
+/* ADD ENTRY BUTTON ICON */
+
+.eq-ui-collapsible-header-add-entry-active.eq-ui-collapsible-header i.sectab-hmo-icon  {
+    background-image: url(../images/icons/add_hmo_icon_img_white.png) !important;   
+}
+
+
+/* CUSTOM SECONDARY NAV TAB */
+
+ul.hmo-sectab-column-2 {
+    display: flex;
+    padding-left: 0px;
+}
+ul.hmo-sectab-column-2 li {
+    padding: 0 7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ul.hmo-sectab-column-2 li.hmo_title {
+    width: 60%;
+}
+ul.hmo-sectab-column-2 li.hmo_num {
+    width: 40%;
+}

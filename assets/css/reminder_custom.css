@@ -1,0 +1,30 @@
+#reminder_list_container table td.eq-ui-list-left{
+  width: 33%;
+  padding-left:0 !important;
+}
+#reminder_list_container table tr:first-child td{
+  border-top:0
+}
+#reminder_list_container table td{
+  padding:15px !important
+}
+#reminder_list_container table td.eq-ui-list-left:after{
+  top:15% !important;
+  bottom:15% !important
+}
+#reminder_list_container table tr:hover{
+  background:transparent !important;
+}
+#reminder_list_container table td.eq-ui-list-right{
+  padding:0 !important;
+}
+#reminder_list_container table td.eq-ui-list-right a{
+  height:30px;
+}
+#reminder_list_container table td.eq-ui-list-right a svg{
+  height:18px !important;
+  width:20px !important;
+}
+#reminder_list_container table td .reminders_nortify{
+  color:#7c7c7c
+}

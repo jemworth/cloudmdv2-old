@@ -1,0 +1,1852 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HPI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/userprofile_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" class="active">
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="userprofile.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html">
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">						
+							<form id="hpi" class="eq-form">
+								<div class="row">
+                                    <div class="col-md-12">
+                                        <h5>History of Present Illness</h5>
+                                        <hr>
+                                    </div>
+									<div class="col-md-12">
+										<div class="eq-ui-form-group eq-ui-input-field">
+											<label>1. Chief Complaint</label>
+											<textarea id="chief-complaint" rows="1" class="eq-ui-textarea"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="eq-ui-form-group eq-ui-input-field">
+											<label>2. How long have you had this problem?</label>
+											<textarea id="problem_duration" rows="1" class="eq-ui-textarea"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="eq-ui-form-group eq-ui-input-field">
+											<label>3. What started the problem?</label>
+											<textarea id="problem_start" rows="1" class="eq-ui-textarea"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">		
+                                        <div class="row eq-ui-form-group eq-ui-input-field">							
+											<div class="col-md-4 eq-ui-input-full">
+												<label>4. Has the problem become worse?</label>
+											</div>
+											<div class="col-md-2">
+                                                <div class="row">
+    												<div class="col-md-6">
+    													<input name="problem_worse_radio" type="radio" id="section1_option1" class="eq-ui-input"/>
+    													<label name="problem_worse_radio" for="section1_option1">Yes</label>
+    												</div>
+    												<div class="col-md-6">
+    													<input name="problem_worse_radio" type="radio" id="section1_option2" class="eq-ui-input" />
+    													<label name="problem_worse_radio" for="section1_option2">No</label>
+    												</div>
+                                                </div>
+                                            </div>
+											<div class="col-md-6">
+												<label>When?</label>
+												<input id="problem_worse" type="text" value="" class="eq-ui-input">
+											</div>
+                                        </div>										
+									</div>
+									<div class="col-md-12">
+                                    	<div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>5. Is this problem the result of a car accident?</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input name="problem_car_radio" type="radio" id="section2_option1" class="eq-ui-input"/>
+                                                        <label name="problem_car_radio" for="section2_option1">Yes</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input name="problem_car_radio" type="radio" id="section2_option2" class="eq-ui-input"/>
+                                                        <label name="problem_car_radio" for="section2_option2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>When?</label>
+                                                <input id="problem_car" type="text" class="eq-ui-input">
+                                            </div>
+                                        </div>										
+									</div>
+									<div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>6. Is this problem the result of a work accident?</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input name="problem_accident_radio" type="radio" id="section3_option1" class="eq-ui-input"/>
+                                                        <label name="problem_accident_radio" for="section3_option1">Yes</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input name="group3" type="radio" id="section3_option1" class="eq-ui-input"/>
+                                                        <label name="group3" for="section1_item3_option2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>When?</label>
+                                                <input id="problem_accident" type="text" value="" class="eq-ui-input">
+                                            </div>
+                                        </div>									
+									</div>
+									<div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>7. Have you missed any work because of this problem?</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input name="problem_miss_radio" type="radio" id="section4_option1" class="eq-ui-input"/>
+                                                        <label name="problem_miss_radio" for="section4_option1">Yes</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input name="group4" type="radio" id="section4_option2" class="eq-ui-input"/>
+                                                        <label name="group4" for="section4_option2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>When?</label>
+                                                <input id="problem_miss" type="text" value="" class="eq-ui-input">
+                                            </div>
+                                        </div>										
+									</div>
+									<div class="col-md-12">	
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>8. Have you missed any school because of this problem?</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input name="problem_school_radio" type="radio" id="section5_option1" class="eq-ui-input"/>
+                                                        <label for="section5_option1">Yes</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input name="problem_school_radio" type="radio" id="section5_option2" class="eq-ui-input"/>
+                                                        <label for="section5_option2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>When?</label>
+                                                <input id="problem_school" type="text" value="" class="eq-ui-input">
+                                            </div>
+                                        </div>																		
+									</div>
+									<div class="col-md-12">	
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>9. Signs Associated to your chief complaint (check all that apply) </label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="checkbox" id="section1_item6_option1" class="eq-ui-input filled-in"/>
+                                                <label for="section1_item6_option1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-full">                                     
+                                            <div class="col-md-6 text-center">
+                                                <label>Location</label>
+                                            </div>
+                                            <div class="col-md-6 text-center">
+                                                <label>Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item1" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item1">Swelling</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="swelling" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                            
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item2" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item2">Redness</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="redness" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                             
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item3" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item3">Warmth</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="warmth" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                             
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item4" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item4">Edema</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="edema" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                            
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item5_" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item5">Skin Changes</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="skin_changes" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                           
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item6" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item6">Bruising</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="bruising" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                     
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item7" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item7">Drainage</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="drainage" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div> 
+                                                    </div>   
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                     
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item8" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item8">Muscle Atrophy</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="muscle_atrophy" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                         
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item9" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item9">Muscle Spasm</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="muscle_spasm" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                            
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item10" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item10">Muscle Twitching</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="muscle_twitching" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                           
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section2_item11" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item11">Loss of Movement</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="loss_of_movement" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                           
+                                                            <div class="col-md-2">
+                                                                <input type="checkbox" id="section2_item12" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item12">Other</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="other" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input id="other_text" type="text" value="" class="eq-ui-input pr-5">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>								
+									</div>
+                                    <div class="col-md-12 pt-15"> 
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-5 eq-ui-input-full">
+                                                <label>10. Symptoms associated with your chief complaint (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="checkbox" id="section4_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section4_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field">
+                                            <input type="checkbox" id="section4_item2" class="eq-ui-input filled-in"/>
+                                            <label for="section4_item2">Pain</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field">
+                                            <input type="checkbox" id="section4_item3" class="eq-ui-input filled-in"/>
+                                            <label for="section4_item3">Weakness</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field">
+                                            <input type="checkbox" id="section4_item4" class="eq-ui-input filled-in"/>
+                                            <label for="section4_item4">Numbness or Tingling</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field">
+                                            <input type="checkbox" id="section4_item5" class="eq-ui-input filled-in"/>
+                                            <label for="section4_item5">Numbness or Tingling</label>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-1">
+                                                <input type="checkbox" id="section4_item6" class="eq-ui-input filled-in"/>
+                                                <label for="section4_item6">(Other)</label>
+                                            </div>  
+                                            <div class="col-md-3 eq-ui-input-full">
+                                                <input id="other_text_section" type="text" value="" class="eq-ui-input">
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                    <div class="col-md-12 pt-15"> 
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                           
+                                            <div class="col-md-5 eq-ui-input-full">
+                                                <label>11. Is your chief complaint made worse by (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="checkbox" id="section5_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section5_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item2" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item2">Sitting</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item3" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item3">Standing</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item4" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item4">Laying</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item5" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item5">Walking</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item6" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item6">Walking</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item7" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item7">Going up Stairs</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item8" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item8">Movement (what body part)</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <input type="checkbox" id="section5_item9" class="eq-ui-input filled-in"/>
+                                                        <label for="section5_item9">Touch (what body part)</label>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <input type="checkbox" id="section5_item10" class="eq-ui-input filled-in"/>
+                                                                <label for="section5_item10">(Other)</label>
+                                                            </div>  
+                                                            <div class="col-md-9 eq-ui-input-full">
+                                                                <input id="other_text_section" type="text" value="" class="eq-ui-input pr-5">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                               
+                                    </div>
+									<div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">									
+											<div class="col-md-4 eq-ui-input-full">
+												<label>12. Does anything make your chief complaint better?</label>
+											</div>
+											<div class="col-md-8">
+												<div class="col-md-2">
+													<input name="chief_complaint_radio" type="radio" id="section6_option1" class="eq-ui-input"/>
+													<label for="section6_option1">Yes</label>
+												</div>
+												<div class="col-md-2">
+													<input name="chief_complaint_radio" type="radio" id="section6_option2" class="eq-ui-input"/>
+													<label for="section6_option2">No</label>
+												</div>
+											</div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-2 eq-ui-input-full">
+                                                <label>If yes, please list:</label>
+                                            </div>  
+                                            <div class="col-md-5 eq-ui-input-full">
+                                                <input id="chief_complaint_list" type="text" value="" class="eq-ui-input">
+                                            </div>
+                                        </div>									
+									</div>
+									<div class="col-md-12 pt-15">
+										<label>13. Rate your pain severity using the following scale: </label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="rate-pain" type="radio" id="section7_option1" class="eq-ui-input"/>
+                                                <label for="section7_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="rate-pain" type="radio" id="section7_option2" class="eq-ui-input"/>
+                                                <label for="section7_option2">Slight</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="rate-pain" type="radio" id="section7_option3" class="eq-ui-input"/>
+                                                <label for="section7_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="rate-pain" type="radio" id="section7_option4" class="eq-ui-input"/>
+                                                <label for="section7_option4">Severed</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="rate-pain" type="radio" id="section7_option5" class="eq-ui-input"/>
+                                                <label for="section7_option5">Extreme</label>
+                                            </div>
+                                            <div class="col-md-2 eq-ui-input-full">
+                                                <input name="rate-pain" type="radio" id="section7_option6" class="eq-ui-input"/>
+                                                <label for="section7_option6">Could not be worse</label>
+                                            </div>
+                                        </div>
+									</div>
+									<div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">									
+											<div class="col-md-5 eq-ui-input-full">
+												<label>14. Describe your quality of pain (check all that apply)</label>
+											</div>
+											<div class="col-md-7">
+												<input type="checkbox" id="section7_item1" class="eq-ui-input filled-in"/>
+												<label for="section7_item1">None Apply</label>
+											</div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item2" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item2">Sharp</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item3" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item3">Stabbing</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item4" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item4">Shooting</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <input type="checkbox" id="section7_item5" class="eq-ui-input filled-in"/>
+                                                        <label for="section7_item5">Other</label>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                         <input id="other_text_section7_line1" type="text" value="" class="eq-ui-input pr-5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>	
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item6" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item6">Dull</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item7" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item7">Throbbing</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item8" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item8">Continuous</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <input type="checkbox" id="section7_item9" class="eq-ui-input filled-in"/>
+                                                        <label for="section7_item9">Other</label>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                         <input id="other_text_section7_line2" type="text" value="" class="eq-ui-input pr-5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item10" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item10">Burning</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item11" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item11">Aching</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section7_item12" class="eq-ui-input filled-in"/>
+                                                <label for="section7_item12">Intermittent</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <input type="checkbox" id="section7_item13" class="eq-ui-input filled-in"/>
+                                                        <label for="section7_item13">Other</label>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                         <input id="other_text_section7_line3" type="text" value="" class="eq-ui-input pr-5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  								
+									</div>
+									<div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-5 eq-ui-input-full">
+                                                <label>15. Treatments for your chief complaint have included (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section8_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item1">None Apply</label>
+                                            </div>
+                                        </div>	
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="section8_item2" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item2">Physical therapy, exercise</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="section8_item3" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item3">Tens unit</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="section8_item4" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item4">Pain Medication</label>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="section8_item5" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item5">Massage and ultrasound</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <input type="checkbox" id="section8_item6" class="eq-ui-input filled-in"/>
+                                                    <label for="section8_item6">Anti-inflammatory Medication</label>
+                                                 </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <input type="checkbox" id="section8_item7" class="eq-ui-input filled-in"/>
+                                                    <label for="section8_item7">Braces</label>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                
+                                            <div class="col-md-4">
+                                                <input type="checkbox" id="section8_item8" class="eq-ui-input filled-in"/>
+                                                <label for="section8_item8">Manipulation</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <input type="checkbox" id="section8_item9" class="eq-ui-input filled-in"/>
+                                                    <label for="section8_item9">Traction</label>
+                                                 </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <input type="checkbox" id="section8_item10" class="eq-ui-input filled-in"/>
+                                                        <label for="section8_item10">Other</label>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                         <input id="other_text_section8" type="text" value="" class="eq-ui-input pr-5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>							
+									</div>
+                                    <div class="col-md-12">
+										<div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+											<label>16. Medicines taken for your current problem</label>
+										</div>
+    									<table class="table eq-ui-data-table table-md-4">
+                                            <thead>
+                                                <tr>
+                                                    <th>Medicine</th>
+                                                    <th>How Much</th> 
+                                                    <th>How Often</th>
+                                                </tr>
+                                            </thead>
+            								<tbody>
+            									<tr>
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+            									</tr>
+            									<tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+            									<tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+            									<tr>
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+            										<td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+            									</tr>
+                                            </tbody>
+        								</table>
+								    </div> 
+									<div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-3 eq-ui-input-full">
+                                                <label>17. Review of Systems (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section9_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section9_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">                                
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item2" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item2">Fever</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item3" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item3">Chills</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item4" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item4">Recent Weight Change</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item5" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item5">Very Low Energy</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item6" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item6">Change of Vision</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item7" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item7">Blurry Vision</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item8" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item8">Double Vision</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item9" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item9">Itchy Eyes</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item10" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item10">Prequent Headaches</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item11" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item11">Loss of Hearing</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item12" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item12">Ear Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item13" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item13">Ear Drainage</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item14" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item14">Ringing in Ears</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item15" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item15">Frequent Nose Bleeds</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item16" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item16">Bad Snoring</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item17" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item17">Sore Throat</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item18" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item18">Change in Voice</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <input type="checkbox" id="section9_item70" class="eq-ui-input filled-in"/>
+                                                            <label for="section9_item70">Other</label>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                             <input id="other_text_section9" type="text" value="" class="eq-ui-input pr-5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item19" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item19">Difficulty Swallowing</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item20" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item20">Easy Bruising</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item21" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item21">Easy Bleeding</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item22" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item22">Swollen Lymph Glands</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item23" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item23">Sinus Infections</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item24" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item24">Dizziness</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item25" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item25">Heart or Chest Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item26" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item26">Chest Pain in Breath</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item27" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item27">Abnormal Heart Beat</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item28" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item28">Short of Breath Walking</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item29" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item29">Short of Breath Lying Down</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item30" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item30">Swollen Ankles or Feet</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item31" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item31">Poor Circulation</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item32" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item32">Persistent Cought</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item33" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item33">Wheezing</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item34" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item34">Green or Yellow Sputum</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item35" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item35">Nausea</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item36" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item36">Vomiting</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item37" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item37">Diarrhea</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item38" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item38">Constipation</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item39" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item39">Change in Bowel Function</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item40" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item40">Stomach Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item41" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item41">Blood in Stool</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item42" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item42">Dark or Tar Looking Stool</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item43" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item43">Ulcers</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item44" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item44">Frequent Infections</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item45" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item45">Rashes</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item46" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item46">Hives</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item47" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item47">Gum Problems</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item48" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item48">Tooth Problems</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item49" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item49">Change in Urine Function</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item50" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item50">Difficulty Urinating</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item51" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item51">Frequent Urination</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item52" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item52">Blood in Urine</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item53" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item53">Leaking Urine</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item54" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item54">Burning on Urination</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item55" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item55">Swollen Joints</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item56" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item56">Red or Warm Joints</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item57" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item57">Broken Bones</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item58" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item58">Neck Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item59" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item59">Back Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item60" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item60">Arm Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item61" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item61">Leg Pain</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item62" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item62">Seizures</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item63" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item63">Blackouts</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item64" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item64">Loss of Memory</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item65" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item65">Weakness of Arms or Legs</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item66" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item66">Poor Balance</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item67" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item67">Nervous Exhaustion</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item68" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item68">Depression or Anxiety</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section9_item69" class="eq-ui-input filled-in"/>
+                                                    <label for="section9_item69">New Moles or Skin Lesions</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-3 eq-ui-input-full">
+                                                <label>Review of Systems (women only)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section10_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section10_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section10_item2" class="eq-ui-input filled-in"/>
+                                                <label for="section10_item2">Irregular or missed periods</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section10_item3" class="eq-ui-input filled-in"/>
+                                                <label for="section10_item3">Pregnant</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section10_item4" class="eq-ui-input filled-in"/>
+                                                <label for="section10_item4">Vaginal Bleeding</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="checkbox" id="section10_item5" class="eq-ui-input filled-in"/>
+                                                <label for="section10_item5">Breast lumps or discharge</label>
+                                            </div>
+                                        </div>																			
+									</div>										
+									<div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-3 eq-ui-input-full">
+                                                <label>18. Medical History: (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section11_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section11_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">                                
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item2" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item2">Heart Attack</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item3" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item3">Heart Failure</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item4" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item4">Angina (Chest Pain)</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item5" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item5">High Blood Pressure</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item6" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item6">Stroke</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item7" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item7">Diabetes</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item8" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item8">High Cholesterol</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item9" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item9">Rheumatoid Arthritis</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <input type="checkbox" id="section7_item34" class="eq-ui-input filled-in"/>
+                                                            <label for="section7_item34">Cancer of</label>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                             <input id="other_text_section10" type="text" value="" class="eq-ui-input pr-5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item10" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item10">Osteoporosis</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item11" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item11">Pneumonia</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item12" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item12">Asthma</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item13" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item13">Bronchitis</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item14" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item14">Emphysema</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item15" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item15">Lung Disease</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item16" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item16">Blood Vessel Disease</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item17" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item17">Mental Illness</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item18" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item18">Gout</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item19" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item19">Ankylosing Spondylitis</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item20" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item20">Kidney Stones</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item21" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item21">Kidney Failure</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item22" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item22">Transplants</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item23" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item23">Alcohol Dependence</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item24" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item24">AIDS</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item25" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item25">Tuberculosis</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item26" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item26">Hepatitis</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item27" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item27">Lupos</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item28" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item28">Blood Clot in Legs</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item29" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item29">Blood Clot in Lungs</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item30" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item30">Stomach Ulcers</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item31" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item31">Bleeding Disorders</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item32" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item32">Sickle Cell Disease</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input type="checkbox" id="section11_item33" class="eq-ui-input filled-in"/>
+                                                    <label for="section11_item33">Liver Trouble</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-2 eq-ui-input-full">
+                                                <label>19. Surgical History</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section12_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section12_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <table class="table eq-ui-data-table table-md-3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operation</th>
+                                                    <th>Surgeon</th>
+                                                    <th>Location</th> 
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-3 eq-ui-input-full">
+                                                <label>20. Family History (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section13_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section13_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                   
+                                            <div class="col-md-3">
+                                                <label>Condition</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Family Member</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Condition</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Family Member</label>
+                                            </div>
+                                        </div>
+                                                                                <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item2" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item2">Heart Disease</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="heart_disease" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item3" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item3">Stroke</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="stroke" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item4" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item4">High BP</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="high_bp" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item5" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item5">Diabetes</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="diabetes" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item6" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item6">Osteoporosis</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="osteoporosis" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item7" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item7">Rheumatoid Arthritis</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="rheumatoid_arthritis" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item8" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item8">Osteoporosis</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="osteoporosis" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item9" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item9">Lupus</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="lupus" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item10" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item10">Sickle Cell</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="sickle-cell" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">    
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item11" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item11">Scoliosis</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="scoliosis" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item12" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item12">Spine Problems</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="spine_problems" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item13" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item13">Kidney Failure</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="kidney_failure" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item14" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item14">Mental Illness</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="mental_illness" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item15" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item15">Bleeding Disorders</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="bleeding-disorders" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item16" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item16">Anemia</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="anemia" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item17" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item17">Alcohol Dependence</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="alcohol-dependence" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                   
+                                                            <div class="col-md-4">
+                                                                <input type="checkbox" id="section13_item18" class="eq-ui-input filled-in"/>
+                                                                <label for="section13_item18">Cancer</label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input id="cancer" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <div class="row">                           
+                                                            <div class="col-md-2">
+                                                                <input type="checkbox" id="section2_item19" class="eq-ui-input filled-in"/>
+                                                                <label for="section2_item19">Other</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="other_sickle_cell" type="text" value="" class="eq-ui-input">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input id="other_sickle_cell_text" type="text" value="" class="eq-ui-input pr-5">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-4 eq-ui-input-full">
+                                                <label>21. Allergies to Medications (check all that apply)</label>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <input type="checkbox" id="section21_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section21_item1">None Apply</label>
+                                            </div>
+                                        </div>
+                                        <table class="table eq-ui-data-table table-md-7">
+                                            <thead>
+                                                <tr>
+                                                    <th>Medications</th>
+                                                    <th>Rash</th>
+                                                    <th>Wheezing</th> 
+                                                    <th>Swelling</th>
+                                                    <th>Upset Stomach</th>
+                                                    <th>Shock</th> 
+                                                    <th>Other</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td> 
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                    <td><textarea rows="1" class="eq-ui-textarea"></textarea></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+									<div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">									
+											<div class="col-md-2">
+												<label>22. Alcohol Use</label>
+											</div>
+											<div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input name="alcohol_use" type="radio" id="section8_option1" class="eq-ui-input"/>
+                                                        <label for="section8_option1">Never</label>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input name="alcohol_use" type="radio" id=section8_option2" class="eq-ui-input"/>
+                                                        <label for="section8_option2">Alcohol Dependent</label>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-md-2">
+												<input name="alcohol_use" type="radio" id="section8_option3" class="eq-ui-input"/>
+												<label for="section8_option3">Rare</label>
+											</div>
+											<div class="col-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input name="alcohol_use" type="radio" id="section8_option4" class="eq-ui-input"/>
+                                                        <label for="section8_option4">Frequent</label>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input name="alcohol_use" type="radio" id="section8_option5" class="eq-ui-input"/>
+                                                        <label for="section8_option5">Recovered Alcoholic</label>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-md-1">
+													<label>Other</label>
+											</div>
+											<div class="col-md-2">
+												<input id="other_text_alcohol_use" type="text" value="" class="eq-ui-input">
+											</div>	
+										</div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                   
+                                            <div class="col-md-2">
+                                                <label>23. Drug Use</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="drug_use" type="radio" id="section9_option1" class="eq-ui-input"/>
+                                                <label for="section9_option1">Never</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="drug_use" type="radio" id="section9_option2" class="eq-ui-input"/>
+                                                <label for="section9_option2">Past</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <input name="drug_use" type="radio" id="section9_option3" class="eq-ui-input"/>
+                                                        <label for="section9_option3">Current</label>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <input id="other_text_drug_use" type="text" value="" class="eq-ui-input">
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row eq-ui-form-group eq-ui-input-field">                                    
+                                            <div class="col-md-12 eq-ui-input-full">
+                                                <label>24. Tobacco (check all that apply)</label>
+                                            </div>
+                                        </div>
+                                        <div class="row eq-ui-form-group eq-ui-input-field eq-ui-input-full">                                
+                                            <div class="col-md-2">
+                                                <input type="checkbox" id="section24_item1" class="eq-ui-input filled-in"/>
+                                                <label for="section24_item1">Never</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="checkbox" id="section24_item2" class="eq-ui-input filled-in"/>
+                                                <label for="section24_item2">Cigarettes</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="checkbox" id="section24_item3" class="eq-ui-input filled-in"/>
+                                                <label for="section24_item3">Cigars</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="checkbox" id="section24_item4" class="eq-ui-input filled-in"/>
+                                                <label for="section24_item4">Chew</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input type="checkbox" id="section24_item5" class="eq-ui-input filled-in"/>
+                                                <label for="section24_item5">Pipe</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+									<div class="col-md-12 pt-15 ">
+                                        <div class="form_text eq-ui-form-group eq-ui-input-field">	
+                                            <p>I have smoked <input id="other_text_smoked" type="text" value="" class="eq-ui-input"> packs of cigarettes per day for <input id="other_text_smoked_packs" type="text" value="" class="eq-ui-input"> years total.</p>
+                                            <p>(If less than one pack) I have smoked <input id="other_text_smoked_less" type="text" value="" class="eq-ui-input"> cigarettes per day for <input id="other_text_smoked_packs_less" type="text" value="" class="eq-ui-input"> years total.</p>
+                                            <p>I have smoked <input id="cigars_per_day" type="text" value="" class="eq-ui-input"> cigars per day for <input id="cigars_per_year" type="text" value="" class="eq-ui-input"> years total.</p>
+                                            <p>I have smoked a pipe for <input id="pipes_year" type="text" value="" class="eq-ui-input"> years total.</p>
+                                            <p>
+                                                <div class="checkbox_text">
+                                                    <input type="checkbox" id="quit_smoking" class="eq-ui-input filled-in"/>
+                                                    <label for="quit_smoking">I quit smoking</label>
+                                                </div>
+                                                <input id="quit_smoking_text" type="text" value="" class="datepicker eq-ui-input"> (date)
+                                            </p>
+										</div>											
+								    </div>																				
+								</div>
+
+	
+							</form>									
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

@@ -1,0 +1,1024 @@
+@charset "UTF-8";
+
+.user_up{
+    display:table;
+}
+.user_up > div{
+    display:table-cell;
+    padding:0px;
+    vertical-align:middle;
+}
+
+/** User Upload Image **/
+#user_upload{
+    padding-left:20px;
+}
+
+/** User Grants **/
+#maincontainer .user_up .select-rights{
+    text-align:right;
+    display:table-cell !important;
+}
+#maincontainer .user_up .eq-ui-select-wrapper{
+    width:218px !important;
+    display:inline-block !important;
+}
+#maincontainer .user_up .eq-ui-select-wrapper input{
+    border:1px solid #cacaca;
+    background:url(../images/user-avatar.svg) 12px center no-repeat !important;
+    background-size:25px !important;
+    padding:23px 15px  23px 45px!important;
+}
+#maincontainer .user_up .select-rights .eq-ui-caret{
+    color:#e0a32c;
+}
+#maincontainer .user_up .select-rights .eq-ui-caret::after{
+    content:'\f504' !important;
+    display:block !important;
+    line-height:48px !important;
+    width:25px;
+    font-size:18px !important;
+    height:46px;
+    font: normal normal normal 24px/1 "Material Design Icons";
+}
+#maincontainer .user_up .select-rights .eq-ui-dropdown.active+span.eq-ui-caret::after{
+    content:'\f465' !important;
+}
+
+.full_width_layout .main_content_container {
+    padding-top: 50px;
+}
+
+/* MESSAGE ALERT */
+
+.message-alert {
+    height: 55px;
+    background-color: #e3e6e9;
+    position: fixed;
+    z-index: 33;
+    border-bottom: 1px solid #00adee;
+}
+
+/* CONTAINER, FOOTER CUSTOMS IF 3rd is VISIBLE */
+
+body.eq-ui-side-nav-visible .container.col-container-populated.col-container-populated-thirdnav-visible {
+    padding-left: 170px;
+}
+
+body.eq-ui-side-nav-visible footer.footer-thirdnav-visible {
+    padding: 21px 0 20px 60px !important;
+}
+
+/* SECONDARY NAV TAB */
+
+.col-sec-tab-head .eq-ui-collapsible-header a i.sectab-addpatient-icon {
+    background-image: url(../images/icons/add_patient_icon_blue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px !important;
+    height: 38px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.col-sec-tab-head .eq-ui-collapsible-header a.active i.sectab-addpatient-icon, .eq-ui-collapsible-header a:hover i.sectab-addpatient-icon {
+    background-image: url(../images/icons/add_patient_icon_blue.png);
+}
+
+/* ADD ENTRY BUTTON ICON */
+
+.eq-ui-collapsible-header-add-entry-active.eq-ui-collapsible-header i.sectab-addpatient-icon  {
+    background-image: url(../images/icons/add_patient_icon_white.png) !important;   
+}
+
+/* SEARCH VIA DATE */
+
+.cstab-search-calendar-input {
+    display: none;
+    color: #fff;
+    padding: 7px 10px;
+}
+.cstab-search-calendar-input-wrap {
+    display: flex;
+}
+.search_date_picker input {
+    width: 120px;
+    background-color: #166387;
+    border: 0;
+    margin: 0 0px;
+    padding: 6px;
+    background-image:url(../images/icons/calendar_icon_white.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* THIRD NAV TAB */
+
+.col-third-tab {
+    background-color: #1c2938;
+    display: block;
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    left: 540px !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding: 130px 0 0 0;
+    z-index: 5;
+    border-right:1px solid #cacaca;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 1px 0px 10px 0 rgba(0,0,0,.12);
+    animation: bounceInDown 2s;
+    display: none;
+}
+
+.col-third-tab-lists {
+    padding: 0;
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible li .eq-ui-collapsible-header {
+    border-bottom: 1px solid #323d4b;
+    height: 50px;
+    background-color: transparent;
+    font-size: 13px;
+
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a {
+    padding: 0px 4px;
+    border: 0 !important;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    color: #248dc6;
+}
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #151e2a !important;
+}
+
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #151e2a !important;
+}
+
+/* DEMOGRAPHICS ICON */
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i.thirdnav-demographics-icon {
+    background-image: url(../images/icons/demographics_icon_blue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px !important;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 9px;
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover i.thirdnav-demographics-icon {
+    background-image: url(../images/icons/demographics_icon_white.png);
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active i.thirdnav-demographics-icon {
+    background-image: url(../images/icons/demographics_icon_white.png);
+}
+
+/* MEDICAL CHART ICON */
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px !important;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 9px;
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i.thirdnav-medicalcharts-icon {
+    background-image: url(../images/icons/medicalcharts_icon_blue.png);
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover i.thirdnav-medicalcharts-icon {
+    background-image: url(../images/icons/medicalcharts_icon_white.png);
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active i.thirdnav-medicalcharts-icon {
+    background-image: url(../images/icons/medicalcharts_icon_white.png);
+}
+
+/* ATTACHMENT ICON */
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i.thirdnav-attachments-icon {
+    background-image: url(../images/icons/attachments_icon_blue.png);
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover i.thirdnav-attachments-icon {
+    background-image: url(../images/icons/attachments_icon_white.png);
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active i.thirdnav-attachments-icon {
+    background-image: url(../images/icons/attachments_icon_white.png);
+}
+
+/* ALERTS ICON */
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i.thirdnav-alerts-icon {
+    background-image: url(../images/icons/alerts_icon_blue.png);
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover i.thirdnav-alerts-icon {
+    background-image: url(../images/icons/alerts_icon_white.png);
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active i.thirdnav-alerts-icon {
+    background-image: url(../images/icons/alerts_icon_white.png);
+}
+
+/* ACTIVITY ICON */
+
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a i.thirdnav-activity-icon {
+    background-image: url(../images/icons/activity_icon_blue.png);
+}
+.col-third-tab .col-third-tab-lists ul.eq-ui-collapsible li a:hover i.thirdnav-activity-icon {
+    background-image: url(../images/icons/activity_icon_white.png);
+}
+.col-third-tab .col-third-tab-lists .eq-ui-collapsible-header a.active i.thirdnav-activity-icon {
+    background-image: url(../images/icons/activity_icon_white.png);
+}
+
+/*  IF LEFT NAV CLOSE */
+
+body.eq-ui-side-nav-hide #maincontainer .col-container-populated-thirdnav-visible{
+    padding-left: 165px;
+}
+
+body.eq-ui-side-nav-hide #maincontainer .col-third-tab {
+    left: 313px !important;
+}
+
+body.eq-ui-side-nav-hide #maincontainer .footer-thirdnav-visible {
+    padding: 20px 0 20px 170px !important;
+}
+
+body.eq-ui-side-nav-visible #maincontainer .col-container-not-populated {
+    /* padding-left: 0px; */
+}
+
+
+/*  IF LEFT NAV OPEN */
+
+body.eq-ui-side-nav-visible #maincontainer .col-container-populated-thirdnav-visible {
+    padding-left: 170px;
+}
+
+body.eq-ui-side-nav-visible #maincontainer .col-third-tab {
+    left: 470px !important;
+    padding-left: 0;
+    width: 43px;
+}
+
+body.eq-ui-side-nav-visible #maincontainer .col-container-populated-thirdnav-visible {
+    padding-left: 50px;
+}
+
+body.eq-ui-side-nav-visible #maincontainer .col-container-not-populated {
+    /* padding-left: 0px; */
+}
+
+body.eq-ui-side-nav-visible #maincontainer .col-container-not-populated.col-container-populated-thirdnav-visible {
+    padding-left: 59px;
+}
+
+
+/*  CONTENTS POPULATED */
+
+.col-container-populated {
+    display: none;
+}
+
+/*  CONTENTS NOT POPULATED NEW ENTRY */
+
+
+/*  PATIENTS PROFILE */
+
+.patient_profile_form {
+    display: none;
+}
+.dob_picker-icon input {
+    background-image: url(../images/icons/calendar_icon_blue.png) !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+textarea.eq-ui-textarea {
+    overflow-y: hidden!important;
+    resize: none;
+    padding: 12px;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    background-color: #fff;
+    overflow-y: scroll !important;
+}
+.patient-notes textarea.eq-ui-textarea {
+    min-height: 100px !important;
+    width: 82% !important;
+}
+.patient-notes label {   
+    width: 10% !important;
+    float: left;
+}
+.patient-discharge-notes textarea.eq-ui-textarea {
+    height: 50px !important;
+    width: 63%;
+    float: right;
+    margin-right: 4px;
+    background-color: #fff;
+}
+.eq-ui-form-time-modal .eq-ui-select-wrapper {
+    width: 34% !important;
+    margin-right: 5px;
+}
+.eq-ui-form-time-modal2 .eq-ui-select-wrapper {
+    width: 29.5% !important;
+    margin-right: 5px;
+}
+.discharge_patient_modal_box .eq-ui-select-wrapper .eq-ui-dropdown {
+    max-height: 150px !important;
+    min-width: 100px;
+}
+.discharge_patient_modal_box .eq-ui-select-wrapper .eq-ui-dropdown.active+span.eq-ui-caret {
+    z-index: 99;
+}
+.eq-ui-input-field-switch label {
+    float: left;
+    font-size: 14px !important;
+}
+.discharge_patient_modal_box .eq-ui-switch {
+    float: left;
+    width: 160px;
+}
+.discharge_patient_modal_box .eq-ui-switch label .lever {
+    width: 90px;
+}
+.discharge_patient_modal_box .eq-ui-switch label .lever:after {
+    width: 50px;
+    height: 20px;
+}
+.discharge_patient_modal_box label {
+    font-size: 14px !important;
+}
+.discharge_patient_modal_box .eq-ui-switch label input[type=checkbox]:checked+.lever:after {
+    background-image: url(../images/scroll_bg.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    left: 40px;
+}   
+.discharge_patient_modal_box .eq-ui-switch label {
+    width: 100%;
+}
+
+.reminder-time-modal-discharge {
+    width: 310px;
+    float: right;
+}
+.reminder-time-modal-discharge .eq-ui-form-time-modal2 {
+    width: 290px;
+}
+.btn-red {
+    background-color: #D8534F;
+}
+.btn-green {
+    background-color: #1CAE99;
+}
+.row-border-blue {
+    border-top: 1px solid #1C86B5;
+    border-bottom: 1px solid #1C86B5;
+}
+.discharge-followup-visit-icon {
+    width: 220px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 25px;
+}
+.discharge-followup-visit-icon i.leftn-reminders-icon {
+    background-image: url(../images/icons/reminders_icon_blue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px !important;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: -13px;
+}
+.discharge_patient_modal_box .eq-ui-input-field {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.eq-ui-modal {
+    max-height: 85%;
+    width: 60%;
+}
+
+
+/*  ALERT CONTENT PAGE */
+
+.alert-patient-ui-section {
+    display: none;
+    animation: fadeinLeft 1s;
+}
+.table-custom-ui table tr td.td_table_icon {
+    text-align: left !important;
+    padding-left: 5% !important;
+}
+
+.table-custom-ui table tr td.td_table_icon i.table-alert-icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px !important;
+    height: 30px;
+    left: 0;
+    top: 0;
+    margin-top: -5px;
+}
+.table-custom-ui table tr td.td_table_icon.high i.table-alert-icon {
+   background-image: url(../images/icons/alert_high_red_icon.png);
+}
+.table-custom-ui table tr td.td_table_icon.medium i.table-alert-icon {
+   background-image: url(../images/icons/alert_medium_blue_icon.png);
+}
+.table-custom-ui table tr td.td_table_icon.low i.table-alert-icon {
+   background-image: url(../images/icons/alert_low_green_icon.png);
+}
+table.tr_alert_box_show tr.active {
+    background-color: #bee9f9 !important;
+}
+table.tr_alert_box_show tr.active td {
+    background-color: #bee9f9 !important;
+}
+table.tr_alert_box_show tr:hover {
+    background-color: #bee9f9;
+    cursor: pointer;    
+}
+table.tr_alert_box_show tr.close_alert {
+    color: #b7b7b7 !important;
+    cursor: pointer;
+}
+table.tr_alert_box_show tr.close_alert.active {
+    background-color: transparent;
+}
+table.tr_alert_box_show tr.close_alert:hover {
+    background-color: transparent;
+    cursor: pointer;    
+}
+.table-custom-ui table tr.close_alert td.td_table_icon i {
+    display: none;
+}
+.ui_alert_box_show {
+    display: none;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: block;
+}
+.add_patient_alert_row1 .col-md-3, .add_patient_alert_row1 .col-md-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.add_patient_alert_row1 .eq-ui-input-field {
+    display: flex;
+}
+.add_patient_alert_form label {    
+    float: left;
+    width: auto !important; 
+    font-size: 14px !important;
+    margin-right: 4px;
+}
+.add_patient_alert_form .eq-ui-input-field .eq-ui-input {
+    width: 100% !important;
+}
+.ui_alert_box_show label {
+    margin-top: 8px;
+}
+.add_patient_alert_row1 {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.ui_alert_box_show_addempty {
+    margin-bottom: 30px;
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 100%;
+    background: #fff;
+    display: none;
+    z-index: 14;
+    animation: bounceInDown 1s;
+}
+.ui-alert-addedit-box {
+    width: 100%;
+    height: 260px;
+    display: none;
+    background: #fff;
+    position: relative;
+}
+
+.ui-alert-addedit-box-show {
+    display: block !important;
+    animation: bounceInDown 1s;
+}
+.ui-alert-addedit-box-show2 {
+    display: block !important;
+}
+
+.alert-content-notification-box {
+    display: none;
+    margin: 0;
+    padding:0;
+}
+.alert-notify-wrapbox {
+    width: 600px;
+    margin: 0 0 0 20%;
+    display: flex;
+}
+.alert-notify-wrapbox div {
+    margin: 0 30px;
+    display: block;
+}
+.alert-filter-text, .alert-filter-text a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.alert-filter-text a.active {
+    color: #228DC7;
+    text-decoration: underline
+}
+.btn-icon-ui-alertnotify {
+    width: 185px;
+    min-height: 10px;
+    max-height: 50px;
+    border: 1px solid #228DC7;
+    border-radius: 3px;
+    color: #228DC7;
+    position: relative;
+}
+.btn-icon-ui-alertnotify a {
+    width: 100%;
+    display: block;
+    height: 35px;
+    color: #228DC7;
+    font-size: 12px;
+}
+.btn-icon-ui-alertnotify a:hover {
+    text-decoration: none;
+}
+.btn-icon-ui-alertnotify i.patient-alert-notify-icon {
+    background-image: url(../images/icons/alert_medium_blue_icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 35px !important;
+    height: 30px;
+    margin-top: 1px;
+    left: 6px;
+}
+.btn-icon-ui-alertnotify span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 8px;
+    bottom: 0;
+}
+.btn-icon-ui-alertnotify i.mdi-plus {
+    color: #E1A428;
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    font-size: 14px;
+}
+
+.add-alert-notify-btn-class.active {
+    background: #228dc7;
+    color:#fff;
+}
+.add-alert-notify-btn-class.active i.patient-alert-notify-icon {
+    background-image: url(../images/icons/alerts_icon_white.png);
+}
+.alert-patient-ui-section-show {
+    display: block;
+}
+.ui_alert_box_show-uibox {
+    display: block !important;
+    animation: bounceInDown 1s;
+}
+
+/*  ACTIVITY CONTENT PAGE */
+
+.activity-patient-ui-section {
+    display: none;
+}
+tr.tr-client-appointment {
+    color: #1CAE99;
+}
+tr.tr-client-surgery {
+    color: #D8534F;
+}
+tr.tr-patient-rounds {
+    color: #FF931E;
+}
+button.btn-color-gray {
+    background-color: #7f7f7f;
+}
+.eq-ui-modal.activity-admitted-modal-ui {
+    width: 40%;
+}
+.dischargel-modal-notes {
+    display: flex;
+    margin-bottom: 0;
+}
+.dischargel-modal-notes textarea {
+    width: 63% !important;
+    float: right !important;
+    height: 60px !important;
+    max-height: 60px;
+    overflow-y: scroll !important;
+    margin-left: 3%;
+}
+
+.activity-notify-wrapbox {
+   display: flex;
+   padding-left: 5%;
+}
+.activity-notify-wrapbox > div {
+    padding: 0 5px 0 5px;
+}
+.activity-notify-datebox label {
+    position: relative;
+    font-size: 13px;
+    padding-top: 5px;
+    height: 40px;
+    top: 0;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.activity-notify-datebox input {
+    padding: 0px 10px !important;
+    width: 70px !important;
+    height: 30px !important;
+    margin-bottom: 0 !important;
+    float: left !important;
+    max-width: 100% !important;
+    background-color: #eceef0 !important;
+    border: 0 !important;
+    background-image: url(../images/icons/calendar_icon_blue.png) !important;
+    background-position: center left !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    padding-left: 45px !important;
+    font-size: 12px !important;
+}
+.activity-notify-datebox {
+    width: 340px;
+    text-align: center;
+    height: 55px;
+    padding-top: 3px;
+}
+.activity-notify-datebox .eq-ui-input-field {
+    margin-top: 13px !important;
+}
+.activitydate-picker-icon {
+    display: flex;
+}
+.activitydate-picker-icon > div {
+    width: 195px;
+}
+.activity-notify-dropdowns {
+    width: 200px;
+    padding-right: 40px;
+    padding-top: 6px !important;
+}
+
+.activity-notify-dropdowns .eq-ui-select-wrapper .eq-ui-dropdown {
+    top: 0 !important;
+}
+
+.activity-notify-dropdowns .eq-ui-select-wrapper .eq-ui-caret {
+    z-index: 20 !important;
+}
+
+.activity-notify-dropdowns.and_location {
+    width: 195px;
+    padding-right: 40px;
+}
+.activity-notify-dropdowns.and_status {
+    width: 185px;
+    padding-right: 40px;
+}           
+.activity-notify-wrapbox .activity-notify-dropdowns .eq-ui-select-wrapper .eq-ui-caret  {
+    border: 0;
+    top: 6px;
+    right: 32px;
+    color: #1c86b5;
+}
+.activity-notify-wrapbox .activity-notify-dropdowns .eq-ui-select-wrapper .eq-ui-caret::after {
+    content: '\f236' !important;
+    display: block !important;
+    line-height: 40px !important;
+    width: 30px;
+    font-size: 26px !important;
+    height: 40px;
+    font: normal normal normal 24px/1 "Material Design Icons";
+}
+.activity-notify-wrapbox .activity-notify-dropdowns .eq-ui-input-field input.eq-ui-input {
+    border: 0 !important;
+    background: transparent;
+    font-size: 13px !important;
+}
+.activity-notify-wrapbox .activity-notify-dropdowns .eq-ui-dropdown li>a {
+    font-size: 13px !important;
+}
+.activity-notify-wrapbox .activity-notify-dropdowns .eq-ui-input-field {
+    margin-top: 3px;
+    margin-bottom: 5px !important;
+}
+
+/*  ATTACHMENTS CONTENT PAGE */ 
+
+.attachments-patient-ui-section {
+    display: none;
+}
+.attachments-notify-wrapbox {
+    width: 200px;
+    margin: 0 0 0 35%;
+}
+.ui-attachments-addedit-box {
+    position: relative;
+    min-height: 1px;
+}
+.ui-attachments-addedit-box-show {
+    display: block !important;
+    animation: bounceInDown 1s;
+}
+.ui-attachments-addonly-box {
+    display: none;
+}
+.attachments-patient-ui-section-show {
+    display: block;
+}
+.ui_attachments_box_show-uibox {
+    display: block !important;
+    animation: bounceInDown 1s;
+}
+.btn-icon-ui-attachments-addedit {
+    width: 185px;
+    min-height: 10px;
+    max-height: 50px;
+    border: 1px solid #228DC7;
+    border-radius: 3px;
+    color: #228DC7;
+    position: relative;
+}
+.btn-icon-ui-attachments-addedit a {
+    width: 100%;
+    display: block;
+    height: 35px;
+    color: #228DC7;
+    font-size: 12px;
+}
+.btn-icon-ui-attachments-addedit a:hover {
+    text-decoration: none;
+}
+.btn-icon-ui-attachments-addedit i.patient-attachments-notify-icon {
+    background-image: url(../images/icons/patient_attachments_icon_blue.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 37px !important;
+    height: 38px;
+    margin-top: -2px;
+    left: 6px;
+}
+
+.btn-icon-ui-attachments-addedit span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 8px;
+    bottom: 0;
+}
+.btn-icon-ui-attachments-addedit i.mdi-plus {
+    color: #E1A428;
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    font-size: 14px;
+}
+
+.add-attachments-notify-btn-class.active {
+    background: #228dc7;
+    color:#fff;
+}
+.add-attachments-notify-btn-class.active i.patient-attachments-notify-icon {
+    background-image: url(../images/icons/patient_attachments_icon_white.png);
+}
+.attachments-patient-ui-section-show {
+    display: block;
+}
+.ui_attachments_box_show-uibox {
+    display: block !important;
+    animation: bounceInDown 1s;
+}
+.attachments-patient-ui-section table tr td i {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px !important;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+.attachments-patient-ui-section table tr td i.patient-attachment-icon {
+    background-image: url(../images/icons/attachment_imaging_icon.png);
+}
+.attachments-patient-ui-section table tr td i.patient-document-icon {
+    background-image: url(../images/icons/attachment_document_icon.png);
+}
+.attachments-patient-ui-section table tr td i span {
+    font-size: 12px;
+    color: #1c86b5;
+    position: absolute;
+    top: 16px;
+    bottom: 0;
+    left: -3px;
+    right: 0;
+}
+.attachments-patient-ui-section .eq-ui-input-wrap {
+    display: flex;
+}
+.patient-attachemnt-notes label {
+    width: 10% !important;
+}
+.patient-attachemnt-notes textarea.eq-ui-textarea {
+    width: 100% !important;
+}
+.ui-attachments-file-upload {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ui-attachments-file-upload p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.attachments-patient-ui-section .table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr {
+    cursor: pointer;
+}
+
+.patient-attach-img-upload ul {
+    width: 100%;
+    display: block;
+}
+.patient-attach-img-upload ul li {
+    list-style: none;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.patient-attach-img-upload ul li img {
+    width: 100%;
+}
+.patient-attach-img-upload ul li img:hover {
+    opacity: 0.7;
+}
+.patient-attach-img-upload ul li a {
+    width: auto;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.patient-attach-img-upload ul li .eq-ui-form-group {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 20;
+}
+.patient-attach-img-upload ul li i.delete-upload-img-icon {
+    background-image: url(../images/icons/delete_img_icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px !important;
+    height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    right: 12px;
+    top: -8px;
+    z-index: 20;
+}
+
+.ui-attachments-editonly-box {
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: 200px;
+    display: none;
+}
+.edit-uploaded-checkbox-select input.eq-ui-input[type=checkbox]+label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 20px;
+    width: 80px;
+    text-align: left;
+}
+.edit-uploaded-checkbox-select .text-right ul {
+    display: flex;
+    width: 200px;
+    float: right;
+}
+.edit-uploaded-checkbox-select .text-right ul li {
+    margin-right: 10px;
+}
+.edit-uploaded-checkbox-select {
+    border-bottom: 1px solid #09adec;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.edit-uploaded-checkbox-select .eq-ui-form-group {
+    margin-bottom: 0px;
+}
+.edit-uploaded-checkbox-select .text-left {
+    font-size: 15px;
+    color: #323232;
+    padding-left: 0px;
+}
+.edit-uploaded-checkbox-select .eq-ui-form-group label {
+    margin-bottom: 0px;
+}
+input.eq-ui-input[type=checkbox].filled-in:not(:checked)+label:after {
+    border: 2px solid #248dc6;
+}
+
+
+/* Table UI */
+
+
+.table-custom-ui table.eq-ui-data-table tbody tr td {
+    white-space: pre-wrap;
+    padding: 15px 15px !important;
+}
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered thead tr th::after {
+    content: '';
+    width: 2px;
+    display: block;
+    background: #00adee;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    bottom: 25%;
+}
+
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr td::after {
+    content: '';
+    width: 2px;
+    display: block;
+    background: #00adee;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    bottom: 25%;
+}
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr:hover {
+    background: #bee9f9;
+}
+.table-custom-ui table.eq-ui-data-table.eq-ui-centered tbody tr.active td {
+    background: #bee9f9 !important;
+}

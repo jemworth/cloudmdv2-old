@@ -1,0 +1,6 @@
+.eq-ui-list-header .select-normal:first-child {
+    width: 90px !important;
+}
+.eq-ui-list-header .select-normal .eq-ui-caret::after {
+  background:#e5e5e5 !important
+}

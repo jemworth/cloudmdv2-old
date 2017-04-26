@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/** User Grants **/
+#maincontainer .user_up .select-rights{
+  text-align:right;
+  display:table-cell !important;
+}
+#maincontainer .user_up .eq-ui-select-wrapper{
+  width:218px !important;
+  display:inline-block !important;
+}
+#maincontainer .user_up .eq-ui-select-wrapper input{
+  border:1px solid #cacaca;
+  background:url(../images/user-avatar.svg) 12px center no-repeat !important;
+  background-size:25px !important;
+  padding:23px 15px  23px 45px!important;
+}
+#maincontainer .user_up .select-rights .eq-ui-caret{
+  color:#e0a32c;
+}
+#maincontainer .user_up .select-rights .eq-ui-caret::after{
+  content:'\f504' !important;
+  display:block !important;
+  line-height:48px !important;
+  width:25px;
+  font-size:18px !important;
+  height:46px;
+  font: normal normal normal 24px/1 "Material Design Icons";
+}
+#maincontainer .user_up .select-rights .eq-ui-dropdown.active+span.eq-ui-caret::after{
+  content:'\f465' !important;
+}
+
+/** User list name **/
+
+.info_ul{
+  width: 76%;
+  padding:0;
+  display:inline-block;
+}
+.info_ul li{
+  padding:0;
+  float:left;
+}
+.info_ul li:first-child{
+  max-width:70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/** SECONDARY NAV TAB **/
+
+.col-sec-tab-head .eq-ui-collapsible-header a i.sectab-users-icon {
+    background-image: url(../images/icons/add_users_icon_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px !important;
+    height: 38px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.col-sec-tab-head .eq-ui-collapsible-header a.active i.sectab-users-icon, .eq-ui-collapsible-header a:hover i.sectab-users-icon {
+    background-image: url(../images/icons/add_users_icon_img.png);
+}
+
+/* ADD ENTRY BUTTON ICON */
+
+.eq-ui-collapsible-header-add-entry-active.eq-ui-collapsible-header i.sectab-users-icon  {
+    background-image: url(../images/icons/add_users_icon_img_white.png) !important;   
+}

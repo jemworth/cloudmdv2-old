@@ -1,0 +1,616 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Letters Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/letters_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+                <div class="container-fluid common_header">
+                <div class="brand">
+                    <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+                </div>
+                <!-- Title -->
+                <div class="header-title">
+                    <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                    <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                        <span>toggle menu</span>
+                    </button>
+                </div>
+                <!-- Nav Menu -->
+                <ul class="right eq-ui-nav-menu">
+                        <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                            <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                            <i class="mdi head-msg-icon icon"></i>
+                            </a>
+                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                        </li>
+                        <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                            <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                            <i class="mdi head-notify-icon icon"></i>
+                            </a>
+                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                        </li>
+                        <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                          <div class="header-profile-right-inner">
+                            <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                            <span>John Gay Kho, MD.</span>
+                            <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                            <i class="mdi mdi-dots-vertical icon"></i>  
+                            </a>
+                          </div>
+                            <!-- Dropdown Structure -->
+                            <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                                <li><a href="userprofile.html">User Profile</a></li>
+                                <li><a href="loggingout.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" >
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="users.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html" class="active">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html" >
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect searchcaserate_section_wrap ">
+									<a class="eq-ui-modal-close active searchcaserate_section_modal_close" id="searchcaserate_section_modalclose" href="#" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                    <a class="eq-ui-modal-trigger" id="searchcaserate_section_modal_open" href="#searchcaserate_section" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+
+            <!-- letter template left NAV  -->
+            <div class="navbar nav-left">
+              <nav>
+                    <div class="collapsible-header">Letter Templates</div>
+                    <ul class="eq-ui-collapsible">
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect active">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Sample Referral</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Prescription Letter</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Referral Letter</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Plan Printout</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Medical Certificate</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                <a id="">Excuse Letter</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- letter template right NAV  -->
+            <div class="navbar nav-right">
+               <nav>
+                    <div class="collapsible-header">Dynamic Values</div>
+                    <ul class="eq-ui-collapsible">
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect active">
+                                <a id="">Advice/Instructions</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Follow up date</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Imaging Orders</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Laboratory Orders</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Patient Address</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Patient Age</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Patient All Assessments</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Patient Specific Assessment</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Performing Physician Name</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Prescription Orders</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Procedures Performed</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Referral Doctor Name</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Reason for Referral</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                <a id="">Visit Date</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li>
+                                <div class="eq-ui-form-group eq-ui-input-field">
+                                    <label for="letter_name">Letter Name<span class="required_">*</span></label>
+                                    <input id="letter_name" type="text" class="eq-ui-input" value="" required>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="paper-size" class="eq-ui-form-group eq-ui-input-field ">
+                                    <select class="eq-ui-select eq-ui-dropdown" required>
+                                        <option value="rx-sheet">Rx Sheet 5.5*8.5 in</option>
+                                        <option value="letter-sheet">Letter 8.5*11 in</option>
+                                        <option value="legal-sheet">Legal 8.5*14 in</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="cktoolbox"></div>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <div class="eq-ui-form-group eq-ui-input-field">
+                            <button id="submit" class="btn btn-primary eq-ui-waves-light waves-effect waves-effect waves-light" type="button">Save</button>
+                            <button id="cancel" class="btn btn-border-blue btn-primary eq-ui-waves-light waves-effect waves-effect waves-light" type="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container dark-bg">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">
+
+                            <div class="bondsize rx_size">
+                                <form id="rxform">
+                                    <textarea name="rx-editor" id="rx-editor">
+                                        <hr>
+                                        <p>Name: John Loe Doe,<br>Age: 26<br>Address: Wireless ,Subang Daku, Mandue City </p>
+                                        <hr>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+
+                                        <p>Truely Yours,</p>
+                                        <p>Dr. John Doe</p>
+                                    </textarea>
+                                </form>
+                            </div>
+
+                            <div class="bondsize letter_size">
+                                <form id="letterform">
+                                    <textarea name="letter-editor" id="letter-editor">
+                                        <h1>Title Here</h1>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)<u></u></p>
+                                        <p>Truely Yours,</p>
+                                        <p>Dr. John Doe</p>
+                                    </textarea>
+                                </form>
+                            </div>
+
+                            <div class="bondsize legal_size">
+                                <form id="legalform">
+                                    <textarea name="legal-editor" id="legal-editor">
+                                        <h1>Title Here</h1>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)</p>
+                                        <p>Es ist ein lang erwiesener Fakt, dass ein Leser vom Text abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt, Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die normale Anordnung von Buchstaben darstellt und somit nach lesbarer Sprache aussieht. Viele Desktop Publisher und Webeditoren nutzen mittlerweile Lorem Ipsum als den Standardtext, auch die Suche im Internet nach "lorem ipsum" macht viele Webseiten sichtbar, wo diese noch immer vorkommen. Mittlerweile gibt es mehrere Versionen des Lorem Ipsum, einige zufällig, andere bewusst (beeinflusst von Witz und des eigenen Geschmacks)<u></u></p>
+                                        <p>Truely Yours,</p>
+                                        <p>Dr. John Doe</p>
+                                    </textarea>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+
+		<!--SEARCH CASE RATE MODAL -->
+	
+	    
+		<div id="searchcaserate_section" class="search-chaserate-modal eq-ui-modal eq-ui-modal-fixed eq-ui-modal-left-sheet" >
+
+                
+				<div class="eq-ui-modal-content">
+                    <ul class="scrate_wrapbox pl-0">
+                        <li class="eq-ui-list-item scrate_innerbox text-center pl-15">
+						    <input type="text" value="" class="eq-ui-input">
+						    <button id="submit" class="btn btn-primary eq-ui-waves-light mt-15 scrate_btn1 " type="button">Search</button>
+                        </li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						    <div class="row">
+								<div class="col-sm-12">
+									Repair of Ruptured Musculoteninous Cuff (e.g., Rotator Cuff); Acute
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-md-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">RVS Code</div><div class="scrate_col_2"><input name="RVS_Code" type="text" value="23410" class="eq-ui-input" ></div>
+								</div>							
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   First Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Second Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Applicable Institutions
+						</li>
+						<li class="eq-ui-list-item scrate_appins_text text-left">
+						     <ul>
+								<li>Level 1</li>
+								<li>Level 2</li>
+								<li>Level 3</li>
+								<li>ASC</li>
+								<li>PCF</li>
+								<li>MCP</li>
+								<li>FSDC</li>
+							 </ul>
+						</li>
+                    </ul>
+                </div>
+			
+
+        </div>
+		
+	 
+	 
+	<!--END SEARCH CASE RATE MODAL -->		
+
+
+
+
+ </div>
+        <!-- end content -->		
+		
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+        <script src="./assets/plugin/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript">
+             window.onload = function(){
+                CKEDITOR.config.htmlbuttons =   [
+                    {
+                        name:'header',
+                        icon:'icon1.png',
+                        html:'<a href="http://www.google.com"> f</a>',
+                        title:'A link to Google'
+                    },
+                    {
+                        name:'rx',
+                        icon:'icon2.png',
+                        html:'<table style="min-width:200px"><tr><td> </td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table>',
+                        title:'A simple table'
+                    }
+                    // {
+                    //  name:'divs',
+                    //  icon:'puzzle.png',
+                    //  title:'Insert items',
+                    //  items : [
+                    //      {
+                    //          name:'button4',
+                    //          icon:'icon1.png',
+                    //          html:'<div class="wrapper"><ol><li>Item 1</li></ol></div>',
+                    //          title:'A div with a list inside'
+                    //      },
+                    //      {
+                    //          name:'button5',
+                    //          icon:'icon2.png',
+                    //          html:'<p class="heading"> </p>',
+                    //          title:'A paragraph with a class'
+                    //      }
+
+                    //  ]
+                    // }
+                ];
+                CKEDITOR.replace('rx-editor', {
+
+                    width: '5.5in',
+                    height: '8.5in',
+                    on: {
+                            instanceReady : function ( evt )
+                        {
+                            var editor = evt.editor,
+                            body = editor.document.getBody();
+                            body.setAttribute( 'class', 'cke_editable cke_editable_themed cke_contents_ltr rx-page');
+                        }
+                    }
+                });
+                CKEDITOR.replace('letter-editor', {
+                    height: '11in',
+                    on: {
+                            instanceReady : function ( evt )
+                        {
+                            var editor = evt.editor,
+                            body = editor.document.getBody();
+                            body.setAttribute( 'class', 'cke_editable cke_editable_themed cke_contents_ltr letter-page');
+                        }
+                    }
+                });
+
+                CKEDITOR.replace('legal-editor', {
+                    height: '14in',
+                    on: {
+                            instanceReady : function ( evt )
+                        {
+                            var editor = evt.editor,
+                            body = editor.document.getBody();
+                            body.setAttribute( 'class', 'cke_editable cke_editable_themed cke_contents_ltr legal-page');
+                        }
+                    }
+                });
+
+
+            };
+        </script>
+        
+    </body>
+</html>

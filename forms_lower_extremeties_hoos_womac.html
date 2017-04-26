@@ -1,0 +1,1274 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Hip Disability & Osteoarthritis Outcome Score</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/userprofile_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" class="active">
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="userprofile.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html">
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">						
+							<form id="hiposteoarthritis_form" class="eq-form">
+								<div class="row">
+                                    <div class="col-md-12">
+    									<h5>Hip Disability & Osteoarthritis Outcome Score</h5>
+                                        <hr>
+                                        <p>Answer every question by ticking the appropriate box. If you are unsure about how to answer a question, please give the best answer you can.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Symptoms - these questions should be answered thinking of your hip symptoms during last week.</h6>
+                                        <label>S1. Do you feel grinding, hear clicking or any other type of noise from you hip?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section1" type="radio" id="section1_option1" class="eq-ui-input"/>
+                                                <label for="section1_option1">Never</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section1" type="radio" id="section1_option2" class="eq-ui-input"/>
+                                                <label for="section1_option2">Slight</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section1" type="radio" id="section1_option3" class="eq-ui-input"/>
+                                                <label for="section1_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section1" type="radio" id="section1_option4" class="eq-ui-input"/>
+                                                <label for="section1_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section1" type="radio" id="section1_option5" class="eq-ui-input"/>
+                                                <label for="section1_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>S2. Difficulties spreading legs wide apart</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section2" type="radio" id="section2_option1" class="eq-ui-input"/>
+                                                <label for="section2_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section2" type="radio" id="section2_option2" class="eq-ui-input"/>
+                                                <label for="section2_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section2" type="radio" id="section2_option3" class="eq-ui-input"/>
+                                                <label for="section2_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section2" type="radio" id="section2_option4" class="eq-ui-input"/>
+                                                <label for="section2_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section2" type="radio" id="section2_option5" class="eq-ui-input"/>
+                                                <label for="section2_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>S3. Difficulties to stride out when walking</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section3" type="radio" id="section3_option1" class="eq-ui-input"/>
+                                                <label for="section3_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section3" type="radio" id="section3_option2" class="eq-ui-input"/>
+                                                <label for="section3_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section3" type="radio" id="section3_option3" class="eq-ui-input"/>
+                                                <label for="section3_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section3" type="radio" id="section3_option4" class="eq-ui-input"/>
+                                                <label for="section3_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section3" type="radio" id="section3_option5" class="eq-ui-input"/>
+                                                <label for="section3_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Stiffness - The following questions concern the amount of joint stiffness you have experienced during the last week in your hip. Stiffness is a sensation of restriction or slowness in the ease with which you move your hip joint.</h6>
+                                        <label>S4. How severe is your hip joint stiffness after first wakening in the morning?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section4" type="radio" id="section4_option1" class="eq-ui-input"/>
+                                                <label for="section4_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section4" type="radio" id="section4_option2" class="eq-ui-input"/>
+                                                <label for="section4_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section4" type="radio" id="section4_option3" class="eq-ui-input"/>
+                                                <label for="section4_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section4" type="radio" id="section4_option4" class="eq-ui-input"/>
+                                                <label for="section4_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section4" type="radio" id="section4_option5" class="eq-ui-input"/>
+                                                <label for="section4_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>S5. How severe is your hip stiffness after sitting, lying or resting later in the day?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section5" type="radio" id="section5_option1" class="eq-ui-input"/>
+                                                <label for="section5_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section5" type="radio" id="section5_option2" class="eq-ui-input"/>
+                                                <label for="section5_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section5" type="radio" id="section5_option3" class="eq-ui-input"/>
+                                                <label for="section5_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section5" type="radio" id="section5_option4" class="eq-ui-input"/>
+                                                <label for="section5_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section5" type="radio" id="section5_option5" class="eq-ui-input"/>
+                                                <label for="section5_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <h6>Pain</h6>
+                                        <label>P1. How often is your hip painful?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section6" type="radio" id="section6_option1" class="eq-ui-input"/>
+                                                <label for="section6_option1">Never</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section6" type="radio" id="section6_option2" class="eq-ui-input"/>
+                                                <label for="section6_option2">Rarely</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section6" type="radio" id="section6_option3" class="eq-ui-input"/>
+                                                <label for="section6_option3">Sometimes</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section6" type="radio" id="section6_option4" class="eq-ui-input"/>
+                                                <label for="section6_option4">Often</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section6" type="radio" id="section6_option5" class="eq-ui-input"/>
+                                                <label for="section6_option5">Always</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>What amount of hip pain have you experienced the last week during the following activities?</h6>
+                                        <label>P2. Straightening your hip fully</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section7" type="radio" id="section7_option1" class="eq-ui-input"/>
+                                                <label for="section7_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section7" type="radio" id="section7_option2" class="eq-ui-input"/>
+                                                <label for="section7_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section7" type="radio" id="section7_option3" class="eq-ui-input"/>
+                                                <label for="section7_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section7" type="radio" id="section7_option4" class="eq-ui-input"/>
+                                                <label for="section7_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section7" type="radio" id="section7_option5" class="eq-ui-input"/>
+                                                <label for="section7_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P3. Bending your hip fully</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section8" type="radio" id="section8_option1" class="eq-ui-input"/>
+                                                <label for="section8_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section8" type="radio" id="section8_option2" class="eq-ui-input"/>
+                                                <label for="section8_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section8" type="radio" id="section8_option3" class="eq-ui-input"/>
+                                                <label for="section8_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section8" type="radio" id="section8_option4" class="eq-ui-input"/>
+                                                <label for="section8_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section8" type="radio" id="section8_option5" class="eq-ui-input"/>
+                                                <label for="section8_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P4. Walking on flat surface</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section9" type="radio" id="section9_option1" class="eq-ui-input"/>
+                                                <label for="section9_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section9" type="radio" id="section9_option2" class="eq-ui-input"/>
+                                                <label for="section9_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section9" type="radio" id="section9_option3" class="eq-ui-input"/>
+                                                <label for="section9_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section9" type="radio" id="section9_option4" class="eq-ui-input"/>
+                                                <label for="section9_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section9" type="radio" id="section9_option5" class="eq-ui-input"/>
+                                                <label for="section9_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P5. Going up or down stairs</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section10" type="radio" id="section10_option1" class="eq-ui-input"/>
+                                                <label for="section10_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section10" type="radio" id="section10_option2" class="eq-ui-input"/>
+                                                <label for="section10_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section10" type="radio" id="section10_option3" class="eq-ui-input"/>
+                                                <label for="section10_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section10" type="radio" id="section10_option4" class="eq-ui-input"/>
+                                                <label for="section10_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section10" type="radio" id="section10_option5" class="eq-ui-input"/>
+                                                <label for="section10_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P6. At night while in bed</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section11" type="radio" id="section11_option1" class="eq-ui-input"/>
+                                                <label for="section11_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section11" type="radio" id="section11_option2" class="eq-ui-input"/>
+                                                <label for="section11_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section11" type="radio" id="section11_option3" class="eq-ui-input"/>
+                                                <label for="section11_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section11" type="radio" id="section11_option4" class="eq-ui-input"/>
+                                                <label for="section11_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section11" type="radio" id="section11_option5" class="eq-ui-input"/>
+                                                <label for="section11_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P7. Sitting or lying</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section12" type="radio" id="section12_option1" class="eq-ui-input"/>
+                                                <label for="section12_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section12" type="radio" id="section12_option2" class="eq-ui-input"/>
+                                                <label for="section12_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section12" type="radio" id="section12_option3" class="eq-ui-input"/>
+                                                <label for="section12_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section12" type="radio" id="section12_option4" class="eq-ui-input"/>
+                                                <label for="section12_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section12" type="radio" id="section12_option5" class="eq-ui-input"/>
+                                                <label for="section12_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P8. Standing upright</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section13" type="radio" id="section13_option1" class="eq-ui-input"/>
+                                                <label for="section13_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section13" type="radio" id="section13_option2" class="eq-ui-input"/>
+                                                <label for="section13_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section13" type="radio" id="section13_option3" class="eq-ui-input"/>
+                                                <label for="section13_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section13" type="radio" id="section13_option4" class="eq-ui-input"/>
+                                                <label for="section13_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section13" type="radio" id="section13_option5" class="eq-ui-input"/>
+                                                <label for="section13_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P9. Walking on a hard surface (asphalt, concrete, etc)</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section14" type="radio" id="section14_option1" class="eq-ui-input"/>
+                                                <label for="section14_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section14" type="radio" id="section14_option2" class="eq-ui-input"/>
+                                                <label for="section14_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section14" type="radio" id="section14_option3" class="eq-ui-input"/>
+                                                <label for="section14_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section14" type="radio" id="section14_option4" class="eq-ui-input"/>
+                                                <label for="section14_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section14" type="radio" id="section14_option5" class="eq-ui-input"/>
+                                                <label for="section14_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>P10. Walking on an uneven surface</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section15" type="radio" id="section15_option1" class="eq-ui-input"/>
+                                                <label for="section15_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section15" type="radio" id="section15_option2" class="eq-ui-input"/>
+                                                <label for="section15_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section15" type="radio" id="section15_option3" class="eq-ui-input"/>
+                                                <label for="section15_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section15" type="radio" id="section15_option4" class="eq-ui-input"/>
+                                                <label for="section15_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section15" type="radio" id="section15_option5" class="eq-ui-input"/>
+                                                <label for="section15_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Function, daily living - The following questions concern your physical function. By this we mean your ability to move around and to look after yourself. For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your hip.</h6>
+                                        <label>Al. Descending stairs</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section16" type="radio" id="section16_option1" class="eq-ui-input"/>
+                                                <label for="section16_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section16" type="radio" id="section16_option2" class="eq-ui-input"/>
+                                                <label for="section16_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section16" type="radio" id="section16_option3" class="eq-ui-input"/>
+                                                <label for="section16_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section16" type="radio" id="section16_option4" class="eq-ui-input"/>
+                                                <label for="section16_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section16" type="radio" id="section16_option5" class="eq-ui-input"/>
+                                                <label for="section16_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A2. Ascending stairs</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section17" type="radio" id="section17_option1" class="eq-ui-input"/>
+                                                <label for="section17_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section17" type="radio" id="section17_option2" class="eq-ui-input"/>
+                                                <label for="section17_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section17" type="radio" id="section17_option3" class="eq-ui-input"/>
+                                                <label for="section17_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section17" type="radio" id="section17_option4" class="eq-ui-input"/>
+                                                <label for="section17_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section17" type="radio" id="section17_option5" class="eq-ui-input"/>
+                                                <label for="section17_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A3. Rising from sitting</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section18" type="radio" id="section18_option1" class="eq-ui-input"/>
+                                                <label for="section18_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section18" type="radio" id="section18_option2" class="eq-ui-input"/>
+                                                <label for="section18_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section18" type="radio" id="section18_option3" class="eq-ui-input"/>
+                                                <label for="section18_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section18" type="radio" id="section18_option4" class="eq-ui-input"/>
+                                                <label for="section18_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section18" type="radio" id="section18_option5" class="eq-ui-input"/>
+                                                <label for="section18_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A4. Standing</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section19" type="radio" id="section19_option1" class="eq-ui-input"/>
+                                                <label for="section19_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section19" type="radio" id="section19_option2" class="eq-ui-input"/>
+                                                <label for="section19_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section19" type="radio" id="section19_option3" class="eq-ui-input"/>
+                                                <label for="section19_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section19" type="radio" id="section19_option4" class="eq-ui-input"/>
+                                                <label for="section19_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section19" type="radio" id="section19_option5" class="eq-ui-input"/>
+                                                <label for="section19_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A5. Bending to floor/pick up an object</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section20" type="radio" id="section20_option1" class="eq-ui-input"/>
+                                                <label for="section20_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section20" type="radio" id="section20_option2" class="eq-ui-input"/>
+                                                <label for="section20_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section20" type="radio" id="section20_option3" class="eq-ui-input"/>
+                                                <label for="section20_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section20" type="radio" id="section20_option4" class="eq-ui-input"/>
+                                                <label for="section20_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section20" type="radio" id="section20_option5" class="eq-ui-input"/>
+                                                <label for="section20_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A6. Walking on flat surface</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section21" type="radio" id="section21_option1" class="eq-ui-input"/>
+                                                <label for="section21_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section21" type="radio" id="section21_option2" class="eq-ui-input"/>
+                                                <label for="section21_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section21" type="radio" id="section21_option3" class="eq-ui-input"/>
+                                                <label for="section21_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section21" type="radio" id="section21_option4" class="eq-ui-input"/>
+                                                <label for="section21_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section21" type="radio" id="section21_option5" class="eq-ui-input"/>
+                                                <label for="section21_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A7. Getting in/out of car</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section22" type="radio" id="section22_option1" class="eq-ui-input"/>
+                                                <label for="section22_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section22" type="radio" id="section22_option2" class="eq-ui-input"/>
+                                                <label for="section22_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section22" type="radio" id="section22_option3" class="eq-ui-input"/>
+                                                <label for="section22_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section22" type="radio" id="section22_option4" class="eq-ui-input"/>
+                                                <label for="section22_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section22" type="radio" id="section22_option5" class="eq-ui-input"/>
+                                                <label for="section22_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A8. Going shopping</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section23" type="radio" id="section23_option1" class="eq-ui-input"/>
+                                                <label for="section23_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section23" type="radio" id="section23_option2" class="eq-ui-input"/>
+                                                <label for="section23_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section23" type="radio" id="section23_option3" class="eq-ui-input"/>
+                                                <label for="section23_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section23" type="radio" id="section23_option4" class="eq-ui-input"/>
+                                                <label for="section23_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section23" type="radio" id="section23_option5" class="eq-ui-input"/>
+                                                <label for="section23_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A9. Putting on socks/stockings</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section24" type="radio" id="section24_option1" class="eq-ui-input"/>
+                                                <label for="section24_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section24" type="radio" id="section24_option2" class="eq-ui-input"/>
+                                                <label for="section24_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section24" type="radio" id="section24_option3" class="eq-ui-input"/>
+                                                <label for="section24_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section24" type="radio" id="section24_option4" class="eq-ui-input"/>
+                                                <label for="section24_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section24" type="radio" id="section24_option5" class="eq-ui-input"/>
+                                                <label for="section24_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A10. Rising from bed</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section25" type="radio" id="section25_option1" class="eq-ui-input"/>
+                                                <label for="section25_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section25" type="radio" id="section25_option2" class="eq-ui-input"/>
+                                                <label for="section25_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section25" type="radio" id="section25_option3" class="eq-ui-input"/>
+                                                <label for="section25_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section25" type="radio" id="section25_option4" class="eq-ui-input"/>
+                                                <label for="section25_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section25" type="radio" id="section25_option5" class="eq-ui-input"/>
+                                                <label for="section25_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A11. Taking off socks/stockings</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section26" type="radio" id="section26_option1" class="eq-ui-input"/>
+                                                <label for="section26_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section26" type="radio" id="section26_option2" class="eq-ui-input"/>
+                                                <label for="section26_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section26" type="radio" id="section26_option3" class="eq-ui-input"/>
+                                                <label for="section26_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section26" type="radio" id="section26_option4" class="eq-ui-input"/>
+                                                <label for="section26_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section26" type="radio" id="section26_option5" class="eq-ui-input"/>
+                                                <label for="section26_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A12. Lying in bed (turning over, maintaining hip position)</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section27" type="radio" id="section27_option1" class="eq-ui-input"/>
+                                                <label for="section27_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section27" type="radio" id="section27_option2" class="eq-ui-input"/>
+                                                <label for="section27_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section27" type="radio" id="section27_option3" class="eq-ui-input"/>
+                                                <label for="section27_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section27" type="radio" id="section27_option4" class="eq-ui-input"/>
+                                                <label for="section27_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section27" type="radio" id="section27_option5" class="eq-ui-input"/>
+                                                <label for="section27_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A13. Getting in/out of bath</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section28" type="radio" id="section28_option1" class="eq-ui-input"/>
+                                                <label for="section28_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section28" type="radio" id="section28_option2" class="eq-ui-input"/>
+                                                <label for="section28_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section28" type="radio" id="section28_option3" class="eq-ui-input"/>
+                                                <label for="section28_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section28" type="radio" id="section28_option4" class="eq-ui-input"/>
+                                                <label for="section28_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section28" type="radio" id="section28_option5" class="eq-ui-input"/>
+                                                <label for="section28_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A14. Sitting</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section29" type="radio" id="section29_option1" class="eq-ui-input"/>
+                                                <label for="section29_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section29" type="radio" id="section29_option2" class="eq-ui-input"/>
+                                                <label for="section29_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section29" type="radio" id="section29_option3" class="eq-ui-input"/>
+                                                <label for="section29_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section29" type="radio" id="section29_option4" class="eq-ui-input"/>
+                                                <label for="section29_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section29" type="radio" id="section29_option5" class="eq-ui-input"/>
+                                                <label for="section29_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A15. Getting on/off toilet</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section30" type="radio" id="section30_option1" class="eq-ui-input"/>
+                                                <label for="section30_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section30" type="radio" id="section30_option2" class="eq-ui-input"/>
+                                                <label for="section30_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section30" type="radio" id="section30_option3" class="eq-ui-input"/>
+                                                <label for="section30_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section30" type="radio" id="section30_option4" class="eq-ui-input"/>
+                                                <label for="section30_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section30" type="radio" id="section30_option5" class="eq-ui-input"/>
+                                                <label for="section30_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A16. Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section31" type="radio" id="section31_option1" class="eq-ui-input"/>
+                                                <label for="section31_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section31" type="radio" id="section31_option2" class="eq-ui-input"/>
+                                                <label for="section31_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section31" type="radio" id="section31_option3" class="eq-ui-input"/>
+                                                <label for="section31_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section31" type="radio" id="section31_option4" class="eq-ui-input"/>
+                                                <label for="section31_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section31" type="radio" id="section31_option5" class="eq-ui-input"/>
+                                                <label for="section31_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>A17. Light domestic duties (cooking, dusting, etc)</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section32" type="radio" id="section32_option1" class="eq-ui-input"/>
+                                                <label for="section32_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section32" type="radio" id="section32_option2" class="eq-ui-input"/>
+                                                <label for="section32_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section32" type="radio" id="section32_option3" class="eq-ui-input"/>
+                                                <label for="section32_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section32" type="radio" id="section32_option4" class="eq-ui-input"/>
+                                                <label for="section32_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section32" type="radio" id="section32_option5" class="eq-ui-input"/>
+                                                <label for="section32_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Function, sports and recreational activities - the following questions concern your physical function when being active on a higher level. The questions should be answered thinking of what degree of difficulty you have experienced during the last week due to your hip.</h6>
+                                        <label>SP1. Squatting</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section33" type="radio" id="section33_option1" class="eq-ui-input"/>
+                                                <label for="section33_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section33" type="radio" id="section33_option2" class="eq-ui-input"/>
+                                                <label for="section33_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section33" type="radio" id="section33_option3" class="eq-ui-input"/>
+                                                <label for="section33_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section33" type="radio" id="section33_option4" class="eq-ui-input"/>
+                                                <label for="section33_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section33" type="radio" id="section33_option5" class="eq-ui-input"/>
+                                                <label for="section33_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>SP2. Running</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section34" type="radio" id="section34_option1" class="eq-ui-input"/>
+                                                <label for="section34_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section34" type="radio" id="section34_option2" class="eq-ui-input"/>
+                                                <label for="section34_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section34" type="radio" id="section34_option3" class="eq-ui-input"/>
+                                                <label for="section34_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section34" type="radio" id="section34_option4" class="eq-ui-input"/>
+                                                <label for="section34_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section34" type="radio" id="section34_option5" class="eq-ui-input"/>
+                                                <label for="section34_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>SP3. Twisting/pivoting on your injured knee</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section35" type="radio" id="section35_option1" class="eq-ui-input"/>
+                                                <label for="section35_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section35" type="radio" id="section35_option2" class="eq-ui-input"/>
+                                                <label for="section35_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section35" type="radio" id="section35_option3" class="eq-ui-input"/>
+                                                <label for="section35_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section35" type="radio" id="section35_option4" class="eq-ui-input"/>
+                                                <label for="section35_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section35" type="radio" id="section35_option5" class="eq-ui-input"/>
+                                                <label for="section35_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>SP4. Walking on uneven surface</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section36" type="radio" id="section36_option1" class="eq-ui-input"/>
+                                                <label for="section36_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section36" type="radio" id="section36_option2" class="eq-ui-input"/>
+                                                <label for="section36_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section36" type="radio" id="section36_option3" class="eq-ui-input"/>
+                                                <label for="section36_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section36" type="radio" id="section36_option4" class="eq-ui-input"/>
+                                                <label for="section36_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section36" type="radio" id="section36_option5" class="eq-ui-input"/>
+                                                <label for="section36_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <h6>Quality of life </h6>
+                                        <label>Q1. How often are you aware of your hip problem?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section37" type="radio" id="section37_option1" class="eq-ui-input"/>
+                                                <label for="section37_option1">Never</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section37" type="radio" id="section37_option2" class="eq-ui-input"/>
+                                                <label for="section37_option2">Monthly</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section37" type="radio" id="section37_option3" class="eq-ui-input"/>
+                                                <label for="section37_option3">Weekly</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section37" type="radio" id="section37_option4" class="eq-ui-input"/>
+                                                <label for="section37_option4">Daily</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section37" type="radio" id="section37_option5" class="eq-ui-input"/>
+                                                <label for="section37_option5">Constantly</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Q2. Have you modified your life stlye to avoid potentially damaging activities to your help?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2 eq-ui-input-full">
+                                                <input name="section38" type="radio" id="section38_option1" class="eq-ui-input"/>
+                                                <label for="section38_option1">Not at all</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section38" type="radio" id="section38_option2" class="eq-ui-input"/>
+                                                <label for="section38_option2">Mildly</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section38" type="radio" id="section38_option3" class="eq-ui-input"/>
+                                                <label for="section38_option3">Moderately</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section38" type="radio" id="section38_option4" class="eq-ui-input"/>
+                                                <label for="section38_option4">Severely</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section38" type="radio" id="section38_option5" class="eq-ui-input"/>
+                                                <label for="section38_option5">Totally</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Q3. How much are you troubled with lack of confidence in your hip?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2 eq-ui-input-full">
+                                                <input name="section39" type="radio" id="section39_option1" class="eq-ui-input"/>
+                                                <label for="section39_option1">Not at all</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section39" type="radio" id="section39_option2" class="eq-ui-input"/>
+                                                <label for="section39_option2">Mildly</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section39" type="radio" id="section39_option3" class="eq-ui-input"/>
+                                                <label for="section39_option3">Moderately</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section39" type="radio" id="section39_option4" class="eq-ui-input"/>
+                                                <label for="section39_option4">Severely</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section39" type="radio" id="section39_option5" class="eq-ui-input"/>
+                                                <label for="section39_option5">Extremely</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Q4. In general, how much difficulty do you have with your hip?</label>
+                                        <div class="row eq-ui-form-group eq-ui-input-field">
+                                            <div class="col-md-2">
+                                                <input name="section40" type="radio" id="section40_option1" class="eq-ui-input"/>
+                                                <label for="section40_option1">None</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section40" type="radio" id="section40_option2" class="eq-ui-input"/>
+                                                <label for="section40_option2">Mild</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section40" type="radio" id="section40_option3" class="eq-ui-input"/>
+                                                <label for="section40_option3">Moderate</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section40" type="radio" id="section40_option4" class="eq-ui-input"/>
+                                                <label for="section40_option4">Severe</label>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <input name="section40" type="radio" id="section40_option5" class="eq-ui-input"/>
+                                                <label for="section40_option5">Extreme</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pt-15">
+                                        <div class="form_text eq-ui-form-group eq-ui-input-field">  
+                                            <p>HOOS Hip Score Survey = <input id="scoresurvey" type="text" value="" class="eq-ui-input"></p>
+                                        </div>
+                                    </div>
+								</div>	
+							</form>
+                            <h6>Reference for Score</h6> 
+                            <p class="skyblue">Klassbo M, Larsson E, Mannevik E. Hip disability and osteoarthritis outcome score. An extension of the Western Ontario and McMaster Universities Osteoarthritis Index. Scand J Rheumatol. 2003;32(1):4651</p>								
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			
+        
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

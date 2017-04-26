@@ -1,0 +1,588 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Oswestry Low Back Pain Disability Questionnaire</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/userprofile_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" class="active">
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="userprofile.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html">
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">						
+							<form id="oswestrylowback_form" class="eq-form">
+								<div class="row">
+                                    <div class="col-md-12">
+									   <h5>Oswestry Low Back Pain Disability Questionnaire</h5>
+                                       <hr>
+                                       <p>Oswestry Disability Index<br>Please complete this questionnaire. It is designed to tell us how your back pain affects your ability to function in every day life.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>I have "Chronic Pain" or pain that has bothered me for 3 months or more:</label>
+                                        <div class="row">
+                                            <div class="col-md-1 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                <input name="section1" type="radio" id="section1_option1" class="eq-ui-input">
+                                                <label for="section1_option1">Yes</label>
+                                            </div>
+                                            <div class="col-md-1 eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                <input name="section1" type="radio" id="section1_option2" class="eq-ui-input"/>
+                                                <label for="section1_option2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Check one of the following:</label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option1" class="eq-ui-input">
+                                                    <label for="section2_option1">Prior to Surgery </label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option2" class="eq-ui-input"/>
+                                                    <label for="section2_option2">After surgery 6 weeks</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option3" class="eq-ui-input">
+                                                    <label for="section2_option3">After surgery 3 months </label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option4" class="eq-ui-input"/>
+                                                    <label for="section2_option4">After surgery 6 months</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option5" class="eq-ui-input">
+                                                    <label for="section2_option5"> After surgery 1 year</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section2" type="radio" id="section2_option6" class="eq-ui-input"/>
+                                                    <label for="section2_option6"> After surgery 2 years</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <p>Please answer each section below by  checking the One Choice that applies the most to you at this time.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Section 1: Pain Intensity</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option1" class="eq-ui-input">
+                                            <label for="section3_option1">I can tolerate the pain I have without having to use pain killers.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option2" class="eq-ui-input"/>
+                                            <label for="section3_option2">The pain is bad but I manage without taking pain killers.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option3" class="eq-ui-input"/>
+                                            <label for="section3_option3">Pain killers give complete relief from pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option4" class="eq-ui-input"/>
+                                            <label for="section3_option4">Pain killers give moderate relief from pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option5" class="eq-ui-input"/>
+                                            <label for="section3_option5"> Pain killers give very little relief from pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option6" class="eq-ui-input"/>
+                                            <label for="section3_option6"> Pain killers have no effect on the pain and I do not use them.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 2: Personal Care</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option1" class="eq-ui-input">
+                                            <label for="section4_option1">I can look after myself normally without causing extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option2" class="eq-ui-input"/>
+                                            <label for="section4_option2">I can look after myself normally but it causes extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option3" class="eq-ui-input"/>
+                                            <label for="section4_option3">It is painful to look after myself and I am slow and careful.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option4" class="eq-ui-input"/>
+                                            <label for="section4_option4">I need some help but manage most of my personal care.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option5" class="eq-ui-input"/>
+                                            <label for="section4_option5">I need help every day in most aspects of self care.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option6" class="eq-ui-input"/>
+                                            <label for="section4_option6">I do not get dressed, wash with difficulty, and stay in bed.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 3: Lifting</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option1" class="eq-ui-input">
+                                            <label for="section5_option1">I can lift heavy weights without extra pain</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option2" class="eq-ui-input"/>
+                                            <label for="section5_option2">I can lift heavy weights but it gives extra pain</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option3" class="eq-ui-input"/>
+                                            <label for="section5_option3">Pain prevents me from lifting heavy weights off the floor  but I can manage if they are conveniently positioned for example on a table.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option4" class="eq-ui-input"/>
+                                            <label for="section5_option4">Pain prevents me from lifting heavy weights but I can manage light to medium weights if they are conveniently positioned.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option5" class="eq-ui-input"/>
+                                            <label for="section5_option5"> I can lift only very light weights.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option6" class="eq-ui-input"/>
+                                            <label for="section5_option6"> I cannot lift or carry anything at all.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 4: Walking</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option1" class="eq-ui-input">
+                                            <label for="section6_option1">Pain does not prevent me walking any distance.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option2" class="eq-ui-input"/>
+                                            <label for="section6_option2">Pain prevents me walking more than 1 mile.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option3" class="eq-ui-input"/>
+                                            <label for="section6_option3">Pain prevents me walking more than 0.5 miles.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option4" class="eq-ui-input"/>
+                                            <label for="section6_option4">Pain prevents me walking more than 0.25 miles.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option5" class="eq-ui-input"/>
+                                            <label for="section6_option5">I can only walk using a stick or crutches.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option6" class="eq-ui-input"/>
+                                            <label for="section6_option6">I am in bed most of the time and have to crawl to the toilet.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 5: Sitting</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option1" class="eq-ui-input">
+                                            <label for="section7_option1">I can sit in any chair as long as I like.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option2" class="eq-ui-input"/>
+                                            <label for="section7_option2">I can only sit in my favorite chair as long as I like.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option3" class="eq-ui-input"/>
+                                            <label for="section7_option3">Pain prevents me sitting more than 1 hour.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option4" class="eq-ui-input"/>
+                                            <label for="section7_option4">Pain prevents me sitting more than 0.5 hours.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option5" class="eq-ui-input"/>
+                                            <label for="section7_option5">Pain prevents me from sitting more than 10 minutes.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option6" class="eq-ui-input"/>
+                                            <label for="section7_option6">Pain prevents me from sitting at all.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 6: Standing</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option1" class="eq-ui-input">
+                                            <label for="section8_option1">I can stand as long as I want without extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option2" class="eq-ui-input"/>
+                                            <label for="section8_option2">I can stand as long as I want but it gives me extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option3" class="eq-ui-input"/>
+                                            <label for="section8_option3">Pain prevents me from standing for more than 1 hour.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option4" class="eq-ui-input"/>
+                                            <label for="section8_option4">Pain prevents me from standing for more than 0.5 hours.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option5" class="eq-ui-input"/>
+                                            <label for="section8_option5">Pain prevents me from standing for more than 10 minutes.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section8" type="radio" id="section8_option6" class="eq-ui-input"/>
+                                            <label for="section8_option6">Pain prevents me from standing at all.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 7: Sleeping</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option1" class="eq-ui-input">
+                                            <label for="section9_option1">Pain does not prevent me from sleeping well.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option2" class="eq-ui-input"/>
+                                            <label for="section9_option2">I can sleep well only by using tablets.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option3" class="eq-ui-input"/>
+                                            <label for="section9_option3">Even when I take tablets, I have less than 6 hours sleep.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option4" class="eq-ui-input"/>
+                                            <label for="section9_option4">Even when I take tablets, I have less than 4 hours of sleep.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option5" class="eq-ui-input"/>
+                                            <label for="section9_option5">Even when I take tabets, I have less than 2 hours of sleep.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section9" type="radio" id="section9_option6" class="eq-ui-input"/>
+                                            <label for="section9_option6">Pain prevents me from sleeping at all.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 8: Sex Life</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option1" class="eq-ui-input">
+                                            <label for="section10_option1">My sex life is normal and causes no extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option2" class="eq-ui-input"/>
+                                            <label for="section10_option2">My sex life is normal but causes some extra pain. </label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option3" class="eq-ui-input"/>
+                                            <label for="section10_option3">My sex life is nearly normal but is very painful.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option4" class="eq-ui-input"/>
+                                            <label for="section10_option4">My sex life is severely restricted by pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option5" class="eq-ui-input"/>
+                                            <label for="section10_option5">My sex life is nearly absent because of pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section10" type="radio" id="section10_option6" class="eq-ui-input"/>
+                                            <label for="section10_option6">Pain prevents any sex life at all.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 9: Social Life</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option1" class="eq-ui-input">
+                                            <label for="section11_option1">My social life is normal and gives me no extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option2" class="eq-ui-input"/>
+                                            <label for="section11_option2">My social life is normal but increases the degree of pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option3" class="eq-ui-input"/>
+                                            <label for="section11_option3">Pain has no significant effect on my social life apart from limiting energetic interests such as dancing.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option4" class="eq-ui-input"/>
+                                            <label for="section11_option4">Pain has restricted my social life and I do not go out as often.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option5" class="eq-ui-input"/>
+                                            <label for="section11_option5"> Pain has restricted my social life to my home.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section11" type="radio" id="section11_option6" class="eq-ui-input"/>
+                                            <label for="section11_option6">I have no social life because of pain.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Section 10: Traveling</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option1" class="eq-ui-input">
+                                            <label for="section12_option1">I can travel anywhere without extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option2" class="eq-ui-input"/>
+                                            <label for="section12_option2">I can travel anywhere but it gives me extra pain.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option3" class="eq-ui-input"/>
+                                            <label for="section12_option3">Pain is bad but I manage journeys over 2 hours.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option4" class="eq-ui-input"/>
+                                            <label for="section12_option4">Pain restricts me to journeys of less than 1 hour.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option5" class="eq-ui-input"/>
+                                            <label for="section12_option5">Pain restricts me to short necessary journeys under 30 minutes.</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section12" type="radio" id="section12_option6" class="eq-ui-input"/>
+                                            <label for="section12_option6">Pain restricts me to short necessary journeys under 30 minutes.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pt-15">
+                                        <div class="form_text eq-ui-form-group eq-ui-input-field">  
+                                            <p>Total Score = <input id="totalscore_2" type="text" value="" class="eq-ui-input"> + interpretation of score</p>
+                                        </div>
+                                    </div>
+								</div>
+							</form>
+                            <h6>Sources</h6> 
+                            <p class="skyblue">Fairbank JCT & Pynsent, PB (2000) The Oswestry Disability Index. Spine, 25(22):2940-2953</p>							
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			
+        
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

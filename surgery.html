@@ -1,0 +1,1234 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Surgery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="./assets/plugin/photoSwipe/dist/photoswipe.css">
+        <link rel="stylesheet" href="./assets/plugin/photoSwipe/dist/default-skin/default-skin.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/surgery_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+                <div class="container-fluid common_header">
+                    <div class="brand">
+                        <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+                    </div>
+                    <!-- Title -->
+                    <div class="header-title">
+                        <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                        <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                            <span>toggle menu</span>
+                        </button>
+                    </div>
+                
+                    <div class="head-content">
+                        <div class="userlist_avatar">
+                            <div class="user_avatar_con">
+                                <img src="./assets/images/user_profile/boggie_houser.jpg">
+                            </div>
+                        </div>
+                        <span class="userlist_name">John Gay Kho</span>, <span class="userlist_age">26</span>Y, <span class="userlist_gender">Male</span> | Surgery Date: <span class="surgery-date">2/18/2017</span>
+                    </div>
+                    <!-- Nav Menu -->
+                    <ul class="right eq-ui-nav-menu">
+                            <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                                <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                                <i class="mdi head-msg-icon icon"></i>
+                                </a>
+                                <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                            </li>
+                            <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                                <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                                <i class="mdi head-notify-icon icon"></i>
+                                </a>
+                                <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                            </li>
+                            <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                              <div class="header-profile-right-inner">
+                                <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                                <span>John Gay Kho, MD.</span>
+                                <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                                <i class="mdi mdi-dots-vertical icon"></i>  
+                                </a>
+                              </div>
+                                <!-- Dropdown Structure -->
+                                <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                                    <li><a href="userprofile.html">User Profile</a></li>
+                                    <li><a href="loggingout.html">Logout</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" >
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="users.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html" >
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect searchcaserate_section_wrap ">
+									<a class="eq-ui-modal-close active searchcaserate_section_modal_close" id="searchcaserate_section_modalclose" href="#" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                    <a class="eq-ui-modal-trigger" id="searchcaserate_section_modal_open" href="#searchcaserate_section" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="add-surgery"  class="btn-border-white">
+                                        <i class="mdi icon icon-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25.83" height="23.86" viewBox="0 0 25.83 23.86">
+                                              <g id="new-surgery" data-name="Layer 2">
+                                                <g id="Layer_25" data-name="Layer 25">
+                                                  <g>
+                                                    <line x1="6.42" y1="20.64" x2="17.89" y2="20.64" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"/>
+                                                    <g>
+                                                      <path d="M1,1H1a1.63,1.63,0,0,0,0,2.3L12.46,14.76l1,.06.84.84,1.51-1.51L15.3,13,3.28,1A1.63,1.63,0,0,0,1,1Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M17.77,19.83a8.31,8.31,0,0,1-2.36-1.65L14.23,17l.09-1.33,1.51-1.51L18.74,17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <line x1="16.72" y1="17.1" x2="17.93" y2="18.29" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <line x1="4.58" y1="2.26" x2="2.71" y2="5.03" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <line x1="5.65" y1="3.33" x2="3.78" y2="6.1" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <line x1="6.72" y1="4.4" x2="4.85" y2="7.17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <g>
+                                                      <g>
+                                                        <line x1="21.54" y1="17.39" x2="21.54" y2="21.76" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <line x1="23.73" y1="19.57" x2="19.36" y2="19.57" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </g>
+                                                      <path d="M17.76,19.57a3.78,3.78,0,1,1,1.86,3.26l-.11-.07A3.78,3.78,0,0,1,17.76,19.57Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </svg>
+                                        </i>
+                                    Add Surgery
+                                    </a>
+                                </div>
+                            </li>                       
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">   
+
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+
+                <div id="surgeries_title" class="row">
+                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-7">
+                        <h5 class="title">
+                            <i class="mdi icon icon-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="21.4" viewBox="0 0 23.5 21.4">
+                                  <g id="surgery-performed" data-name="Layer 2">
+                                    <g id="Layer_25" data-name="Layer 25">
+                                      <g>
+                                        <line x1="6.62" y1="20.9" x2="20.72" y2="20.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"/>
+                                        <g>
+                                          <path d="M1,1H1A1.62,1.62,0,0,0,1,3.31L12.87,14.94l1.06.06.87.85,1.56-1.53-.56-1.17L3.37,1A1.71,1.71,0,0,0,1,1Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M16.37,14.33,23,20.82l-.39,0a8.7,8.7,0,0,1-6.68-2.44l-1.22-1.2.1-1.35Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="17.29" y1="17.32" x2="18.69" y2="18.7" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="19.62" y1="19.61" x2="19.15" y2="19.14" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="4.72" y1="2.28" x2="2.79" y2="5.09" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="5.83" y1="3.37" x2="3.9" y2="6.17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="6.93" y1="4.45" x2="5" y2="7.25" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                            </i>
+                            <span>Surgeries Performed</span>
+                        </h5>
+                    </div>
+                </div>
+
+                <div id="newsurgery_title" class="row">
+                    <div class="col-md-5">
+                        <h5 class="title">
+                            <a id="back"><i class="mdi icon icon-left mdi-chevron-left"></i>Surgeries Performed</a>
+                        </h5>
+                    </div>
+                    <div class="col-md-7">
+                        <h5 class="title">
+                            <i class="mdi icon icon-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.83" height="23.86" viewBox="0 0 25.83 23.86">
+                                  <g id="new-surgery" data-name="Layer 2">
+                                    <g id="Layer_25" data-name="Layer 25">
+                                      <g>
+                                        <line x1="6.42" y1="20.64" x2="17.89" y2="20.64" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"/>
+                                        <g>
+                                          <path d="M1,1H1a1.63,1.63,0,0,0,0,2.3L12.46,14.76l1,.06.84.84,1.51-1.51L15.3,13,3.28,1A1.63,1.63,0,0,0,1,1Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M17.77,19.83a8.31,8.31,0,0,1-2.36-1.65L14.23,17l.09-1.33,1.51-1.51L18.74,17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="16.72" y1="17.1" x2="17.93" y2="18.29" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="4.58" y1="2.26" x2="2.71" y2="5.03" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="5.65" y1="3.33" x2="3.78" y2="6.1" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <line x1="6.72" y1="4.4" x2="4.85" y2="7.17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <g>
+                                          <g>
+                                            <line x1="21.54" y1="17.39" x2="21.54" y2="21.76" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <line x1="23.73" y1="19.57" x2="19.36" y2="19.57" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </g>
+                                          <path d="M17.76,19.57a3.78,3.78,0,1,1,1.86,3.26l-.11-.07A3.78,3.78,0,0,1,17.76,19.57Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                            </i>
+                            <span>New Surgery</span>
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div id="new-sugery-container" class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">
+                            <div class="form-container">
+                                <form id="newsurgery_form" class="eq-form">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Date of Birth <span class="required_">*</span></label>
+                                                        <input id="date_perform" type="date" class="monthly eq-ui-input" required>
+                                                        <label for="date_perform" class="input-icon right">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20.61" height="22" viewBox="0 0 20.61 22">
+                                                              <g id="Layer_2" data-name="Layer 2">
+                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                  <g>
+                                                                    <polygon points="15.62 21.5 0.5 21.5 0.5 2.2 20.11 2.2 20.11 17 15.62 21.5" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <polygon points="15.62 17 20.11 17 15.62 21.5 15.62 17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="20.11" y1="7.31" x2="0.5" y2="7.31" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <g>
+                                                                      <line x1="5.73" y1="0.5" x2="5.73" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                      <line x1="10.31" y1="0.5" x2="10.31" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                      <line x1="14.88" y1="0.5" x2="14.88" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </g>
+                                                                    <g>
+                                                                      <path d="M8.81,12.33H7.23a.58.58,0,0,1,0-1.16h2.84a.61.61,0,0,1,.41,1.07L8.93,13.67a1.83,1.83,0,0,1,2,1.8c0,1.14-.81,2.12-2.51,2.12a2.2,2.2,0,0,1-1.9-1,.6.6,0,1,1,1-.64,1.29,1.29,0,0,0,1,.47c.57,0,1.12-.24,1.12-1,0-1-1.18-.82-1.82-.75a.6.6,0,0,1-.56-1Z" fill="#228dc7"/>
+                                                                      <path d="M13,12.64l-.56.22a.59.59,0,1,1-.34-1.13l1.31-.48c.43-.19.82,0,.82.65v5.2c0,.69-1.22.71-1.22,0Z" fill="#228dc7"/>
+                                                                    </g>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </svg>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Role <span class="required_">*</span></label>
+                                                        <select class="eq-ui-select" required>
+                                                            <option value="" disabled selected></option>
+                                                            <option value="">Nurse</option>
+                                                            <option value="">Surgeon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Setting</label>
+                                                        <select class="eq-ui-select">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="">Nurse</option>
+                                                            <option value="">Surgeon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Urgency</label>
+                                                        <select class="eq-ui-select">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="">Nurse</option>
+                                                            <option value="">Surgeon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Major / Minor</label>
+                                                        <select class="eq-ui-select">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="">Major</option>
+                                                            <option value="">Minor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Assist</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <label>Operative Report</label>
+                                                        <textarea rows='4' class="eq-ui-textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-time eq-ui-form-group eq-ui-input-field">
+                                                        <label>Start Time</label>
+                                                        <ul class="eq-ui-input-field_ul">
+                                                            <li>
+                                                                <input id="starttime" type="text" class="timepicker eq-ui-input">
+                                                            </li>
+                                                            <li>
+                                                                <select class="eq-ui-select">
+                                                                    <option value="">AM</option>
+                                                                    <option value="">PM</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-time eq-ui-form-group eq-ui-input-field">
+                                                        <label>End Time</label>
+                                                        <ul class="eq-ui-input-field_ul">
+                                                            <li>
+                                                                <input id="endtime" type="text" class="timepicker eq-ui-input">
+                                                            </li>
+                                                            <li>
+                                                                <select class="eq-ui-select">
+                                                                    <option value="">AM</option>
+                                                                    <option value="">PM</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full eq-ui-input-select">
+                                                        <label>Pre-op Diagnosis</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                        <select class="eq-ui-select">
+                                                            <option value="icd">ICD</option>
+                                                            <option value="text">TEXT</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-list">
+                                                        <ul class="eq-ui-list">
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                                <a href="" class="btn-doc">Use as Final Dx</a>
+                                                            </li>
+                                                        </ul>
+                                                        <span>
+                                                            <a class="btn-upload eq-ui-waves-light">
+                                                                Browse from computer /
+                                                                <input type="file" multiple>
+                                                            </a>
+                                                            <a class="btn-take eq-ui-waves-light">
+                                                                Take a picture
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div id="final-icd-doc" class="eq-ui-form-group eq-ui-input-field eq-ui-input-full eq-ui-input-select">
+                                                        <label>Final Diagnosis</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                        <select class="eq-ui-select">
+                                                            <option value="icd">ICD</option>
+                                                            <option value="text">TEXT</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-list">
+                                                        <ul class="eq-ui-list">
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                            </li>
+                                                        </ul>
+                                                        <span>
+                                                            <a class="btn-upload eq-ui-waves-light">
+                                                                Browse from computer /
+                                                                <input type="file" multiple>
+                                                            </a>
+                                                            <a class="btn-take eq-ui-waves-light">
+                                                                Take a picture
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div id="operation-icd-doc" class="eq-ui-form-group eq-ui-input-field eq-ui-input-full eq-ui-input-select">
+                                                        <label>Operation / Procedure</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                        <select class="eq-ui-select">
+                                                            <option value="icd">RVS</option>
+                                                            <option value="text">TEXT</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-list">
+                                                        <ul class="eq-ui-list">
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                                <div class="select-normal">
+                                                                    <select>
+                                                                        <option value="">-</option>
+                                                                        <option value="">Adult</option>
+                                                                        <option value="">Hand</option>
+                                                                        <option value="">Pedia</option>
+                                                                        <option value="">Spine</option>
+                                                                        <option value="">Trauma</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                                <div class="select-normal">
+                                                                    <select>
+                                                                        <option value="">-</option>
+                                                                        <option value="">Adult</option>
+                                                                        <option value="">Hand</option>
+                                                                        <option value="">Pedia</option>
+                                                                        <option value="">Spine</option>
+                                                                        <option value="">Trauma</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                                <div class="select-normal">
+                                                                    <select>
+                                                                        <option value="">-</option>
+                                                                        <option value="">Adult</option>
+                                                                        <option value="">Hand</option>
+                                                                        <option value="">Pedia</option>
+                                                                        <option value="">Spine</option>
+                                                                        <option value="">Trauma</option>
+                                                                    </select>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <span>
+                                                            <a class="btn-upload eq-ui-waves-light">
+                                                                Browse from computer /
+                                                                <input type="file" multiple>
+                                                            </a>
+                                                            <a class="btn-take eq-ui-waves-light">
+                                                                Take a picture
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <label>Implant Device</label>
+                                                        <select class="eq-ui-select">
+                                                            <option value="" disabled selected></option>
+                                                            <option value="">Nurse</option>
+                                                            <option value="">Surgeon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-list">
+                                                        <ul class="eq-ui-list">
+                                                            <li>
+                                                                <!--<a href="#" class="eq-icon-del">
+                                                                    <i class="mdi trash-icon icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 16.52 20.85">
+                                                                            <g id="delete_icon" data-name="Layer 2">
+                                                                                <g id="Layer_25" data-name="Layer 25">
+                                                                                    <g id="_Group_" data-name="&lt;Group&gt;">
+                                                                                        <g id="_Group_2" data-name="&lt;Group&gt;">
+                                                                                            <g>
+                                                                                                <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+                                                                                                <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+                                                                                                <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+                                                                                            </g>
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </i>
+                                                                </a>
+                                                                <span>21344  Biopsy, excisional; deep (e.g., humerus, ischium, femur)</span>
+                                                                <a href="" class="btn-doc">Use as Final Dx</a>
+                                                                -->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <label>Implants Removed</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                        <label>AO Classification</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                        <span>
+                                                            <a class="eq-ui-waves-light">AO Surgery Reference</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-input-full">
+                                                        <label>Outcome to Include Histopath</label>
+                                                        <input type="text" class="eq-ui-input" readonly>
+                                                        <span>
+                                                            <a class="btn-upload eq-ui-waves-light">
+                                                                Browse from computer /
+                                                                <input type="file" multiple>
+                                                            </a>
+                                                            <a class="btn-take eq-ui-waves-light">
+                                                                Take a picture
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="eq-ui-form-group eq-ui-input-file eq-ui-input-full">
+                                                        <label>Findings</label>
+                                                        <input type="text" class="eq-ui-input" readonly>
+                                                        <span>
+                                                            <a class="btn-upload eq-ui-waves-light">
+                                                                Browse from computer /
+                                                                <input type="file" multiple>
+                                                            </a>
+                                                            <a class="btn-take eq-ui-waves-light">
+                                                                Take a picture
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div id="pre-icd-doc" class="eq-ui-form-group eq-ui-input-field eq-ui-input-full eq-ui-input-select">
+                                                        <label>Referred By</label>
+                                                        <input type="text" class="eq-ui-input">
+                                                        <select class="eq-ui-select">
+                                                            <option value="icd">PREV</option>
+                                                            <option value="text">Doctors Name</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-20">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 text-right">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <button id="submit" class="btn btn-primary eq-ui-waves-light" type="button">Save</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 text-left">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <button id="cancel" class="btn btn-border-blue btn-primary eq-ui-waves-light" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surgeries Perfomed Table List -->
+                <div id="sugeries-container" class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="row main_content p-0">
+                            <table class="table eq-ui-data-table eq-ui-hoverable table-md-4">
+                                <thead>
+                                    <tr>
+                                        <th>Surgery Performed</th>
+                                        <th>Diagnosis</th>
+                                        <th>Operation Done & Operative Findings</th>
+                                        <th>Outcome to Include Histopath</th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li><span class="eq-ui-list-title">Date Perfomed:</span>
+                                                    <span class="eq-ui-list-body">04/ 11/ 2016</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Setting:</span>
+                                                    <span class="eq-ui-list-body">In-Patient</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Urgency:</span>
+                                                    <span class="eq-ui-list-body">Elective</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <!--<ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <ul>
+                                                            <li><img src="" alt=""></li>
+                                                            <li><img src="" alt=""></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li><span class="eq-ui-list-title">Date Perfomed:</span>
+                                                    <span class="eq-ui-list-body">04/ 11/ 2016</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Setting:</span>
+                                                    <span class="eq-ui-list-body">In-Patient</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Urgency:</span>
+                                                    <span class="eq-ui-list-body">Elective</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <!--<ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <ul>
+                                                            <li><img src="" alt=""></li>
+                                                            <li><img src="" alt=""></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li><span class="eq-ui-list-title">Date Perfomed:</span>
+                                                    <span class="eq-ui-list-body">04/ 11/ 2016</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Setting:</span>
+                                                    <span class="eq-ui-list-body">In-Patient</span>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Urgency:</span>
+                                                    <span class="eq-ui-list-body">Elective</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <div id="" class="gallery">
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg1.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg1.jpg">
+                                                                </a>
+                                                            </figure>
+                                                            <figure>
+                                                                <a href="./assets/images/uploads/surg2.jpg" data-size="1000x600"> 
+                                                                    <img src="./assets/images/uploads/surg2.jpg">
+                                                                </a>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body asterisk">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <!--<ul class="eq-ui-list">
+                                                <li>
+                                                    <span class="eq-ui-list-title">Pre-op Diagnosis:</span>
+                                                    <span class="eq-ui-list-body">M17.12 Unilateral primary osteoarthritis, left knee</span>
+                                                    <div class="eq-ui-list-images">
+                                                        <ul>
+                                                            <li><img src="" alt=""></li>
+                                                            <li><img src="" alt=""></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>-->
+                                        </td>
+                                    </tr>
+                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+
+            <!-- Light Gallery -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <!-- Background of PhotoSwipe. 
+                    It's a separate element as animating opacity is faster than rgba(). -->
+                <div class="pswp__bg"></div>
+                <!-- Slides wrapper with overflow:hidden. -->
+                <div class="pswp__scroll-wrap">
+                    <!-- Container that holds slides. 
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <!--  Controls are self-explanatory. Order can be changed. -->
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	
+	<!--SEARCH CASE RATE MODAL -->
+	
+	    
+		<div id="searchcaserate_section" class="search-chaserate-modal eq-ui-modal eq-ui-modal-fixed eq-ui-modal-left-sheet" >
+
+                
+				<div class="eq-ui-modal-content">
+                    <ul class="scrate_wrapbox pl-0">
+                        <li class="eq-ui-list-item scrate_innerbox text-center pl-15">
+						    <input type="text" value="" class="eq-ui-input">
+						    <button id="submit" class="btn btn-primary eq-ui-waves-light mt-15 scrate_btn1 " type="button">Search</button>
+                        </li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						    <div class="row">
+								<div class="col-sm-12">
+									Repair of Ruptured Musculoteninous Cuff (e.g., Rotator Cuff); Acute
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-md-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">RVS Code</div><div class="scrate_col_2"><input name="RVS_Code" type="text" value="23410" class="eq-ui-input" ></div>
+								</div>							
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   First Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Second Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Applicable Institutions
+						</li>
+						<li class="eq-ui-list-item scrate_appins_text text-left">
+						     <ul>
+								<li>Level 1</li>
+								<li>Level 2</li>
+								<li>Level 3</li>
+								<li>ASC</li>
+								<li>PCF</li>
+								<li>MCP</li>
+								<li>FSDC</li>
+							 </ul>
+						</li>
+                    </ul>
+                </div>
+			
+
+        </div>
+		
+	 
+	 
+	<!--END SEARCH CASE RATE MODAL -->		
+			
+			
+			
+			
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+        <script src="./assets/plugin/photoSwipe/dist/photoswipe.min.js"></script>
+        <script src="./assets/plugin/photoSwipe/dist/photoswipe-ui-default.min.js"></script>
+    </body>
+</html>

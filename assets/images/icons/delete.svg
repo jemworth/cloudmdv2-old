@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.52" height="20.85" viewBox="0 0 16.52 20.85">
+  <g id="delete_icon" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g id="_Group_" data-name="&lt;Group&gt;">
+        <g id="_Group_2" data-name="&lt;Group&gt;">
+          <g>
+            <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M16.37,2.54a.56.56,0,0,0-.4-.18H13.53V.56A.56.56,0,0,0,13,0H3.55A.56.56,0,0,0,3,.56V2.37H.56A.56.56,0,0,0,0,3L1.05,20.32a.56.56,0,0,0,.56.52H14.93a.56.56,0,0,0,.56-.52L16.52,3A.55.55,0,0,0,16.37,2.54ZM4.1,1.11h8.32V2.37H4.1Zm-2,18.62-1-16.25H15.37l-1,16.25H2.13" fill="#1c6d93"/>
+            <path id="_Path_" data-name="&lt;Path&gt;" d="M4.78,18.31h0a.56.56,0,0,0,.52-.59L4.59,5.49A.55.55,0,0,0,4,5a.56.56,0,0,0-.52.59l.74,12.23A.56.56,0,0,0,4.78,18.31Z" fill="#1c6d93"/>
+            <path id="_Path_2" data-name="&lt;Path&gt;" d="M11.68,18.31h0a.56.56,0,0,0,.56-.52L13,5.55a.56.56,0,0,0-1.11-.07l-.74,12.23A.56.56,0,0,0,11.68,18.31Z" fill="#1c6d93"/>
+            <path id="_Path_3" data-name="&lt;Path&gt;" d="M8.26,18.31a.56.56,0,0,0,.56-.56V5.52a.56.56,0,0,0-1.11,0V17.75A.56.56,0,0,0,8.26,18.31Z" fill="#1c6d93"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

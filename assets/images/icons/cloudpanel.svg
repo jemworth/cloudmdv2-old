@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="21.72" viewBox="0 0 26 21.72">
+  <title>cloudpanel</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <rect x="0.5" y="0.5" width="25" height="20.72" rx="2.5" ry="2.5" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+        <line x1="5.67" y1="4.81" x2="25.46" y2="4.81" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+        <line x1="5.72" y1="21.22" x2="5.72" y2="0.5" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+        <line x1="15.69" y1="21.22" x2="15.69" y2="4.82" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

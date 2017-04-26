@@ -1,0 +1,1160 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Add Patients</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+        
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" >
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="users.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html" >
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html" >
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white active">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main half_width_layout">
+            <!-- content -->
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 main_content_container">
+                        <div class="main_content">
+                            <div class="page_header">
+                                <div class="page_title">
+                                    <h4 class="title mt-0">
+                                        <i class="mdi add_patient_icon icon icon-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 23.06 22.67">
+                                              <g id="add_patient" data-name="Layer 2">
+                                                <g id="Layer_25" data-name="Layer 25">
+                                                  <g>
+                                                    <g>
+                                                      <path d="M11.11,13.16s3.13-.89,4.12-3.17.64-1.53.64-1.53.94-.58,1-1.34-1.05-1.23-1.05-1.23S16.23.62,11.08.5h-.27C5.65.62,6.06,5.89,6.06,5.89S5,6.36,5,7.12,6,8.46,6,8.46,5.65,7.7,6.65,10s4.2,3.17,4.2,3.17Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M16.46,21.33c-2.61.15-5.22.19-5.22.19h-.3S1.38,21.35.5,20.65c0,0,.35-4.92,3.34-5.86a17.56,17.56,0,0,0,4.94-2.43" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M13.26,12.21a17.72,17.72,0,0,0,5.08,2.58" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      <path d="M7.24,13.37A4.88,4.88,0,0,0,15,13.3" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <g>
+                                                      <g>
+                                                        <line x1="18.86" y1="16.34" x2="18.86" y2="20.6" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <line x1="20.99" y1="18.47" x2="16.73" y2="18.47" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                      </g>
+                                                      <path d="M15.16,18.47A3.7,3.7,0,1,1,17,21.66l-.11-.07A3.7,3.7,0,0,1,15.16,18.47Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                  </g>
+                                                </g>
+                                              </g>
+                                            </svg>
+                                        </i>
+                                        <span>Attachments</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 side_bar_container">
+                        <div class="side_bar">
+                            <div class="sidebar_header">
+                                <div class="sidebar_title">
+                                    <h4 class="title">
+                                        <label>
+                                            <i class="mdi add_patient_icon icon icon-left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20.61 22">
+                                                  <g id="calendar_icon" data-name="Layer 2">
+                                                    <g id="Layer_25" data-name="Layer 25">
+                                                      <g>
+                                                        <polygon points="15.62 21.5 0.5 21.5 0.5 2.2 20.11 2.2 20.11 17 15.62 21.5" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <polygon points="15.62 17 20.11 17 15.62 21.5 15.62 17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <line x1="20.11" y1="7.31" x2="0.5" y2="7.31" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <g>
+                                                          <line x1="5.73" y1="0.5" x2="5.73" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          <line x1="10.31" y1="0.5" x2="10.31" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          <line x1="14.88" y1="0.5" x2="14.88" y2="3.9" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <g>
+                                                          <path d="M8.81,12.33H7.23a.58.58,0,0,1,0-1.16h2.84a.61.61,0,0,1,.41,1.07L8.93,13.67a1.83,1.83,0,0,1,2,1.8c0,1.14-.81,2.12-2.51,2.12a2.2,2.2,0,0,1-1.9-1,.6.6,0,1,1,1-.64,1.29,1.29,0,0,0,1,.47c.57,0,1.12-.24,1.12-1,0-1-1.18-.82-1.82-.75a.6.6,0,0,1-.56-1Z" fill="#228dc7"/>
+                                                          <path d="M13,12.64l-.56.22a.59.59,0,1,1-.34-1.13l1.31-.48c.43-.19.82,0,.82.65v5.2c0,.69-1.22.71-1.22,0Z" fill="#228dc7"/>
+                                                        </g>
+                                                      </g>
+                                                    </g>
+                                                  </g>
+                                                </svg>
+                                            </i>
+                                            <span class="cal_month_title">February 24, 2017</span>
+                                            <input id="side-date" type="date" class="date-format eq-ui-input" style="display:none;">
+                                        </label>
+                                    </h4>
+                                </div>
+                                <div class="title-right">
+                                    <div class="select-normal">
+                                        <select class="eq-ui-select">
+                                            <option value="" selected disabled>Appointment Type</option>
+                                            <option value="">All Appointments</option>
+                                            <option value="">Clinic</option>
+                                            <option value="">Surgery</option>
+                                            <option value="">Patients Rounds</option>
+                                            <option value="">Blocking</option>
+                                        </select>                                         
+                                    </div>
+                                    <div class="select-normal">
+                                        <select class="eq-ui-select">
+                                            <option value="" selected disabled>Location</option>
+                                            <option value="">All</option>
+                                            <option value="">Cybergate</option>
+                                            <option value="">Chong Hua</option>
+                                            <option value="">Cebu Doctor</option>
+                                        </select>                                         
+                                    </div>
+                                    <div class="select-normal right">
+                                        <select class="eq-ui-select">
+                                            <option value="" selected disabled>Status</option>
+                                            <option value="">Confirmed</option>
+                                            <option value="">Cancelled</option>
+                                            <option value="">No Show</option>
+                                            <option value="">For Collection</option>
+                                            <option value="">Checkout</option>
+                                        </select>                                         
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Appoinment List Sidebar -->
+                            <div class="eq-ui-list eq-ui-hoverable">
+
+                                <!-- for clinic list -->
+                                <div class="eq-ui-list-item clinic">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="">+ Add Visit Note</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="demographics.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="medical-chart.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="attachments.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="alerts.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="eq-ui-list-item clinic">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="">+ Add Visit Note</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="demographics.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="medical-chart.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="attachments.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="alerts.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- for surgery list -->
+                                <div class="eq-ui-list-item surgery">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="surgery.html">+ Add Surgical Details</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="demographics.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="medical-chart.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="attachments.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="alerts.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- for rounds list -->
+                                <div class="eq-ui-list-item rounds">
+                                    <div class="eq-ui-list-info">
+                                        <h6 class="eq-ui-list-title">Patients Rounds</h6>
+                                        <ul>
+                                            <li class="">Time 10:00 AM - 12:00 PM</li>
+                                            <li class="">Location: Chong Hua Hospital</li>
+                                        </ul>
+                                        <a class="btn btn-info eq-ui-waves waves-effect" href="rounds.html"></a>
+                                    </div>
+                                </div>
+
+                                <div class="eq-ui-list-item surgery">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="surgery.html">+ Add Surgical Details</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="demographics.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="medical-chart.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="attachments.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="alerts.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="eq-ui-list-item clinic">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="">+ Add Visit Note</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="eq-ui-list-item clinic">
+                                    <div class="eq-ui-list-detail">
+                                        <div class="eq-ui-list-avatar">
+                                            <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="1">
+                                            <img class="circle" src="./assets/images/user_profile/boggie_houser.jpg">
+                                            </span>
+                                            <a class="btn btn-info eq-ui-waves waves-effect" href="">+ Add Visit Note</a>
+                                        </div>
+                                        <div class="eq-ui-list-info">
+                                            <h6 class="eq-ui-list-title">Ms. Liza Arenas</h6>
+                                            <ul>
+                                                <li class="">Reason: ORIF</li>
+                                                <li class="">Payment</li>
+                                                <li class="">Clinic: C&C</li>
+                                                <li class="">
+                                                    Status:
+                                                    <select>
+                                                        <option value="">Confirmed</option>
+                                                        <option value="">Cancelled</option>
+                                                        <option value="">No Show</option>
+                                                        <option value="">For Collection</option>
+                                                        <option value="">Checkout</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-body">
+                                        <div class="appt-time">
+                                            <div class="title">APPT Time</div>
+                                            <div class="time">11:00 AM</div>
+                                        </div>
+                                        <div class="chckin-time">
+                                            <div class="title">Check-in Time</div>
+                                            <div class="time">11:10 AM</div>
+                                        </div>
+                                        <div class="chckout-time">
+                                            <div class="title">Check-out Time</div>
+                                            <div class="time">-:--</div>
+                                        </div>
+                                        <div class="dura-time">
+                                            <div class="title">ENC Duration</div>
+                                            <div class="time">-- mins</div>
+                                        </div>
+                                    </div>
+                                    <div class="eq-ui-list-button">
+                                        <ul>
+                                            <li>
+                                                <a href="demographics.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21.37" height="21.71" viewBox="0 0 21.37 21.71">
+                                                          <g id="user_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M10.71,12.65s3-.85,4-3,.62-1.47.62-1.47.9-.56,1-1.29-1-1.18-1-1.18S15.62.61,10.67.5h-.26C5.46.61,5.86,5.67,5.86,5.67s-1.07.45-1,1.18,1,1.29,1,1.29-.34-.73.62,1.47,4,3,4,3Z" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <path d="M12.77,11.74a17,17,0,0,0,4.88,2.47c2.87.9,3.2,5.62,3.2,5.62-.84.67-10,.84-10,.84h-.29s-9.18-.17-10-.84c0,0,.34-4.72,3.2-5.62a16.86,16.86,0,0,0,4.74-2.33" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="13.79 12.45 10.69 15.55 7.63 12.5" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <polyline points="15.05 13.15 10.69 20.71 6.33 13.17" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                                <rect x="14.09" y="16.78" width="3.67" height="2.23" fill="none" stroke="#1cae99" stroke-miterlimit="10"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="medical-chart.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15.63" height="21" viewBox="0 0 15.63 21">
+                                                          <g id="doc_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polyline points="10.96 2.52 15.13 2.52 15.13 20.5 0.5 20.5 0.5 2.52 4.67 2.52" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="5.62 18.3 12.92 18.3 12.94 18.3 12.94 18.23 12.94 4.72 11.45 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polygon points="5.62 15.37 2.69 15.37 5.62 18.3 5.62 15.37" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="2.69 15.39 2.69 4.72 4.12 4.72" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <polyline points="9.37 2.02 10.84 2.02 11.59 5.27 4.04 5.27 4.79 2.02 6.29 2.02" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M9.33,2a1.52,1.52,0,0,0-3,0" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <g>
+                                                                  <line x1="4.71" y1="11.92" x2="11.05" y2="11.92" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <g>
+                                                                    <line x1="7.88" y1="9.64" x2="7.88" y2="7.05" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <line x1="9.17" y1="8.35" x2="6.58" y2="8.35" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  </g>
+                                                                  <line x1="4.71" y1="13.58" x2="11.05" y2="13.58" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="attachments.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14.83" height="16.08" viewBox="0 0 14.83 16.08">
+                                                          <g id="attach_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <path d="M1.72,8.81,8.91,1.45a3.16,3.16,0,0,1,4.46-.05h0a3.16,3.16,0,0,1,.05,4.46L6.23,13.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.86,6.41,4.61,14.86a2.39,2.39,0,0,1-3.39,0h0a2.39,2.39,0,0,1,0-3.39L9.44,3.06" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M2.83,9.82l6.85-7a1.52,1.52,0,0,1,2.15,0h0a1.52,1.52,0,0,1,0,2.15L4.74,12.22" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="alerts.html">
+                                                    <i class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+                                                          <g id="alert_icon" data-name="Layer 2">
+                                                            <g id="Layer_25" data-name="Layer 25">
+                                                              <g>
+                                                                <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- for rounds list -->
+                                <div class="eq-ui-list-item blocks">
+                                    <div class="eq-ui-list-info">
+                                        <h6 class="eq-ui-list-title">Board Meeting</h6>
+                                        <ul>
+                                            <li class="">Time 3:30 PM - 6:00 PM</li>
+                                            <li class="">Location: Care and Cure Hub</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

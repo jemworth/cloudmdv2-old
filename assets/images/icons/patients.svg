@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.98" height="21.78" viewBox="0 0 21.98 21.78">
+  <title>patients</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <path d="M11,13s3.09-.88,4.08-3.14.64-1.51.64-1.51.93-.57,1-1.33-1-1.22-1-1.22S16.07.62,11,.5h-.27C5.61.62,6,5.83,6,5.83S4.92,6.29,5,7,6,8.37,6,8.37s-.35-.75.64,1.51S10.75,13,10.75,13Z" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+        <path d="M13.13,12.08a17.52,17.52,0,0,0,5,2.55c3,.93,3.3,5.79,3.3,5.79-.87.69-10.32.87-10.32.87h-.29S1.39,21.11.52,20.42c0,0,.35-4.86,3.3-5.79a17.36,17.36,0,0,0,4.89-2.4" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+        <path d="M7.18,13.22a4.83,4.83,0,0,0,7.67-.07" fill="none" stroke="#228dc7" stroke-miterlimit="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

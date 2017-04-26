@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.54" height="14.46" viewBox="0 0 16.54 14.46">
+  <g id="alert_icon" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <polygon points="8.27 0.5 0.5 13.96 16.04 13.96 8.27 0.5" fill="none" stroke="#1cae99" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7.67,10.12c0-.66,1.19-.67,1.19,0v.15a.6.6,0,0,1-1.19,0ZM7.73,5.8a.54.54,0,1,1,1.08,0V8.54c0,.61-1.08.67-1.08,0Z" fill="#1cae99"/>
+      </g>
+    </g>
+  </g>
+</svg>

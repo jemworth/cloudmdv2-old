@@ -1,0 +1,366 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Spine Instability Neoplastic Scores (SINS)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/userprofile_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" class="active">
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="userprofile.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html">
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">						
+							<form id="spineneoplastic_form" class="eq-form">
+								<div class="row">
+                                    <div class="col-md-12">
+                                        <h5>Spine Instability Neoplastic Scores (SINS)</h5>
+                                        <hr>
+                                        <ul class="ul-solid-circ">
+                                            <li>SINS is used to assess the stability of the spine in patients with metastatic spinal cord compression</li>
+                                            <li>It has near-perfect inter- and intraobserver reliability in determining three clinically relevant categories of stability.</li>
+                                            <li>The sensitivity and specificity of SINS for potentially unstable or unstable lesions were 95.7% and 79.5% respectively.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>Location</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option1" class="eq-ui-input">
+                                            <label for="section1_option1">Junctional (C0-C2, C7-T2, T11-L1, L5-S1)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option2" class="eq-ui-input">
+                                            <label for="section1_option2">Mobile spine (C3-C6, L2-L4)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option3" class="eq-ui-input">
+                                            <label for="section1_option3">Semi-rigid (T3-T10)</label>
+                                        </div>                                      
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option4" class="eq-ui-input"/>
+                                            <label for="section1_option4">Rigid (S2-S5)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Pain relief with recumbency and/or pain with movement/loading of the spine</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option1" class="eq-ui-input">
+                                            <label for="section2_option1">Yes</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option2" class="eq-ui-input">
+                                            <label for="section2_option2">No (occasional pain but not mechanical)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option3" class="eq-ui-input">
+                                            <label for="section2_option3">Pain free lesion</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Bone lesion</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option1" class="eq-ui-input">
+                                            <label for="section3_option1">Lytic</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option2" class="eq-ui-input"/>
+                                            <label for="section3_option2">Mixed (lytic/blastic)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option3" class="eq-ui-input"/>
+                                            <label for="section3_option3">Blastic</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Radiographic spinal alignment</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option1" class="eq-ui-input">
+                                            <label for="section3_option1">Subluxation/translation present</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option2" class="eq-ui-input"/>
+                                            <label for="section3_option2">De novo deformity (kyphosis/scoliosis)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option3" class="eq-ui-input"/>
+                                            <label for="section3_option3">Normal alignment</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Vertebral body collapse</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option1" class="eq-ui-input">
+                                            <label for="section4_option1">> 50% collapse</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option2" class="eq-ui-input"/>
+                                            <label for="section4_option2">< 50% collapse</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option3" class="eq-ui-input"/>
+                                            <label for="section4_option3">No collapse with >50% body involved</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section4" type="radio" id="section4_option4" class="eq-ui-input"/>
+                                            <label for="section4_option4">None of the above</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Posterolateral involvement of the spinal elements (facet, pedicle or costovertebral joint fracture or replacement with tumor)</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section5_option1" class="eq-ui-input">
+                                            <label for="section5_option1">Bilateral</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section6_option1" class="eq-ui-input"/>
+                                            <label for="section6_option1">Unilateral</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section5" type="radio" id="section7_option1" class="eq-ui-input"/>
+                                            <label for="section7_option1">None of the above</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pt-15">
+                                        <div class="form_text eq-ui-form-group eq-ui-input-field">  
+                                            <p>Total Score = <input id="totalscore_2" type="text" value="" class="eq-ui-input"> + Interpretation of score</p>
+                                        </div>
+                                    </div>
+								</div>
+							</form>	                            
+                            <h6>Reference</h6> 
+                            <p class="skyblue">Fisher CG, DiPaola CP, Ryken TC, Bilsky MH, Shaffrey CI, Berven SH, et al.<br> A novel classification system for spinal instability in neoplastic disease: an evidence-based  approach  and expert consensus from the Spine Oncology Study Group. Spine 2010; 35:E1221-9.</p>						
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

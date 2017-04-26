@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.99" height="22.34" viewBox="0 0 23.99 22.34">
+  <title>searchcaserate</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <polyline points="18.41 9.1 18.85 9.1 18.85 9.79" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <polyline points="8.86 13.73 8.2 13.73 8.2 9.1 9.87 9.1" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <g>
+          <g>
+            <g>
+              <polyline points="20.52 19.98 20.52 21.75 0.5 21.75 0.5 0.5 20.52 0.5 20.52 17.75" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="11.52 7.69 2.17 7.69 2.17 2.59 18.85 2.59 18.85 7.69 16.73 7.69" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g>
+              <circle cx="14.12" cy="12.48" r="5.45" transform="translate(-4.69 13.64) rotate(-45)" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.5,15.76l4.75,4.75a.77.77,0,0,1,0,1.1h0a.77.77,0,0,1-1.1,0l-4.75-4.75" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+          <rect x="2.17" y="9.1" width="4.62" height="4.62" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="2.17" y="15.35" width="4.62" height="4.62" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="12.82 17.78 12.82 19.98 8.2 19.98 8.2 15.35 9.49 15.35" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="18.85 18.29 18.85 19.98 14.23 19.98 14.23 17.92" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

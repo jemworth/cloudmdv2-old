@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.83" height="23.86" viewBox="0 0 25.83 23.86">
+  <g id="new-surgery" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <line x1="6.42" y1="20.64" x2="17.89" y2="20.64" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2"/>
+        <g>
+          <path d="M1,1H1a1.63,1.63,0,0,0,0,2.3L12.46,14.76l1,.06.84.84,1.51-1.51L15.3,13,3.28,1A1.63,1.63,0,0,0,1,1Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17.77,19.83a8.31,8.31,0,0,1-2.36-1.65L14.23,17l.09-1.33,1.51-1.51L18.74,17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="16.72" y1="17.1" x2="17.93" y2="18.29" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="4.58" y1="2.26" x2="2.71" y2="5.03" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="5.65" y1="3.33" x2="3.78" y2="6.1" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="6.72" y1="4.4" x2="4.85" y2="7.17" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g>
+          <g>
+            <line x1="21.54" y1="17.39" x2="21.54" y2="21.76" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="23.73" y1="19.57" x2="19.36" y2="19.57" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <path d="M17.76,19.57a3.78,3.78,0,1,1,1.86,3.26l-.11-.07A3.78,3.78,0,0,1,17.76,19.57Z" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

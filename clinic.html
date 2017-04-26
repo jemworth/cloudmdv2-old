@@ -1,0 +1,887 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Clinic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="./assets/css/clinic_custom.css">
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" >
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li class="active">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect active">
+                                    <a id="" class="active">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1" class="active">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="users.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html" >
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html" >
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect searchcaserate_section_wrap ">
+									<a class="eq-ui-modal-close active searchcaserate_section_modal_close" id="searchcaserate_section_modalclose" href="#" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                    <a class="eq-ui-modal-trigger" id="searchcaserate_section_modal_open" href="#searchcaserate_section" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+								
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+		
+		<!-- SECONDARY NAV TAB -->
+		<div class="col-md-2 col-secondary-tab">
+		  <div class="row col-sec-tab-head">
+		    <div class="col-md-12 col-sec-tab-head-inner">
+				<div class="col-sectab-act-inact"><a href="">Active</a>&nbsp; | &nbsp;Inactive</div>
+				<div class="col-sectab-add">
+				        <div id="add-entry-btn-uchh" class="eq-ui-collapsible-header eq-ui-waves waves-effect eq-ui-collapsible-header-add-entry-active">
+                                    <a id="" href="#" >
+                                    <i class="mdi sectab-addclinic-icon icon icon-left icon-24"></i>
+                                    <span>Add Clinic</span>
+									<i class="mdi mdi-plus icon icon-right icon-24 eq-ui-collapsible-view-close"></i>
+                                    </a>            
+                        </div>
+				</div>
+				<div class="col-sectab-searchbtn">
+				  <a href="#"><i class="mdi sectab-searchbtn-icon icon icon-right"></i></a>
+				</div>
+			</div>
+		  </div>
+		  <div class="cstab-search-input">
+		  <input type="text" value=""name="search" placeholder="Search Clinic" >
+		  </div>
+		  <div class="">
+		  </div>
+		    <div id="sec-tab-lists" class="col-md-12 col-sec-tab-lists ">
+						<ul class="eq-ui-collapsible" >
+							<li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close active">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+								   <a id="" href="#" >
+                                    Care and Cure Hub
+                                    </a>
+                                </div>
+                            </li>						
+							<li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close  ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    CDUH Medical Arts
+                                    </a>
+                                </div>
+                            </li>						
+							<li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    Chung Hua Medical Arts
+                                    </a>
+                                </div>
+                            </li>	
+							<li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>
+							<li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>							
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect add-entry-box-close ">
+								   <a hre="#" class="eq-icon-del"><i class="mdi trash-icon icon icon-left icon-24"></i></a>
+                                    <a id="" href="#" >
+                                    High Precision
+                                    </a>
+                                </div>
+                            </li>
+						</ul>
+			
+			</div>
+		  </div>
+		  
+		</div>
+		
+		<!--END SECONDARY NAV TAB -->
+		
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout eq-ui-main-maincon-2">		
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- CONTENT POPULATED -->
+            <div class="container container-populated-box ">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">
+                            <form id="form-clinic" class="eq-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="clinic-name">Clinic Name<span class="required_">*</span></label>
+                                                    <input id="clinic-name" type="text" value="CDU Medical Arts" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="address">Address<span class="required_">*</span></label>
+                                                    <input id="address" type="text" value="North Reclamation Area" class="eq-ui-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="city">City<span class="required_">*</span></label>
+                                                    <input id="city" type="text" value="Mandaue City" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="province">Province</label>
+                                                    <input id="province" type="text" value="Cebu" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="zipcode">Zip Code</label>
+                                                    <input id="zipcode" type="text" value="6010" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="phonenumber">Phone Number</label>
+                                                    <input id="phonenumber" type="text" value="321213213" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                             <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="mobilenumber">Mobile Number</label>
+                                                    <input id="mobilenumber" type="text" value="3213213213213" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                             <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="email">Email Address</label>
+                                                    <input id="email" type="text" value="cdumedicalarts@gmail.com" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6 text-right">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <button id="submit" class="btn btn-primary eq-ui-waves-light" type="button">Save</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-left">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <button id="cancel" class="btn btn-border-blue btn-primary eq-ui-waves-light" type="button">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-mid-schedule">
+                
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                        <div class="valign-wrapper">
+                           <div class="valign center-align">                    
+          
+                                <div id="row-mid-scheduler-toggle" class="col-addsched-btn">
+                                     <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                        <a>
+                                        <i class="mdi mdi-addsched-icon icon icon-left icon-24"></i>
+                                        <span>Add New Schedule</span>
+                                        <i class="mdi mdi-plus icon icon-right icon-24 eq-ui-collapsible-view-close"></i>
+                                        </a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>      
+                <div class="col-md-4"></div>
+                
+                </div>
+                
+                <div class="row row-mid-scheduler">
+                        
+                    <div class="col-md-1 mt-15"></div>
+                      <div class="row-scheduler-dropdowns col-md-10 mt-15">
+                         <form id="form-clinic" class="eq-form">
+                            <div class="row">
+                               <ul>
+                                  <li>
+                                        <div class="eq-ui-form-group eq-ui-input-field">
+                                            <label>Day<span class="required_">*</span></label>
+                                            <select class="eq-ui-select" required>
+                                                <option value="Monday">Monday</option>
+                                                <option value="Tuesday">Tuesday</option>
+                                                <option value="Wednesday">Wednesday</option>
+                                                <option value="Thursday">Thursday</option>
+                                                <option value="Friday">Friday</option>
+                                                <option value="Saturday">Saturday</option>
+                                                <option value="Sunday">Sunday</option>
+                                            </select>
+                                        </div>
+                                  </li>
+                                  <li>
+                                        <div class="eq-ui-form-time eq-ui-form-group eq-ui-input-field">
+                                            <label>Time<span class="required_">*</span></label>
+                                            <label>From</label>
+                                            <select class="eq-ui-select" required>
+                                                <option value="">1:00</option>
+                                                <option value="">1:30</option>
+                                                <option value="">2:00</option>
+                                                <option value="">2:30</option>
+                                                <option value="">3:00</option>
+                                                <option value="">3:30</option>
+                                                <option value="">4:00</option>
+                                            </select>
+                                            <select class="eq-ui-select" required>
+                                                <option value="">AM</option>
+                                                <option value="">PM</option>
+                                            </select>
+                                        </div></li>
+                                  <li>                                      
+                                  <div class="eq-ui-form-time eq-ui-form-group eq-ui-input-field">
+                                            <label>To</label>
+                                            <select class="eq-ui-select" required>
+                                                <option value="">1:00</option>
+                                                <option value="">1:30</option>
+                                                <option value="">2:00</option>
+                                                <option value="">2:30</option>
+                                                <option value="">3:00</option>
+                                                <option value="">3:30</option>
+                                                <option value="">4:00</option>
+                                            </select>
+                                            <select class="eq-ui-select" required>
+                                                <option value="">AM</option>
+                                                <option value="">PM</option>
+                                            </select>
+                                        </div>
+                                 </li>
+                               </ul>                               
+                            </div>
+                            <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6 text-right">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <button id="submit" class="btn btn-primary eq-ui-waves-light" type="button">Save</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-left">
+                                                    <div class="eq-ui-form-group eq-ui-input-field">
+                                                        <button id="cancel" class="btn btn-border-blue btn-primary eq-ui-waves-light" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                             </div>
+                        
+                          </form>
+                        </div>
+                    <div class="col-md-1 mt-15"></div>
+                </div>
+                <div class="row table-custom-ui">   
+                            
+                        <table class="table eq-ui-data-table eq-ui-centered z-depth-1">
+                <thead>
+                <tr>
+                    <th class="eq-ui-data-table-cell-non-numeric">Day</th>
+                    <th class="table-no-border-right">Time</th>
+
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Monday</td>
+                    <td>8:00 AM - 11:00 AM</td>
+                </tr>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Tuesday</td>
+                    <td>5:00 AM - 1:00 PM</td>
+                </tr>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Friday</td>
+                    <td>3:00 AM - 12:00 PM</td>
+                </tr>
+                
+                 <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Friday</td>
+                    <td>3:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Friday</td>
+                    <td>3:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Friday</td>
+                    <td>3:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                    <td class="eq-ui-data-table-cell-non-numeric eq-ui-data-table-cell-truncate">Friday</td>
+                    <td>3:00 AM - 12:00 PM</td>
+                </tr>
+                </tbody>
+            </table>
+
+                </div>
+            </div>
+             <!--END CONTENT POPULATED -->
+		
+		     <!--CONTENT ADD ENTRY EMPTY -->
+			 
+		    <div class="container container-addnew-box">
+			
+			 <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">
+                            <form id="form-clinic" class="eq-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="clinic-name">Clinic Name<span class="required_">*</span></label>
+                                                    <input id="clinic-name" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="address">Address<span class="required_">*</span></label>
+                                                    <input id="address" type="text" value="" class="eq-ui-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="city">City<span class="required_">*</span></label>
+                                                    <input id="city" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="province">Province</label>
+                                                    <input id="province" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="zipcode">Zip Code</label>
+                                                    <input id="zipcode" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="phonenumber">Phone Number</label>
+                                                    <input id="phonenumber" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                             <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="mobilenumber">Mobile Number</label>
+                                                    <input id="mobilenumber" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                             <div class="col-md-12">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <label for="email">Email Address</label>
+                                                    <input id="email" type="text" value="" class="eq-ui-input"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6 text-right">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <button id="submit" class="btn btn-primary eq-ui-waves-light" type="button">Save</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-left">
+                                                <div class="eq-ui-form-group eq-ui-input-field">
+                                                    <button id="cancel" class="btn btn-border-blue btn-primary eq-ui-waves-light" type="button">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+			  
+			  </div>
+			  
+			   <!--CONTENT ADD ENTRY EMPTY -->
+
+
+			<!--SEARCH CASE RATE MODAL -->
+	
+	    
+		<div id="searchcaserate_section" class="search-chaserate-modal eq-ui-modal eq-ui-modal-fixed eq-ui-modal-left-sheet" >
+
+                
+				<div class="eq-ui-modal-content">
+                    <ul class="scrate_wrapbox pl-0">
+                        <li class="eq-ui-list-item scrate_innerbox text-center pl-15">
+						    <input type="text" value="" class="eq-ui-input">
+						    <button id="submit" class="btn btn-primary eq-ui-waves-light mt-15 scrate_btn1 " type="button">Search</button>
+                        </li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						    <div class="row">
+								<div class="col-sm-12">
+									Repair of Ruptured Musculoteninous Cuff (e.g., Rotator Cuff); Acute
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-md-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">RVS Code</div><div class="scrate_col_2"><input name="RVS_Code" type="text" value="23410" class="eq-ui-input" ></div>
+								</div>							
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   First Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Second Case Rate
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox2 text-left pl-15">
+						   	<div class="row">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">HCI Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_HCI_Fee" type="text" value="10,900.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Prof Fee</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Prof_Fee" type="text" value="10,080.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+							<div class="row pt-15">
+								<div class="col-sm-12 scrate_innerbox2_inner">
+									<div class="scrate_col_1">Case Rate</div><div class="scrate_col_2"><sup>P</sup><input name="2nd_Care_rate" type="text" value="20,980.00" class="eq-ui-input" ></div>
+								</div>
+							</div>
+						</li>
+						<li class="eq-ui-list-item scrate_innerbox_title text-left">
+						   Applicable Institutions
+						</li>
+						<li class="eq-ui-list-item scrate_appins_text text-left">
+						     <ul>
+								<li>Level 1</li>
+								<li>Level 2</li>
+								<li>Level 3</li>
+								<li>ASC</li>
+								<li>PCF</li>
+								<li>MCP</li>
+								<li>FSDC</li>
+							 </ul>
+						</li>
+                    </ul>
+                </div>
+			
+
+        </div>
+		
+	 
+	 
+	<!--END SEARCH CASE RATE MODAL -->		
+			   
+		
+    <!-- Footer Section -->
+        <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+        </footer>
+    <!-- Footer Section end -->
+			
+			
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>

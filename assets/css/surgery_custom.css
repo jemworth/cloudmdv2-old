@@ -1,0 +1,38 @@
+#maincontainer .message-alert{
+    background:#fff;
+}
+.head-content{
+    display:inline-block;
+    line-height:40px;
+    font-size:14px;
+}
+.head-content .userlist_avatar{
+    margin:0 8px 0 0;
+    height:35px;
+    width:35px;
+}
+.eq-ui-input-select > input{
+    position:absolute;
+}
+.eq-ui-input-select .eq-ui-select-wrapper{
+    float:right !important;
+    width:20% !important;
+}
+.eq-ui-input-select .eq-ui-select-wrapper > input{
+    background:#00aeef !important;
+    border:0;
+    font-size:14px !important;
+    color:#fff
+}
+.eq-ui-input-select .eq-ui-select-wrapper > ul{
+    left:auto;
+    right:0;
+}
+.eq-ui-input-select .eq-ui-select-wrapper > .eq-ui-caret{
+    color:#fff !important;
+}
+.eq-ui-input-select .eq-ui-select-wrapper > .eq-ui-caret::after{
+    width:10px !important;
+    float:right !important;
+    margin-right:-15px
+}

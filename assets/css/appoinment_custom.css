@@ -1,0 +1,156 @@
+#calendar-table{
+  border:0px;
+  width:100% !important;
+  border-bottom:1px solid #00adee;
+  border-collapse:inherit;
+  margin-bottom:15px;
+  border-radius:5px;
+}
+#calendar-table th{
+  color:#228dc7;
+  height:30px;
+  text-align: center;
+  padding:0;
+  vertical-align:top
+}
+#calendar-table td{
+  border:1px solid #cbcbcb;
+  border-left:0px;
+  border-bottom:0px;
+  font-weight:700 !important;
+  text-align: center;
+  font-family:'Arial';
+  padding:0;
+  cursor:pointer;
+  vertical-align:middle
+}
+.eq-ui-side-nav-hide #calendar-table td{
+  font-size:60px;
+  line-height:85px !important;
+}
+.eq-ui-side-nav-visible #calendar-table td{
+  font-size: 48px;
+  line-height:70px !important;
+}
+#calendar-table td:first-child{
+  border-left:1px solid #00adee;
+  margin-top:30px;
+}
+#calendar-table td:last-child{
+  border-right:1px solid #00adee;
+  margin-top:30px;
+  border-radius:0px 0px 0px 0px!important;
+}
+#calendar-table tr:first-child td{
+  border-top:1px solid #00adee;
+}
+#calendar-table tr:first-child td:first-child{
+  border-radius:5px 0 0 0
+}
+#calendar-table tr:first-child td:last-child{
+  border-radius:0 5px 0 0 !important
+}
+#calendar-table tr:last-child td:first-child{
+  border-radius: 0 0 0 5px
+}
+#calendar-table tr:last-child td:last-child{
+  border-radius:0 0 5px 0 !important
+}
+#calendar-table td.day{
+  color:#cbcbcb;
+}
+#calendar-table td.day span{
+  top:5px !important;
+  position:relative;
+}
+#calendar-table td.current_day{
+  border:2px solid #00a6e8 !important;
+  color:#00a6e8;
+}
+#calendar-table td.next-mon-day{
+  color:#e5e5e5;
+}
+
+#calendar-table .appointment_color{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+#calendar-table .appointment_color::after{
+  content:'';
+  display:block;
+  clear:both;
+}
+#calendar-table .appointment_color > div{
+  float:left;
+  height: 7px;
+}
+#calendar-table .quad > div{
+  width:25%;
+}
+#calendar-table .tri > div{
+  width:33.3333%;
+}
+#calendar-table .double > div{
+  width:50%;
+}
+#calendar-table .single > div{
+  width:100%;
+}
+.current_day{}
+#calendarcounter_container::after{
+  clear:both;
+  content:'';
+  display:block;
+}
+
+#calendarcounter{
+  padding:0;
+  margin:10px 0 0 0;
+}
+#calendarcounter li{
+  line-height: 23px;
+  font-size: 13px;
+  display:inline-block;
+}
+#calendarcounter li span{
+  float:right;
+  color:#fff;
+  width: 23px;
+  margin: 0 5px;
+  text-align:center;
+  border-radius:100%;
+}
+#calendar-table .clinic,
+#calendarcounter .clinic{
+  background: #1cae99;
+}
+#calendar-table .surgery,
+#calendarcounter .surgery{
+  background:#d8534f;
+}
+#calendar-table .rounds,
+#calendarcounter .rounds{
+  background:#e1a428;
+}
+#calendar-table .blocks,
+#calendarcounter .blocks{
+  background:#808080;
+}
+#calendarcounter_container .right{
+  position:relative;
+}
+
+#calendarcounter_container .dropdown_list_btn ul{
+  padding:0;
+  top: 33px !important;
+  left: auto !important;
+  right: 0px !important;
+  border:1px solid #228dc7;
+  border-radius:0 0 5px 5px;
+}
+
+#calendarcounter_container{
+  padding-bottom:15px;
+}

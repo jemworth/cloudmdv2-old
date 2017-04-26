@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24.8" viewBox="0 0 25 24.8">
+  <title>reports</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_25" data-name="Layer 25">
+      <g>
+        <polyline points="0.5 0.5 0.5 24.3 24.5 24.3" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        <g>
+          <rect x="3.75" y="7.58" width="2.63" height="14.38" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="8.71" y="13.21" width="2.63" height="8.75" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="13.67" y="1.38" width="2.63" height="20.58" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18.63" y="16.96" width="2.63" height="5" fill="none" stroke="#228dc7" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+
+body.eq-ui-side-nav-hide .eq-ui-main-maincon-2 {
+    padding-left: 350px !Important;
+}
+body.eq-ui-side-nav-hide .col-md-2.col-secondary-tab {
+    left: 50px !important;
+}
+
+/* ADD ENTRY BUTTON ICON */
+
+.eq-ui-collapsible-header-add-entry-active.eq-ui-collapsible-header i.sectab-addclinic-icon  {
+    background-image: url(../images/icons/add_hospital_icon_img_white.png) !important;   
+}
+
+
+/* FOOTER */
+.eq-ui-side-nav-hide footer {
+    padding: 20px 0 20px 385px !important;
+}
+
+
+
+
+
+
+
+
+

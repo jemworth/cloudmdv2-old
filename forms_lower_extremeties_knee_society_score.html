@@ -1,0 +1,562 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Knee Society Score</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap-material-ui.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css">
+
+        <!-- CSS for this page -->
+        <link rel="stylesheet" href="./assets/css/userprofile_custom.css">
+
+    </head>
+    <body class="">
+        <!-- header menu -->
+        <header class="eq-ui-layout-header">
+            <div id="main-eq-ui-app-bar" class="eq-ui-app-bar">
+            <div class="container-fluid common_header">
+            <div class="brand">
+                <img src="./assets/images/cloundmd_logo.svg" alt="Cloudmd logo">
+            </div>
+            <!-- Title -->
+            <div class="header-title">
+                <!-- <i class="mdi mdi-menu icon icon-left icon-24 eq-ui-side-nav-toggle"></i> -->
+                <button class="c-hamburger c-hamburger--htla eq-ui-side-nav-toggle">
+                    <span>toggle menu</span>
+                </button>
+            </div>
+            <!-- Nav Menu -->
+            <ul class="right eq-ui-nav-menu">
+                    <li class="eq-ui-nav-menu-item-icon head-icon-green-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-msg-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="12"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon head-icon-red-wrap">
+                        <a class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves eq-ui-modal-trigger  head-icon-a-wrap">
+                        <i class="mdi head-notify-icon icon"></i>
+                        </a>
+                        <span class="eq-ui-badge eq-ui-badge-overlap" data-badge="2"></span>
+                    </li>
+                    <li class="eq-ui-nav-menu-item-icon header-profile-right">
+                      <div class="header-profile-right-inner">
+                        <img src="./assets/images/user_profile/boggie_houser.jpg" />
+                        <span>John Gay Kho, MD.</span>
+                        <a data-target="doc-dropdown-app-bar-user" data-gutter="-48" data-hover="false" class="btn btn-default eq-ui-btn-flat eq-ui-btn-fab eq-ui-btn-menu-fab eq-ui-waves dropdown-trigger waves-effect">
+                        <i class="mdi mdi-dots-vertical icon"></i>  
+                        </a>
+                      </div>
+                        <!-- Dropdown Structure -->
+                        <ul id="doc-dropdown-app-bar-user" class="eq-ui-dropdown eq-ui-dropdown-right-top profile-header">
+                            <li><a href="userprofile.html">User Profile</a></li>
+                            <li><a href="loggingout.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header menu end -->
+
+        <!-- Left NAv -->
+        <div class="eq-ui-side-nav">
+            <div class="eq-ui-side-nav-wrapper">
+                <div class="eq-ui-side-nav-content-wrapper">
+                    <nav>
+                        <!-- Collapsible Menu -->
+                        <ul class="eq-ui-collapsible eq-ui-nav-first" data-collapsible="accordion">
+                            <li class="eq-ui-nav-pd-top">
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="" href="cloudpanel.html">
+                                    <i class="mdi leftn-cpanel-icon icon icon-left icon-24"></i>
+                                    CloudPanel
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="patients.html" class="active">
+                                    <i class="mdi leftn-patients-icon icon icon-left icon-24"></i>
+                                    Patients
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Group 1 -->
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                    <a id="">
+                                    <i class="mdi leftn-locations-icon icon icon-left icon-24"></i>
+                                    <i class="mdi mdi-plus icon icon-right icon-18 eq-ui-collapsible-view-close"></i>
+                                    <i class="mdi mdi-minus icon icon-right icon-18 eq-ui-collapsible-view-open"></i>
+                                    Locations
+                                    </a>
+                                </div>
+                                <div class="eq-ui-collapsible-body">
+                                    <!-- Sub Level Menu -->
+                                    <ul class="eq-ui-collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="clinic.html" id="collapsible-nav-group-1-menu-1">
+                                                <i class="mdi leftn-clinic-icon icon icon-left icon-24"></i>
+                                                Clinics
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="lefnv-li-noborder">
+                                            <div class="eq-ui-collapsible-header eq-ui-waves waves-effect">
+                                                <a href="hospital.html" id="collapsible-nav-group-1-menu-2">
+                                                <i class="mdi leftn-hospital-icon  icon icon-left icon-24"></i>
+                                                Hospital
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- 1º level menu -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="userprofile.html" >
+                                    <i class="mdi leftn-users-icon icon icon-left icon-24"></i>
+                                    Users
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="hmo.html" >
+                                    <i class="mdi leftn-hmos-icon icon icon-left icon-24"></i>
+                                    HMOs
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="letters.html">
+                                    <i class="mdi leftn-letters-icon icon icon-left icon-24"></i>
+                                    Letters
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="reports.html">
+                                    <i class="mdi leftn-reports-icon icon icon-left icon-24"></i>
+                                    Reports
+                                    </a>
+                                </div>
+                            </li>                           
+                            <li>
+                                <div class="eq-ui-collapsible-header eq-ui-waves waves-effect ">
+                                    <a id="" href="caserate.html" >
+                                    <i class="mdi leftn-scrate-icon icon icon-left icon-24"></i>
+                                    Search Case Rate
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- Groups 1 -->
+                        </ul>
+                        
+                        <ul class="eq-ui-collapsible eq-ui-nav-second" data-collapsible="accordion">
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="addpatients.html" class="btn-border-white">
+                                        <i class="mdi leftn-addpatients-icon icon icon-left icon-24"></i>
+                                    Add Patients
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="appointments.html" class="btn-border-white">
+                                        <i class="mdi leftn-appointments-icon icon icon-left icon-24"></i>
+                                    Appointments
+                                    </a>
+                                </div>
+                            </li>                       
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="admissions.html" class="btn-border-white">
+                                        <i class="mdi leftn-admissions-icon icon icon-left icon-24"></i>
+                                    Admissions
+                                    </a>
+                                </div>
+                            </li>   
+                            <li>
+                                <div class="eq-ui-collapsible-header">
+                                    <a id="" href="reminder.html" class="btn-border-white">
+                                        <i class="mdi leftn-reminders-icon icon icon-left icon-24"></i>
+                                    Reminder
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End Left NAv -->
+
+        <!-- For content body -->
+        <div id="maincontainer" class="eq-ui-main full_width_layout">
+            <!-- for message alert & multi use box -->
+            <div class="container message-alert">
+                <div class="row">
+                    <div class="col-md-12"></div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_content_container">
+                        <div class="main_content">						
+							<form id="kneesociety_form" class="eq-form">
+								<div class="row">
+                                    <div class="col-md-12">
+									   <h5>Knee Society Score</h5>
+                                       <hr>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Part 1 - Knee Score</h6>
+                                        <label>Pain</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option1" class="eq-ui-input"/>
+                                            <label for="section1_option1">None</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option2" class="eq-ui-input"/>
+                                            <label for="section1_option2">Mild / Occasional</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option3" class="eq-ui-input"/>
+                                            <label for="section1_option3">Mild (Stairs only)</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option4" class="eq-ui-input"/>
+                                            <label for="section1_option4">Mild (Walking and Stairs)</label>
+                                        </div>
+                                        
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option5" class="eq-ui-input"/>
+                                            <label for="section1_option5">Moderate - Occasional</label>
+                                        </div>
+                                        
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option6" class="eq-ui-input"/>
+                                            <label for="section1_option6">Moderate - Continual</label>
+                                        </div>
+                                        
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section1" type="radio" id="section1_option7" class="eq-ui-input"/>
+                                            <label for="section1_option7">Severe</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Flexion Contracture (if present)</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option1" class="eq-ui-input"/>
+                                            <label for="section2_option1">5° - 10°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option2" class="eq-ui-input"/>
+                                            <label for="section2_option2">10° - 15°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option3" class="eq-ui-input"/>
+                                            <label for="section2_option3">16° - 20°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section2" type="radio" id="section2_option4" class="eq-ui-input"/>
+                                            <label for="section2_option4">> 20°</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Extension Lag</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option1" class="eq-ui-input"/>
+                                            <label for="section3_option1">< 10°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option2" class="eq-ui-input"/>
+                                            <label for="section3_option2">10 - 20°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section3" type="radio" id="section3_option3" class="eq-ui-input"/>
+                                            <label for="section3_option3">> 20°</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Total Range of Flexion</label>
+                                        <div class="row">                                
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option1" class="eq-ui-input">
+                                                    <label for="section4_option1">0 - 5</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option6" class="eq-ui-input">
+                                                    <label for="section4_option6">26 - 30</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option11" class="eq-ui-input">
+                                                    <label for="section4_option11">51 - 55</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option16" class="eq-ui-input">
+                                                    <label for="section4_option16">76 - 80</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option21" class="eq-ui-input">
+                                                    <label for="section4_option21">101 - 105</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option2" class="eq-ui-input">
+                                                    <label for="section4_option2">0 - 6</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option7" class="eq-ui-input">
+                                                    <label for="section4_option7">31 - 35</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option12" class="eq-ui-input">
+                                                    <label for="section4_option12">56 - 60</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option17" class="eq-ui-input">
+                                                    <label for="section4_option17">81 - 85</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option22" class="eq-ui-input">
+                                                    <label for="section4_option22">106 - 110</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option3" class="eq-ui-input">
+                                                    <label for="section4_option3">11 - 15</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option8" class="eq-ui-input">
+                                                    <label for="section4_option8">36 - 40</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option13" class="eq-ui-input">
+                                                    <label for="section4_option13">61 - 65</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option18" class="eq-ui-input">
+                                                    <label for="section4_option18">86 - 90</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option23" class="eq-ui-input">
+                                                    <label for="section4_option23">111 - 115</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option4" class="eq-ui-input">
+                                                    <label for="section4_option4">16 - 20</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option9" class="eq-ui-input">
+                                                    <label for="section4_option9">41 - 45</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option14" class="eq-ui-input">
+                                                    <label for="section4_option14">66 - 70</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option19" class="eq-ui-input">
+                                                    <label for="section4_option19">91 - 95</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option24" class="eq-ui-input">
+                                                    <label for="section4_option24">116 - 120</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option5" class="eq-ui-input">
+                                                    <label for="section4_option5">21 - 25</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option10" class="eq-ui-input">
+                                                    <label for="section4_option10">46 - 50</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option15" class="eq-ui-input">
+                                                    <label for="section4_option15">71 - 75</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option20" class="eq-ui-input">
+                                                    <label for="section4_option20">96 - 100</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section4" type="radio" id="section4_option25" class="eq-ui-input">
+                                                    <label for="section4_option25">121 - 125</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Alignment (Varus & Valgus)</label>
+                                        <div class="row">                                
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option1" class="eq-ui-input">
+                                                    <label for="section5_option1">0</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option2" class="eq-ui-input" />
+                                                    <label for="section5_option2">1</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option3" class="eq-ui-input"/>
+                                                    <label for="section5_option3">2</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option6" class="eq-ui-input">
+                                                    <label for="section5_option6">5-10</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option4" class="eq-ui-input"/>
+                                                    <label for="section5_option4">3</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option5" class="eq-ui-input"/>
+                                                    <label for="section5_option5">4</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">                                
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option7" class="eq-ui-input"/>
+                                                    <label for="section5_option7">11</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option8" class="eq-ui-input"/>
+                                                    <label for="section5_option8">12</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option9" class="eq-ui-input"/>
+                                                    <label for="section5_option9">13</label>
+                                                </div>
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option12" class="eq-ui-input" />
+                                                    <label for="section5_option12">Over 15°</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option10" class="eq-ui-input" />
+                                                    <label for="section5_option10">14</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                                    <input name="section5" type="radio" id="section5_option11" class="eq-ui-input" />
+                                                    <label for="section5_option11">15</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h6>Stability (Maximum movement in any position)</h6>
+                                        <label>Antero-posterior</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option1" class="eq-ui-input"/>
+                                            <label for="section6_option1">< 5mm</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option2" class="eq-ui-input"/>
+                                            <label for="section6_option2">5 - 10mm</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section6" type="radio" id="section6_option3" class="eq-ui-input">
+                                            <label for="section6_option3">10 + mm</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-15">
+                                        <label>Mediolateral</label>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option1" class="eq-ui-input"/>
+                                            <label for="section7_option1">< 5°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option2" class="eq-ui-input" />
+                                            <label for="section7_option2">6-9°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option3" class="eq-ui-input">
+                                            <label for="section7_option3">10-14°</label>
+                                        </div>
+                                        <div class="eq-ui-form-group eq-ui-input-field eq-ui-input-full">
+                                            <input name="section7" type="radio" id="section7_option4" class="eq-ui-input">
+                                            <label for="section7_option4">15°</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form_text eq-ui-form-group eq-ui-input-field">  
+                                            <p>Total Score = <input id="totalscore" type="text" value="" class="eq-ui-input"> + Interpretation of score</p>
+                                        </div>
+                                    </div>
+								</div>
+							</form>
+                            <h6>Reference for score</h6> 
+                            <p class="skyblue">Insall JN, Dorr LD, Scott RD, Scott WN. Rationale of the Knee Society clinical rating system. Clin Orthop Relat Res. 1989 Nov;(248):13-4. link to pubmed.  Link SF36, SF12</p>
+                            <h6>Reference for Grading</h6> 
+                            <p class="skyblue">Asif S , Choon DS . Midterm results of cemented Press Fit Condylar Sigma total knee arthroplasty system. J Orthop Surg (Hong Kong). 2005 Dec;13(3):280-4</p>									
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			
+        
+            <!-- Footer Section -->
+            <footer id="footer">
+                <div class="container copyright">
+                    <ul class="text-center p-0 mb-0">
+                        <li>Copyright © 2017. All Rights Reserved.</li>
+                        <li><img src="./assets/images/cloudmd_icon.svg" width="25"></li>
+                        <li>A Product of <a target="_blank" href="http://cloudmd.ph/">Xynapx</a> Technologies</li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Footer Section end -->
+        </div>
+        <!-- end content -->
+
+        <!-- Main JS -->
+        <script src="./assets/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/modernizr.min.js"></script>
+        <script src="./assets/js/bootstrap-material-ui.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <!-- Plugin -->
+
+    </body>
+</html>
